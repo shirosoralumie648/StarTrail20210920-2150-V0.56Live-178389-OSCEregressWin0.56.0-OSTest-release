@@ -1,0 +1,203 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "c31ae3b1-2ecc-45f8-9714-0a84bc74368d", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "30c04312-3457-45ea-8c1d-ce12b56d852e", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "0ddd326c-29f4-4432-a3fa-543d18f32930", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010601/Story_1010601032.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "04feb0a2-0965-4e05-b754-ba8b9fcb12b9", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Default", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010601032"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "9ee813ea-950d-4ae9-ab34-0a9fdb8f5e71", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mar_7th", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010601032"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "1b1a4a6a-24e5-41ac-807c-0a87d2f6e26d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010601032"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "b063f4ec-b6cb-41a5-aab0-ff75c1921ab4", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Seele", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010601032"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "6bcae1ba-1a05-4789-b383-70e711997ae1", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010601032"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false,
+					"EnableRootMotion" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "bf86bc34-6622-42dd-a186-d9a37f9996f2", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010601/Story_101060103201.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "9846c09a-fd18-4873-85cb-582a8df7b487", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "1073afe1-1d9e-47b7-abb4-9467188ddb16", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "a50905f7-dd5d-42cc-b4db-eb46ed842b58", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "57ab5b30-bb33-451d-8f00-f13003085ea0", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "虎克被掳走", 
+				"Guid" : "c31ae3b1-2ecc-45f8-9714-0a84bc74368d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "30c04312-3457-45ea-8c1d-ce12b56d852e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "0ddd326c-29f4-4432-a3fa-543d18f32930", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					848, 
+					0
+				], 
+				"Guid" : "bf86bc34-6622-42dd-a186-d9a37f9996f2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1104, 
+					0
+				], 
+				"Guid" : "9846c09a-fd18-4873-85cb-582a8df7b487", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					576, 
+					224
+				], 
+				"Guid" : "a50905f7-dd5d-42cc-b4db-eb46ed842b58", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					224
+				], 
+				"Guid" : "57ab5b30-bb33-451d-8f00-f13003085ea0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					208
+				], 
+				"Guid" : "1073afe1-1d9e-47b7-abb4-9467188ddb16", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

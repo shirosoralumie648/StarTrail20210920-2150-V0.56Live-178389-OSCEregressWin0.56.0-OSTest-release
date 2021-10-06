@@ -1,0 +1,28 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 17
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 28
+  },
+  "m_Name": "",
+  "Center": {
+    "x": 0.0,
+    "y": 15.0,
+    "z": -39.4
+  },
+  "Size": {
+    "x": 200.0,
+    "y": 50.0,
+    "z": 353.127258
+  },
+  "MiniMapImage": {
+    "m_FileID": 97,
+    "m_PathID": -3389132440607528090
+  },
+  "Scale": 1.0,
+  "CombineLayerAutomatic": 0
+}

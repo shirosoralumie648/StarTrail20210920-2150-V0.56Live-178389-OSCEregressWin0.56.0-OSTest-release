@@ -1,0 +1,1326 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "5fafa05a-b22c-44e9-a6b2-fd8fbe20e4af", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "8015fb84-0995-4931-b2cf-be725ea81a37", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "6f0edd4c-764a-4cc4-9b21-a8283946d15e", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010801/Story_1010801061.prefab", 
+					"LockPlayControl" : true, 
+					"LockCamera" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "61fb78df-e73f-43d0-bc91-9f62b91b61d9", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Seele", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010801061", 
+							"AnchorName" : "Seele01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "55297b0c-043c-4240-9587-8efbc9cfa31f", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010801061", 
+							"AnchorName" : "Bronya01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "35508de4-50ab-4c5c-aabb-3f852ec80846", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Default", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010801061", 
+							"AnchorName" : "Player01"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : true, 
+					"EnableRootMotion" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "e75bae86-5687-4c2d-9ed8-949119730a1f", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayOptionTalk", 
+					"$guid" : "2473a0bf-e8d6-4edc-b512-4e76a8166c1e", 
+					"TaskEnabled" : true, 
+					"OptionList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "a92ead76-e870-414f-95d9-cf2bf8c56a90", 
+							"OptionTextmapID" : "VoiceTalk_201311226", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311226", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "6bc04297-8579-45c2-82f4-64e9e7d981d8", 
+							"OptionTextmapID" : "VoiceTalk_201311227", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311226", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "8462dd80-ec69-4c3c-a906-3439aaabf7dd", 
+							"OptionTextmapID" : "VoiceTalk_201311228", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311226", 
+							"HasTriggered" : false
+						}
+					], 
+					"HideSelected" : false
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "8c33e614-5110-48b2-8055-9077edb4c6f0", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "2df46c57-370b-4ea4-bc0d-09af223746e5", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311226", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "c0b76f33-dc66-408b-8348-ed1493d611db", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106102.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayOptionTalk", 
+					"$guid" : "350d782b-3804-4b6a-9ddf-f24b0e4841b8", 
+					"TaskEnabled" : true, 
+					"OptionList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "26623a5f-c030-488d-a49a-fc3dbe014d27", 
+							"OptionTextmapID" : "VoiceTalk_201311231", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311231", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "87fb781d-f67e-425a-bed5-355db99526eb", 
+							"OptionTextmapID" : "VoiceTalk_201311232", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311231", 
+							"HasTriggered" : false
+						}
+					], 
+					"HideSelected" : false
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "f4e502e5-d7c0-490f-82cc-1d773bda370f", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "b62489db-4e2f-4a0d-ba4e-be9614fbcd36", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311231", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "80f52939-8c2d-4a62-b68e-61aeeecf5b36", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106103.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayOptionTalk", 
+					"$guid" : "6ecebf89-8456-4ffd-a948-985b2d8a8d87", 
+					"TaskEnabled" : true, 
+					"OptionList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "26623a5f-c030-488d-a49a-fc3dbe014d27", 
+							"OptionTextmapID" : "VoiceTalk_201311237", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311237", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "87fb781d-f67e-425a-bed5-355db99526eb", 
+							"OptionTextmapID" : "VoiceTalk_201311240", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311240", 
+							"HasTriggered" : false
+						}
+					], 
+					"HideSelected" : false
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "2d9996a3-4ece-4425-adec-ec9cb7dc07f4", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "4029048c-d464-401f-b20c-5e756576d2e4", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311237", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "c39b1c7d-b6aa-4f00-bdb6-2e25465084b6", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106104.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "a5160409-b1a6-4f23-8d52-b45d01c08559", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311242"
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "cf47fd81-9a85-4f31-ba8d-27ea57c87198", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "35a5f0c7-008e-4efe-b95a-fc4a2456f680", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311240", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "83a6d235-20ab-462b-b44c-3e8ba0c6e1ac", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106105.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "f5e812b0-f15f-43bb-880c-90fc9174d07f", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311242"
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "b51bf09f-9a25-4c41-bae9-cf695aa11922", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "97c42633-88ce-4056-8e7d-a0f4becba38f", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311242", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "7f49df39-39ed-497e-b042-b02641287a0c", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106106.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayOptionTalk", 
+					"$guid" : "ce4c8bb4-e155-45b6-9539-59002d8157eb", 
+					"TaskEnabled" : true, 
+					"OptionList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "26623a5f-c030-488d-a49a-fc3dbe014d27", 
+							"OptionTextmapID" : "VoiceTalk_201311246", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311246", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "87fb781d-f67e-425a-bed5-355db99526eb", 
+							"OptionTextmapID" : "VoiceTalk_201311248", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311248", 
+							"HasTriggered" : false
+						}
+					], 
+					"HideSelected" : false
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "6db6a49c-84f6-41c8-9ca9-723b95242e51", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "9dab9996-e337-4970-b537-782b876a008b", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311246", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "4e2e8b35-7ac5-4146-91e1-05748bfac792", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106107.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "3cc452b6-9c9f-4740-8031-4edc9f672bc3", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311250"
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "04c6ffe8-39f5-4636-868a-802186e47718", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "25ca0d52-a966-4278-9548-229bd164c675", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311248", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "fe5200ba-33a4-4a30-8e52-5a207c941f76", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106108.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "5c5aa3aa-1b68-40a3-ae6c-d3845a316590", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311250"
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "27e09d0c-29b5-4fa3-a558-e4f502593ee6", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "f0ab97a1-bcbd-44ba-bb5c-929ecd0062d8", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311250", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "7a03c678-b304-4125-956e-24135185dac2", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106109.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayOptionTalk", 
+					"$guid" : "18015fe0-6c69-49cf-85d7-fca40b23d4c9", 
+					"TaskEnabled" : true, 
+					"OptionList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "26623a5f-c030-488d-a49a-fc3dbe014d27", 
+							"OptionTextmapID" : "VoiceTalk_201311252", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311252", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "87fb781d-f67e-425a-bed5-355db99526eb", 
+							"OptionTextmapID" : "VoiceTalk_201311253", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311253", 
+							"HasTriggered" : false
+						}
+					], 
+					"HideSelected" : false
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "82c7829d-3e29-4b7d-bdf2-3918d4d7b790", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "a4f8ff7b-162e-416d-9a4f-86ed759db16e", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311252", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "a232487a-d7b6-41b7-bda5-5314a33f42dc", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106110.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "2e624e9f-f1c2-4e72-b216-4b7689d4d6b3", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311256"
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "6f730297-607f-4bae-9224-3fc518fa561a", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "0a6cd13e-6c46-408b-8bea-76f0e18fe911", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311253", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "f3acf4bc-8ef6-492c-9204-c07b28100189", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106111.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "00131c01-e106-4b24-a1a9-5990ac1f73c6", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311256"
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "9877f9f7-aa77-4e22-9aed-d706678f38a1", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "d052c383-eb5f-41dc-af28-78efb329fa21", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311256", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "42c77fc6-d2fc-4075-88d4-0d620a905f80", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106112.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayOptionTalk", 
+					"$guid" : "192a0137-1bf7-47a7-a92f-c9bd7abb6c46", 
+					"TaskEnabled" : true, 
+					"OptionList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "656b3ede-82b4-4fee-877e-bcde3d84d14c", 
+							"OptionTextmapID" : "VoiceTalk_201311257", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311257", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "0c94c674-98ca-45bc-893c-b358a64b1ca5", 
+							"OptionTextmapID" : "VoiceTalk_201311258", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311257", 
+							"HasTriggered" : false
+						}
+					], 
+					"HideSelected" : false
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "51a1e9ff-7b96-4fca-81ad-bd7d6ec8cf82", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "4fd89357-e57c-4926-a202-5d2219258905", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311257", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "366298e8-e5ce-4dbb-a8a3-e26a54a90d4d", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106113.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayOptionTalk", 
+					"$guid" : "dd458d50-0c07-4f37-95d8-fca86183b018", 
+					"TaskEnabled" : true, 
+					"OptionList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "bad1f476-3d75-47c9-9b4d-87f5561456b6", 
+							"OptionTextmapID" : "VoiceTalk_201311261", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311261", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "41943506-50ad-4c81-9b3b-9a7b3f38ea99", 
+							"OptionTextmapID" : "VoiceTalk_201311263", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311261", 
+							"HasTriggered" : false
+						}, 
+						{
+							"$type" : "RPG.GameCore.OptionTalkInfo", 
+							"$guid" : "856b0b6a-2b8c-4c4d-b7c4-768cdd2640cc", 
+							"OptionTextmapID" : "VoiceTalk_201311265", 
+							"OptionIconPath" : "SpriteOutput/TalkIcon/ChatIcon.png", 
+							"TriggerCustomString" : "VoiceTalk_201311265", 
+							"HasTriggered" : false
+						}
+					], 
+					"HideSelected" : false
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "40e28d21-f2dd-4baa-9048-dc378ffe07d6", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "7f8bc55c-0f7a-4a7c-a96a-a3985da180d2", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311261", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "bae566c8-c6e5-4e85-aea6-1e0665313768", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106114.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "0b14c380-c516-487e-bf4c-06096fffc137", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311265"
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "69528948-21e6-4f5c-94b1-0dd69eb3bba5", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitCustomString", 
+					"$guid" : "2c3f131e-b2e9-41b9-95b9-abcad731e0a5", 
+					"TaskEnabled" : true, 
+					"CustomString" : "VoiceTalk_201311265", 
+					"WaitOwnerOnly" : false, 
+					"Sync" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "401a2ffe-3af0-40ed-9500-bf6081557b16", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010801/Story_101080106115.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "620d185d-206f-455a-b1ef-79dfb493567b", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "77cdb1c5-c6c9-4dc2-b880-48ec9494bfd5", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "0b7c9686-34af-4679-87e3-617863ade874", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "44525f7c-5c06-4940-a2a8-fdec486871e0", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					-144, 
+					-768
+				], 
+				"Comment" : "希儿和布洛妮娅", 
+				"Guid" : "5fafa05a-b22c-44e9-a6b2-fd8fbe20e4af", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					256, 
+					-624
+				], 
+				"Guid" : "8015fb84-0995-4931-b2cf-be725ea81a37", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					-608
+				], 
+				"Guid" : "6f0edd4c-764a-4cc4-9b21-a8283946d15e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					-608
+				], 
+				"Guid" : "e75bae86-5687-4c2d-9ed8-949119730a1f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1056, 
+					-608
+				], 
+				"Guid" : "2473a0bf-e8d6-4edc-b512-4e76a8166c1e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					256, 
+					-448
+				], 
+				"Guid" : "8c33e614-5110-48b2-8055-9077edb4c6f0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					-432
+				], 
+				"Comment" : "我不是故意偷听的", 
+				"Guid" : "2df46c57-370b-4ea4-bc0d-09af223746e5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					-432
+				], 
+				"Guid" : "c0b76f33-dc66-408b-8348-ed1493d611db", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1056, 
+					-432
+				], 
+				"Guid" : "350d782b-3804-4b6a-9ddf-f24b0e4841b8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					-288
+				], 
+				"Guid" : "f4e502e5-d7c0-490f-82cc-1d773bda370f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					-272
+				], 
+				"Comment" : "我们来找布洛妮娅", 
+				"Guid" : "b62489db-4e2f-4a0d-ba4e-be9614fbcd36", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					-272
+				], 
+				"Guid" : "80f52939-8c2d-4a62-b68e-61aeeecf5b36", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1056, 
+					-272
+				], 
+				"Guid" : "6ecebf89-8456-4ffd-a948-985b2d8a8d87", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					-128
+				], 
+				"Guid" : "2d9996a3-4ece-4425-adec-ec9cb7dc07f4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					-112
+				], 
+				"Comment" : "你学到了什么", 
+				"Guid" : "4029048c-d464-401f-b20c-5e756576d2e4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					-112
+				], 
+				"Guid" : "c39b1c7d-b6aa-4f00-bdb6-2e25465084b6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1056, 
+					-112
+				], 
+				"Guid" : "a5160409-b1a6-4f23-8d52-b45d01c08559", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					16
+				], 
+				"Guid" : "cf47fd81-9a85-4f31-ba8d-27ea57c87198", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					32
+				], 
+				"Comment" : "然后你想怎么做", 
+				"Guid" : "35a5f0c7-008e-4efe-b95a-fc4a2456f680", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					32
+				], 
+				"Guid" : "83a6d235-20ab-462b-b44c-3e8ba0c6e1ac", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1056, 
+					32
+				], 
+				"Guid" : "f5e812b0-f15f-43bb-880c-90fc9174d07f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					176
+				], 
+				"Guid" : "b51bf09f-9a25-4c41-bae9-cf695aa11922", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					192
+				], 
+				"Comment" : "然后我想直接去找可可利亚", 
+				"Guid" : "97c42633-88ce-4056-8e7d-a0f4becba38f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					192
+				], 
+				"Guid" : "7f49df39-39ed-497e-b042-b02641287a0c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1056, 
+					192
+				], 
+				"Guid" : "ce4c8bb4-e155-45b6-9539-59002d8157eb", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					352
+				], 
+				"Guid" : "6db6a49c-84f6-41c8-9ca9-723b95242e51", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					368
+				], 
+				"Comment" : "真的会那么顺利吗", 
+				"Guid" : "9dab9996-e337-4970-b537-782b876a008b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					368
+				], 
+				"Guid" : "4e2e8b35-7ac5-4146-91e1-05748bfac792", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1072, 
+					368
+				], 
+				"Guid" : "3cc452b6-9c9f-4740-8031-4edc9f672bc3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					512
+				], 
+				"Guid" : "04c6ffe8-39f5-4636-868a-802186e47718", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					528
+				], 
+				"Comment" : "你现在的立场肯定很艰难吧", 
+				"Guid" : "25ca0d52-a966-4278-9548-229bd164c675", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					528
+				], 
+				"Guid" : "fe5200ba-33a4-4a30-8e52-5a207c941f76", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1072, 
+					528
+				], 
+				"Guid" : "5c5aa3aa-1b68-40a3-ae6c-d3845a316590", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					704
+				], 
+				"Guid" : "27e09d0c-29b5-4fa3-a558-e4f502593ee6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					720
+				], 
+				"Comment" : "如果可可利亚大人不愿意接受", 
+				"Guid" : "f0ab97a1-bcbd-44ba-bb5c-929ecd0062d8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					720
+				], 
+				"Guid" : "7a03c678-b304-4125-956e-24135185dac2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1072, 
+					720
+				], 
+				"Guid" : "18015fe0-6c69-49cf-85d7-fca40b23d4c9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					848
+				], 
+				"Guid" : "82c7829d-3e29-4b7d-bdf2-3918d4d7b790", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					512, 
+					864
+				], 
+				"Comment" : "当然", 
+				"Guid" : "a4f8ff7b-162e-416d-9a4f-86ed759db16e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					864
+				], 
+				"Guid" : "a232487a-d7b6-41b7-bda5-5314a33f42dc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1088, 
+					864
+				], 
+				"Guid" : "2e624e9f-f1c2-4e72-b216-4b7689d4d6b3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					1040
+				], 
+				"Guid" : "6f730297-607f-4bae-9224-3fc518fa561a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					1056
+				], 
+				"Comment" : "时间有点紧", 
+				"Guid" : "0a6cd13e-6c46-408b-8bea-76f0e18fe911", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					1056
+				], 
+				"Guid" : "f3acf4bc-8ef6-492c-9204-c07b28100189", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1104, 
+					1056
+				], 
+				"Guid" : "00131c01-e106-4b24-a1a9-5990ac1f73c6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					1184
+				], 
+				"Guid" : "9877f9f7-aa77-4e22-9aed-d706678f38a1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					1200
+				], 
+				"Comment" : "对了 你和布洛妮娅 ", 
+				"Guid" : "d052c383-eb5f-41dc-af28-78efb329fa21", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					1200
+				], 
+				"Guid" : "42c77fc6-d2fc-4075-88d4-0d620a905f80", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1104, 
+					1200
+				], 
+				"Guid" : "192a0137-1bf7-47a7-a92f-c9bd7abb6c46", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					1376
+				], 
+				"Guid" : "51a1e9ff-7b96-4fca-81ad-bd7d6ec8cf82", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					1392
+				], 
+				"Comment" : "见过 怎么啦", 
+				"Guid" : "4fd89357-e57c-4926-a202-5d2219258905", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					1392
+				], 
+				"Guid" : "366298e8-e5ce-4dbb-a8a3-e26a54a90d4d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1104, 
+					1392
+				], 
+				"Guid" : "dd458d50-0c07-4f37-95d8-fca86183b018", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					1568
+				], 
+				"Guid" : "40e28d21-f2dd-4baa-9048-dc378ffe07d6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					1584
+				], 
+				"Comment" : "其实星星是燃烧的气体", 
+				"Guid" : "7f8bc55c-0f7a-4a7c-a96a-a3985da180d2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					784, 
+					1584
+				], 
+				"Guid" : "bae566c8-c6e5-4e85-aea6-1e0665313768", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1104, 
+					1584
+				], 
+				"Guid" : "0b14c380-c516-487e-bf4c-06096fffc137", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					1792
+				], 
+				"Guid" : "69528948-21e6-4f5c-94b1-0dd69eb3bba5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					1808
+				], 
+				"Comment" : "是的，星星是宝石", 
+				"Guid" : "2c3f131e-b2e9-41b9-95b9-abcad731e0a5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					800, 
+					1808
+				], 
+				"Guid" : "401a2ffe-3af0-40ed-9500-bf6081557b16", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1104, 
+					1808
+				], 
+				"Guid" : "620d185d-206f-455a-b1ef-79dfb493567b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					2016
+				], 
+				"Guid" : "77cdb1c5-c6c9-4dc2-b880-48ec9494bfd5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					560, 
+					2016
+				], 
+				"Guid" : "0b7c9686-34af-4679-87e3-617863ade874", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					832, 
+					2016
+				], 
+				"Guid" : "44525f7c-5c06-4940-a2a8-fdec486871e0", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

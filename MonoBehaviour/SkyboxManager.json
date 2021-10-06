@@ -1,0 +1,187 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 24
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 14
+  },
+  "m_Name": "",
+  "StarsScintillation": 0.16,
+  "SkyFrontBackBlendFactor": 1.0,
+  "BottomColorHeight": 0.36,
+  "HorizonHaloHeight": 0.02,
+  "HorizonHaloIntensity": 0.1,
+  "SunHaloSize": 0.187,
+  "SunHaloBrightness": 0.5,
+  "MoonBrightness": 0.0,
+  "MoonLunarPhase": 0.26,
+  "MoonGlowBrightness": 1.0,
+  "StarsBrightness": 10.0,
+  "StarsDensity": 1.0,
+  "SunDiskSharpness": 1.0,
+  "SunDiskBrightness": 0.0,
+  "SunAngle": 0.0,
+  "SunInclination": -23.0,
+  "SunInclinationOffset": 0.94,
+  "MoonAngle": 0.0,
+  "MoonInclination": 49.8,
+  "MoonInclinationOffset": 0.98,
+  "MoonOrbitOffset": -0.05,
+  "MoonRotation": 0.0,
+  "SunDiskSize": {
+    "m_Curve": [
+      {
+        "time": 0.0,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 1.0,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+  },
+  "MoonSize": {
+    "m_Curve": [
+      {
+        "time": 0.0,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      },
+      {
+        "time": 1.0,
+        "value": 1.0,
+        "inSlope": 0.0,
+        "outSlope": 0.0,
+        "weightedMode": 0,
+        "inWeight": 0.333333343,
+        "outWeight": 0.333333343
+      }
+    ],
+    "m_PreInfinity": 2,
+    "m_PostInfinity": 2,
+    "m_RotationOrder": 4
+  },
+  "TimeOfDay24": 24.0,
+  "skySize": 6000.0,
+  "TopFrontColor": {
+    "r": 0.215686291,
+    "g": 0.3019608,
+    "b": 0.427451,
+    "a": 1.0
+  },
+  "TopBackColor": {
+    "r": 0.1914027,
+    "g": 0.3909503,
+    "b": 0.9,
+    "a": 1.0
+  },
+  "BottomFrontColor": {
+    "r": 0.215686277,
+    "g": 0.3019608,
+    "b": 0.427450985,
+    "a": 1.0
+  },
+  "BottomBackColor": {
+    "r": 0.215686277,
+    "g": 0.3019608,
+    "b": 0.427450985,
+    "a": 1.0
+  },
+  "HorizonHaloColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "SunHaloColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "MoonColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "SunDiskColor": {
+    "r": 0.0,
+    "g": 0.0,
+    "b": 0.0,
+    "a": 1.0
+  },
+  "AtmosphereTransform": {
+    "m_FileID": 0,
+    "m_PathID": 56
+  },
+  "SunTransform": {
+    "m_FileID": 0,
+    "m_PathID": 55
+  },
+  "MoonTransform": {
+    "m_FileID": 0,
+    "m_PathID": 57
+  },
+  "CloudElapsedTime": 1.0,
+  "CloudSunBrightenIntensity": 0.437,
+  "CloudCoverage": 0.0,
+  "CloudAgePercent": 1.0,
+  "CloudRimLightRadius": 0.15,
+  "CloudLightBackColor": {
+    "r": 0.156862751,
+    "g": 0.298039228,
+    "b": 0.372549027,
+    "a": 1.0
+  },
+  "CloudDarkFrontColor": {
+    "r": 0.435294122,
+    "g": 0.0627451,
+    "b": 0.211764708,
+    "a": 1.0
+  },
+  "CloudLightFrontColor": {
+    "r": 0.8392157,
+    "g": 0.2901961,
+    "b": 0.258823544,
+    "a": 1.0
+  },
+  "CloudDarkBackColor": {
+    "r": 0.0235294122,
+    "g": 0.121568628,
+    "b": 0.223529413,
+    "a": 1.0
+  },
+  "CloudFrontBackBlendFactor": 0.5,
+  "WindZoneTransform": {
+    "m_FileID": 0,
+    "m_PathID": 58
+  },
+  "CloudHeight": 0.352,
+  "CloudTiling": 0.9,
+  "CloudOpacity": 0.0,
+  "CloudSmoothness": 0.475,
+  "CloudWisps": 0.0,
+  "CloudWispsCoverage": 1.0,
+  "CloudWispsOpacity": 0.7
+}

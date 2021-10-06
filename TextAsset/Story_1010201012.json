@@ -1,0 +1,190 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+	"OnInitSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelInitSequeceConfig", 
+			"$guid" : "7f7546d3-71cf-4f4b-8727-ae33c2739cdb", 
+			"TaskList" : 
+			[
+			]
+		}
+	], 
+	"OnStartSequece" : 
+	[
+		
+		// 故事开始
+        
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "91fdbca2-8442-47d7-bff2-c6471edbf3d5", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010201/Story_1010201021.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "90814942-763f-4d71-a2f4-d352e52d2be6", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : false
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "7caf076b-29b1-4518-9294-d7e88f86a21b", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Gepard", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Gepard", 
+							"AreaName" : "Story_1010201021", 
+							"AnchorName" : "Anchor01"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBubbleTalk" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "d780d5c5-59a2-48fc-a469-cf141df77c2f", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "481257c4-0d0c-40da-ad13-38d1edcc23c2", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : {
+	"DanglingNodes" : 
+	[
+	], 
+	"ClassMeta" : 
+	[
+		{
+			"Position" : 
+			[
+				0, 
+				0
+			], 
+			"Comment" : "跟随杰帕德进入城市", 
+			"Guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				320, 
+				0
+			], 
+			"Guid" : "7f7546d3-71cf-4f4b-8727-ae33c2739cdb", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				320, 
+				128
+			], 
+			"Guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				576, 
+				128
+			], 
+			"Guid" : "91fdbca2-8442-47d7-bff2-c6471edbf3d5", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				1344, 
+				128
+			], 
+			"Guid" : "d780d5c5-59a2-48fc-a469-cf141df77c2f", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				320, 
+				256
+			], 
+			"Guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				576, 
+				256
+			], 
+			"Guid" : "481257c4-0d0c-40da-ad13-38d1edcc23c2", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				832, 
+				256
+			], 
+			"Guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				832, 
+				128
+			], 
+			"Guid" : "084e0e36-a4e3-4ecf-b6c2-2a87e94337ab", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				1088, 
+				128
+			], 
+			"Guid" : "04a17c43-de87-4e95-912f-2a7350566b9b", 
+			"Locked" : false
+		}
+	], 
+	"Connections" : 
+	[
+	], 
+	"SerializeVersion" : 1
+}
+}

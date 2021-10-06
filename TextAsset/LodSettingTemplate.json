@@ -1,0 +1,854 @@
+{
+	"$type" : "RPG.GameCore.LodConfig", 
+	"$guid" : "d65ee67e-2901-44a3-8717-3eaaea0cb0cc", 
+	"LodTemplateMap" : 
+	{
+		"default" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "a1d30248-f291-4973-aceb-211c1004b8ee", 
+			"Name" : "Without Lod", 
+			"Index" : 0, 
+			"Distance" : 0.000000
+		}, 
+		"LandMarkL" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "799bdaf2-6d8d-40b6-806f-78209358f030", 
+			"Name" : "LandMarks_Large", 
+			"Index" : 1, 
+			"Distance" : 800.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "b4e33a53-749a-49b4-b193-89163aac1c7c", 
+					"Lod" : 0, 
+					"Percent" : 15.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "f6914bc5-ab99-4984-8639-4bbe9e1a8c23", 
+					"Lod" : 1, 
+					"Percent" : 30.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "89349c0a-72f9-41f6-9b87-4d33c07d073b", 
+					"Lod" : 2, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "7a6477de-c4cd-496d-9fec-07983b51f5bc", 
+					"Lod" : 3, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "fcea5274-fe86-42a4-bb75-31e4e4764df7", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "Landmark"
+		}, 
+		"LandMarkM" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "4e2658ee-c290-4cd3-ab8f-becb366b6ac4", 
+			"Name" : "LandMarks_Middle", 
+			"Index" : 1, 
+			"Distance" : 400.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "d7b0a0b4-43ab-4c56-8345-77834e4aaef2", 
+					"Lod" : 0, 
+					"Percent" : 30.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "04ddde6a-f4dd-4e7d-8472-efcffb5f99ea", 
+					"Lod" : 1, 
+					"Percent" : 40.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "ddb93c6a-484b-461c-b800-802eff5170eb", 
+					"Lod" : 2, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "927816e1-6d6a-4da7-94dd-83b702e09f91", 
+					"Lod" : 3, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "f6b595a5-35bb-4c73-afee-ba54711928a3", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "Landmark"
+		}, 
+		"LandMarkS" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "a19174f7-517d-4632-9d8f-6df8db5cd220", 
+			"Name" : "LandMarks_Small", 
+			"Index" : 1, 
+			"Distance" : 200.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "0ff4271b-b637-45f8-aa4e-4262168b3e34", 
+					"Lod" : 0, 
+					"Percent" : 30.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "ed38aa3a-dcf9-4b39-93d1-9b2043422f2d", 
+					"Lod" : 1, 
+					"Percent" : 50.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "173fcb3b-416b-49cf-bce0-33a461cb1cfd", 
+					"Lod" : 2, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "296e1a97-a3c1-4183-b2e7-55c55931d218", 
+					"Lod" : 3, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "6b2232a5-2c6f-40f1-b0d8-9d3e1db8dfcf", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "Landmark"
+		}, 
+		"BuildingA" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "7f79328d-44f2-48eb-b7d1-6601cd1addfa", 
+			"Name" : "BuildingA", 
+			"Index" : 1, 
+			"Distance" : 500.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "d3abc6c6-9b0c-4f0b-b9f2-8240a8479e5c", 
+					"Lod" : 0, 
+					"Percent" : 15.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "9e28f79b-3905-433e-91f4-af78e2c0108f", 
+					"Lod" : 1, 
+					"Percent" : 25.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "ba7da784-e719-4d4d-9b82-c80489e22f9b", 
+					"Lod" : 2, 
+					"Percent" : 30.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "6aa0ec9f-d79d-4fcf-a290-fb9e0852026e", 
+					"Lod" : 3, 
+					"Percent" : 60.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "7435b42d-8835-4c10-b1f6-2b9ca3952fd8", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "BuildingLarge"
+		}, 
+		"BuildingB" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "33a82ac2-a4da-4db8-a4e1-92f56bfa639d", 
+			"Name" : "BuildingB", 
+			"Index" : 1, 
+			"Distance" : 300.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "cac62feb-befe-4ddf-a498-ae26d05acff7", 
+					"Lod" : 0, 
+					"Percent" : 15.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "a1c82dd0-7d5c-4c1f-9853-5672b5085ebb", 
+					"Lod" : 1, 
+					"Percent" : 30.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "4a84f986-0fcc-44da-a9f9-bffe0202309d", 
+					"Lod" : 2, 
+					"Percent" : 50.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "95d5175e-b1f6-4b98-89d6-6b288f88733b", 
+					"Lod" : 3, 
+					"Percent" : 80.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "597df2f6-519b-4794-b030-3fdf5f58f1f1", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "BuildingLarge"
+		}, 
+		"BuildingC" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "91773573-26aa-4afd-805a-e9dc48a4ac4f", 
+			"Name" : "BuildingC", 
+			"Index" : 1, 
+			"Distance" : 150.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "ab65911c-2345-462e-be7c-2866c79aedb9", 
+					"Lod" : 0, 
+					"Percent" : 30.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "875806a0-29d0-48c0-a859-9871db7a5463", 
+					"Lod" : 1, 
+					"Percent" : 50.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "c655b6fa-1e9d-4435-9b8a-13b9844471ab", 
+					"Lod" : 2, 
+					"Percent" : 65.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "40475c61-70de-4216-a6d0-5d06a0c340de", 
+					"Lod" : 3, 
+					"Percent" : 80.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "0f32b2ef-343e-40df-810e-c0692ae702aa", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "Building"
+		}, 
+		"StandAlone" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "e2cca047-fdd7-4650-b82e-cf2414dd7b48", 
+			"Name" : "Stand Alone Objects", 
+			"Index" : 1, 
+			"Distance" : 100.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "2312d0e4-8395-4b9b-b80b-daac6141417c", 
+					"Lod" : 0, 
+					"Percent" : 30.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "c2ea92d2-5266-47b5-a661-7ea76f1059fb", 
+					"Lod" : 1, 
+					"Percent" : 60.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "0a21973d-e29c-49bf-a091-e49af2978399", 
+					"Lod" : 2, 
+					"Percent" : 75.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "030942f7-b5c8-47c8-9cfc-be8b29cbabf5", 
+					"Lod" : 3, 
+					"Percent" : 80.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "81686560-8d36-4764-96c3-f2dec61a61bc", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "StandAloneObjects"
+		}, 
+		"DistantView" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "dcec6967-e4f7-4d78-a244-722d24791215", 
+			"Name" : "Distant View", 
+			"Index" : 1, 
+			"Distance" : 1000.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "d4eeb24a-8951-4a52-a406-37235cc77649", 
+					"Lod" : 0, 
+					"Percent" : 5.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "1781ef11-ba4d-4074-afb9-01617eb1f2e0", 
+					"Lod" : 1, 
+					"Percent" : 10.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "7a9403c3-6c57-490d-8ebb-b4be029e3fcd", 
+					"Lod" : 2, 
+					"Percent" : 15.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "fe3bf8f7-e3af-4c0e-90d1-ee65363caa62", 
+					"Lod" : 3, 
+					"Percent" : 50.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "e4e1434c-73e6-4604-aa52-56617cb2a67b", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : "DistantView"
+		}, 
+		"SmallProp" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "5fd7e185-e734-481e-a1db-fe3db57aa968", 
+			"Name" : "Small Prop", 
+			"Index" : 1, 
+			"Distance" : 50.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "dbb4d01e-b7f9-4002-8355-db7a8af8c21f", 
+					"Lod" : 0, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "f4740a31-2fb7-4c8c-814a-c3b25fbab14c", 
+					"Lod" : 1, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "5992b53f-807f-4487-a045-a7a0ff30f68c", 
+					"Lod" : 2, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "04a0c49f-5eb5-44ca-aae6-6cf3bcb409f4", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "b49f5075-94b1-4b57-91ed-6aeb32d7ecaf", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "Prop"
+		}, 
+		"GPUInstanced" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "fbc79f69-8056-4518-a723-45fb620ce051", 
+			"Name" : "GPUInstanced", 
+			"Index" : 1, 
+			"Distance" : 300.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "f06b2702-13d3-4b40-b3ec-6fd0e464341f", 
+					"Lod" : 0, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "d3a1982d-1ee4-4d85-b4aa-f2e4338ee115", 
+					"Lod" : 1, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "ba4b06cd-31ce-44c4-ab4d-5ccd5aed582b", 
+					"Lod" : 2, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "dcaca2ad-0577-40a9-8d62-2b5cfb369c46", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "64f1ab21-fbf3-4a9a-a349-cee7614ee3dc", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "PersistentLevel"
+		}, 
+		"MazeProp" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "aa102f70-f7da-4bd3-9488-bc7e6a2aa0b6", 
+			"Name" : "MazeProp", 
+			"Index" : 1, 
+			"Distance" : 75.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "0b45cf4f-9114-4f70-8f83-4038cabad704", 
+					"Lod" : 0, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "c3fc28ed-ce33-4942-8d77-7420373dd0eb", 
+					"Lod" : 1, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "3aacd5bd-f4d5-477c-900e-02275ccd61e8", 
+					"Lod" : 2, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "d3b99488-76df-457b-b0d5-9275dd9e8764", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "dc144ff2-9f2c-4e24-a131-8ad23b154403", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "StandAloneObjects"
+		}, 
+		"Ground" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "7d44a3da-6aac-435f-999d-ea028d310777", 
+			"Name" : "Ground", 
+			"Index" : 1, 
+			"Distance" : 1000.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "118540bc-07ca-4399-819a-5d649b9399d6", 
+					"Lod" : 0, 
+					"Percent" : 20.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "7fbd03f3-76ab-49de-baf7-ae97e92c5f09", 
+					"Lod" : 1, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "aa097a29-17ae-4c5c-8a67-6b7d6b429dd0", 
+					"Lod" : 2, 
+					"Percent" : 100.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "6ddb056a-dfbf-47d6-b523-ddc2b4f2c5d1", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "81646750-a778-40ea-82dc-4d1ead1d52e1", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "PersistentLevel"
+		}, 
+		"PerformanceTest" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "4aedea21-3f88-4920-8f93-c3024b5cd276", 
+			"Name" : "PerformanceTest", 
+			"Index" : 1, 
+			"Distance" : 10000.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "88d796fe-f0e5-4745-95f9-70fafc4ed821", 
+					"Lod" : 0, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "cc61291c-2343-4bc4-abf0-75bde71a10ee", 
+					"Lod" : 1, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "59f49148-a374-4001-bb07-4d6e12ba5772", 
+					"Lod" : 2, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "215a6ac2-ae22-4ec4-9340-50e7b00377f8", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "3d63a641-8a20-4470-a034-e8c51899e01c", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "PersistentLevel"
+		}, 
+		"BuildingFar" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "11e8dcae-5dea-416c-ac55-926e61bd79c8", 
+			"Name" : "BuildingFar", 
+			"Index" : 1, 
+			"Distance" : 500.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "bbd99951-d7d0-4f45-83a9-ef92f1fc1501", 
+					"Lod" : 0, 
+					"Percent" : 20.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "62105366-b348-4029-a36b-64ef6ab5a3f0", 
+					"Lod" : 1, 
+					"Percent" : 60.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "f438c396-4c00-4322-815e-1655066393d4", 
+					"Lod" : 2, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "89b8ec9a-2968-4fc8-9a99-19554bcd9550", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "3e3303c1-d7ca-4194-b498-751a5c538271", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "BuildingLarge"
+		}, 
+		"GroundSmall" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "7d44a3da-6aac-435f-999d-ea028d310777", 
+			"Name" : "GroundSmall", 
+			"Index" : 1, 
+			"Distance" : 500.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "118540bc-07ca-4399-819a-5d649b9399d6", 
+					"Lod" : 0, 
+					"Percent" : 10.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "7fbd03f3-76ab-49de-baf7-ae97e92c5f09", 
+					"Lod" : 1, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "aa097a29-17ae-4c5c-8a67-6b7d6b429dd0", 
+					"Lod" : 2, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "6ddb056a-dfbf-47d6-b523-ddc2b4f2c5d1", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "81646750-a778-40ea-82dc-4d1ead1d52e1", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "Landmark"
+		}, 
+		"MazeBuilding" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "bc7087bd-0464-42e9-a0cd-391e5390fc01", 
+			"Name" : "MazeBuilding", 
+			"Index" : 1, 
+			"Distance" : 500.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "20d6951b-b2a5-423d-8686-095fdb96cf3c", 
+					"Lod" : 0, 
+					"Percent" : 8.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "b96dc627-3d21-464b-a7ef-a613935ebc85", 
+					"Lod" : 1, 
+					"Percent" : 15.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "279e58b3-922d-4cf6-983c-c88e71c04292", 
+					"Lod" : 2, 
+					"Percent" : 25.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "bbe33986-7bb1-4643-8e8a-2b532a45b526", 
+					"Lod" : 3, 
+					"Percent" : 40.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "a93c8edd-a219-47de-b0cb-e8c55fe61257", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			]
+		}, 
+		"CutSceneControlled" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"$guid" : "047f4ed1-9167-43b5-aa7e-0229a8c4d95b", 
+			"Name" : "CutSceneControlled", 
+			"Index" : 1, 
+			"Distance" : 200.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "455baccd-3bb1-40c3-8a0c-85870e8c40f0", 
+					"Lod" : 0, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "472169fe-a893-4ffc-9beb-2607e0507ec0", 
+					"Lod" : 1, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "89e01ea0-2111-4782-b8b0-51d5746618d5", 
+					"Lod" : 2, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "ea538328-1ff8-4e6e-aa99-39bb483b8eab", 
+					"Lod" : 3, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"$guid" : "13b09407-e108-49e8-809d-d1e32a6a6f63", 
+					"Lod" : 4, 
+					"Percent" : 0.000000, 
+					"Quality" : 0
+				}
+			], 
+			"Layer" : "PersistentLevel"
+		}, 
+		"LandMarkSpecial" : 
+		{
+			"$type" : "RPG.GameCore.LodTemplate", 
+			"Name" : "LandMarkSpecial", 
+			"Index" : 1, 
+			"Distance" : 800.000000, 
+			"LodDetailList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"Lod" : 0, 
+					"Percent" : 60.000000, 
+					"Quality" : 1
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"Lod" : 1, 
+					"Percent" : 70.000000, 
+					"Quality" : 3
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"Lod" : 2, 
+					"Percent" : 80.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"Lod" : 3, 
+					"Percent" : 90.000000, 
+					"Quality" : 7
+				}, 
+				{
+					"$type" : "RPG.GameCore.LodDetail", 
+					"Lod" : 4, 
+					"Percent" : 100.000000, 
+					"Quality" : 7
+				}
+			], 
+			"Layer" : ""
+		}
+	}
+}

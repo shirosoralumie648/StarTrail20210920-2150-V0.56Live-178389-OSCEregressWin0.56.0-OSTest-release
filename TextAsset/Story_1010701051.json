@@ -1,0 +1,180 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "936cabc8-8286-46e2-99a6-b4ca92dc84d2", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "420fe7d9-6505-4d15-befd-12a3208b5ac2", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "e66b2b47-5e0b-4687-82d7-c4bd601426c2", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010701/Story_1010701051.prefab", 
+					"LockPlayControl" : true, 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "b70b81fa-c8d4-4bb3-b18e-af6dc7bec82f", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Default", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010701051"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "0933a6c2-53b3-4ed9-86c8-038f41a7355e", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mar_7th", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010701051"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "a20a27bd-52de-4157-808e-a5e6cd0b01a2", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010701051"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "7687f8e3-0ed3-47b3-b59f-edfe3e506eb3", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Seele", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010701051"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "f48bd772-795c-4c31-bf80-147f01be335d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010701051"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "d8ba992f-0ae8-4071-8803-0c9dcb5fe5d6", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Sampo", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Sampo_00", 
+							"AreaName" : "Story_1010701051"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "996bf57f-0b96-453f-9075-bc921273eab7", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Klara", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Klara_00", 
+							"AreaName" : "Story_1010701051"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "c62f873f-b0fe-45e6-afa6-58f8b1839c41", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Svarog", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Svarog_00", 
+							"AreaName" : "Story_1010701051"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "cc958e32-83d7-4d69-80b9-f053a5f953f3", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010701/Story_101070105101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "fb2f3196-0d94-4700-a591-c4bc6bd660e6", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "再战史瓦罗", 
+				"Guid" : "936cabc8-8286-46e2-99a6-b4ca92dc84d2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "420fe7d9-6505-4d15-befd-12a3208b5ac2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "e66b2b47-5e0b-4687-82d7-c4bd601426c2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					0
+				], 
+				"Guid" : "cc958e32-83d7-4d69-80b9-f053a5f953f3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1120, 
+					0
+				], 
+				"Guid" : "fb2f3196-0d94-4700-a591-c4bc6bd660e6", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

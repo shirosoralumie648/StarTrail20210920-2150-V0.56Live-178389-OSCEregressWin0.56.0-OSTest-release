@@ -1,0 +1,62 @@
+{
+	"StartAssetInPak": 
+	{
+		"SubPakId": 1000,
+		"AssetFileOrPathList": [
+			"Assets/AsbRes/UI/Login/UiLoginDialog.prefab",
+			"Assets/AsbRes/UI/Menu/ASBPage.prefab",
+			"Assets/Standard Assets/Shaders",
+			"Assets/AsbRes/UI/DemoPage/ServerSelectDialog.prefab",
+			"Assets/AsbRes/UI/Dev/Debug/DebugInfoWidget.prefab",
+			"Assets/AsbRes/UI/CommonKits/FullscreenBlockWidget.prefab",
+			"Assets/AsbRes/UI/Dev/Debug/DebugUI.prefab",
+			"Assets/AsbRes/UI/Loading/LoadingPage.prefab",
+			"Assets/AsbRes/UI/MainStory/PageSwitchWidget.prefab",
+			"Assets/AsbRes/UI/Login/UiAccountLoginDialog.prefab",
+			"Assets/AsbRes/UI/Common/ConfirmDialog.prefab",
+			"Assets/AsbRes/UI/Login/LoginDialog.prefab",
+			"Assets/AsbRes/UI/Login/LoginStageChoosePage.prefab",
+			"Assets/AsbRes/UI/Common/MessageBoxDialog.prefab",
+			"Assets/AsbRes/UI/Common/SplashConfirmDialog.prefab",
+			"Assets/AsbRes/UI/Login/SplashDialog.prefab",
+			"Assets/AsbRes/UI/Login/LoginPage.prefab",
+			"Assets/AsbRes/UI/Login/DevPanel.prefab",
+			"Assets/AsbRes/UI/Login/LoginDataCheckDialog.prefab",
+			"Assets/AsbRes/UI/Login/LoginLanguageSelectDialog.prefab",
+			"Assets/AsbRes/SpriteOutput/UI/MainStory/PicMainStoryTemp.png",
+			"Assets/AsbRes/SpriteOutput/UI/Common/BgTemporary.png",
+			"Assets/AsbRes/UI/Login/LoginServerSelectDialog.prefab",
+			"Assets/AsbRes/QA/scriptsInfo.json",
+			"Assets/AsbRes/QA/LuaScriptsInfo.json",
+			"Assets/AsbRes/UI/Common/GeneralScrollDialog.prefab",
+			"Assets/AsbRes/ResConfig/RPGQualitySettingsData.asset",
+			"Assets/AsbRes/UI/CommonKits/Dialog/BetaHintDialog.prefab",
+			"Assets/AsbRes/SpriteOutput/UI/Login/TempLogo.png",
+			"Assets/AsbRes/SpriteOutput/UI/Login/LogoMiHoYoGames.png"
+		]
+	}, 
+	"RequiredAssetAfterStart": 
+	{
+		"SubPakId": 2000, 
+		"AssetFileOrPathList": 
+		[
+			
+		]
+	},
+	"Feature0": 
+	{
+		"SubPakId": 3000, 
+		"AssetFileOrPathList": 
+		[
+
+		]
+	}, 
+	"Feature1": 
+	{
+		"SubPakId": 3001, 
+		"AssetFileOrPathList": 
+		[
+			
+		]
+	}
+}

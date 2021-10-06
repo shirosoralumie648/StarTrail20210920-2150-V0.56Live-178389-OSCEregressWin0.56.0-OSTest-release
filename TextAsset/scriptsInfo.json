@@ -1,0 +1,17 @@
+{
+    "$type" : "RPG.GameCore.ScriptsInfoJson",
+    "SmokeTest": ["GetPrevError", "EnterGame", "EnterStageTest1", "StageAutoFight"],
+    "DailyTest": ["GetPrevError", "DynamicExpressionTest", "LocalBattle"],
+    
+    "TempTest": ["EnterGame", "TempTest"],
+    "ChapterTest": ["GetPrevError", "DynamicExpressionTest", "EnterGame", "DailyTest"],
+    "FullTest": ["GetPrevError", "DynamicExpressionTest", "EnterGame", "MainPanelTest", "BattlePanelTest", "DailyTest"],
+    "ProtoSetTeamTest": ["SetTeamByProto"],
+    "DynamicExpressionTest": ["DynamicExpressionTest"],
+    "TargetEvaluatorTest": ["TargetEvaluatorTest"],
+
+    "BattleServerTest": ["GetPrevError", "BattleServerTest"],
+    "AllMonsterTest": ["GetPrevError", "AllMonsterTest"],
+    "AllMonsterTestPart2": ["GetPrevError", "AllMonsterTestPart2"],
+    "AllStageTest": ["GetPrevError", "AllStageTest"]
+}

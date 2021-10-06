@@ -1,0 +1,62 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 36
+  },
+  "m_Name": "Main Camera Volume Profile",
+  "components": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 42
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 45
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 44
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 53
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 55
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 56
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 43
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 40
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 46
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 47
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 41
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 54
+    }
+  ]
+}

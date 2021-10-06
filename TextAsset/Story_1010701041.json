@@ -1,0 +1,201 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "8e67d8f9-af52-447c-b835-41892ce72070", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "75df7fd2-38a5-45bc-9607-62e82caaee5b", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "52cf1f6f-181d-4341-8b0b-4a0e73463403", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010701/Story_1010701041.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "c56a1c20-2b36-4f08-a8df-def7eb0e557d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Klara", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Klara_00", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "0e95cc2a-b797-4335-a228-540240c007cd", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Seele", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "ffeea43a-564e-435c-b6bc-e83d659a62ec", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "1cc07590-bdc4-4d1e-83ff-11b365043e26", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "PlayerBoy", 
+							"Catgory" : "Default", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "b35ec1a8-3b9e-4a3a-995e-b5a051963ba6", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "619f220f-7767-43b0-bcce-23c279ab20ae", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "e875dd8b-120d-46c1-acef-3f0619098a82", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Sampo", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Sampo_00", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "7210156a-9a68-4fa7-a9ad-ce9b388912ed", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "npcA", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Soldier01_03", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "6e8841dd-2e18-4cfb-93c3-add1efa12fc1", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "npcB", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Soldier01_03", 
+							"AreaName" : "Story_1010701041"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "7e50b8c6-9b0a-49a5-9c17-01a44d7eb518", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "npcC", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Soldier01_03", 
+							"AreaName" : "Story_1010701041"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "9932b45a-de33-423a-951b-8935a11b9f6f", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010701/Story_101070104101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "6e851053-b770-4305-8921-91f3e2811586", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "重返史瓦罗的基地", 
+				"Guid" : "8e67d8f9-af52-447c-b835-41892ce72070", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "75df7fd2-38a5-45bc-9607-62e82caaee5b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					544, 
+					16
+				], 
+				"Guid" : "52cf1f6f-181d-4341-8b0b-4a0e73463403", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					752, 
+					16
+				], 
+				"Guid" : "9932b45a-de33-423a-951b-8935a11b9f6f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1040, 
+					0
+				], 
+				"Guid" : "6e851053-b770-4305-8921-91f3e2811586", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

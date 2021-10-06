@@ -1,0 +1,68 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 21
+  },
+  "m_Name": "RPGAmbientOcclusion",
+  "active": 1,
+  "m_AdvancedMode": 0,
+  "AmbientOcclusioMethod": {
+    "m_OverrideState": 1,
+    "m_Value": 0
+  },
+  "StartFadeDistance": {
+    "m_OverrideState": 0,
+    "m_Value": 100.0,
+    "min": 1.0
+  },
+  "FadeOutDistance": {
+    "m_OverrideState": 0,
+    "m_Value": 50.0,
+    "min": 1.0
+  },
+  "SSAORadius": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "SSAOAmount": {
+    "m_OverrideState": 0,
+    "m_Value": 1.5
+  },
+  "SSAOThreadhold": {
+    "m_OverrideState": 0,
+    "m_Value": 0.01
+  },
+  "GTAOQuality": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "GTAOFalloffEnd": {
+    "m_OverrideState": 0,
+    "m_Value": 2.0
+  },
+  "GTAOFalloffStartRatio": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "GTAONumAngles": {
+    "m_OverrideState": 0,
+    "m_Value": 2.0
+  },
+  "GTAOThicknessBlend": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "GTAOIntensity": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "GTAOPower": {
+    "m_OverrideState": 0,
+    "m_Value": 2.0
+  }
+}

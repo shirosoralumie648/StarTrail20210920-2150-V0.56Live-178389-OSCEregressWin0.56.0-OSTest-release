@@ -1,0 +1,37 @@
+{
+	"$type" : "RPG.GameCore.StageLodMapConfig", 
+	"$guid" : "0f9f8e41-5155-4ad5-8751-0f995d7bf2fa", 
+	"LodMap" : 
+	{
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_Grd_Area_Square_05_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_Shop_01_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_Hotel_01_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_Fortress_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_Cinema_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_Church_01_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_BellTower_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_AirFortress_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_24_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_23_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_22_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_21_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_20_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_19_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_16_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_18_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_15_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_14_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_13_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_12_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_10_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_09_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_08_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_07_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_06_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_05_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_04_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_03_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_02_Lod0.prefab" : "PerformanceTest", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap01_BD_01_Lod0.prefab" : "PerformanceTest"
+	}
+}

@@ -1,0 +1,66 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 4
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 15
+  },
+  "m_Name": "",
+  "enable": 1,
+  "enableRemote": 0,
+  "gesturePriority": 0,
+  "StationaryTolerance": 15.0,
+  "longTapTime": 1.0,
+  "swipeTolerance": 0.85,
+  "minPinchLength": 0.0,
+  "minTwistAngle": 0.0,
+  "doubleTapDetection": 0,
+  "doubleTapTime": 0.3,
+  "alwaysSendSwipe": 0,
+  "enable2FingersGesture": 1,
+  "enableTwist": 0,
+  "enablePinch": 1,
+  "enable2FingersSwipe": 0,
+  "twoFingerPickMethod": 0,
+  "touchCameras": [
+    {
+      "camera": {
+        "m_FileID": 0,
+        "m_PathID": 62
+      },
+      "guiCamera": 0
+    }
+  ],
+  "autoSelect": 1,
+  "pickableLayers3D": {
+    "m_Bits": 32
+  },
+  "enable2D": 1,
+  "pickableLayers2D": {
+    "m_Bits": 32
+  },
+  "autoUpdatePickedObject": 0,
+  "allowUIDetection": 0,
+  "enableUIMode": 1,
+  "autoUpdatePickedUI": 0,
+  "enabledNGuiMode": 0,
+  "nGUILayers": {
+    "m_Bits": 0
+  },
+  "nGUICameras": [],
+  "enableSimulation": 0,
+  "twistKey": 308,
+  "swipeKey": 306,
+  "showGuiInspector": 1,
+  "showSelectInspector": 1,
+  "showGestureInspector": 1,
+  "showTwoFingerInspector": 1,
+  "showSecondFingerInspector": 1,
+  "secondFingerTexture": {
+    "m_FileID": 1,
+    "m_PathID": 3
+  }
+}

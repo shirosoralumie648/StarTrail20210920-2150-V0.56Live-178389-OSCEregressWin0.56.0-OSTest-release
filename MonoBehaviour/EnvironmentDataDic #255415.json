@@ -1,0 +1,325 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1399
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 32
+  },
+  "m_Name": "",
+  "ProfileName": [
+    "Chap01_Maze_01"
+  ],
+  "DataNode": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 1193
+    }
+  ],
+  "LightRefs": [
+    {
+      "PropLight": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      ],
+      "DataLight": [
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        },
+        {
+          "m_FileID": 0,
+          "m_PathID": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7
+  },
+  "m_Name": "RPGDepthOfField",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "Method": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "FocusDistance": {
+    "m_OverrideState": 1,
+    "m_Value": 9.508512
+  },
+  "CocMethodType": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "NearTransitionRegion": {
+    "m_OverrideState": 0,
+    "m_Value": 6.0
+  },
+  "FarTransitionRegion": {
+    "m_OverrideState": 0,
+    "m_Value": 6.0
+  },
+  "CocBlurUnit": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "DOFDebug": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "fStop": {
+    "m_OverrideState": 0,
+    "m_Value": 4.0
+  },
+  "SensorWidth": {
+    "m_OverrideState": 0,
+    "m_Value": 24.576
+  },
+  "DepthBlurRadius": {
+    "m_OverrideState": 0,
+    "m_Value": 0.01
+  },
+  "DepthBlurAmount": {
+    "m_OverrideState": 0,
+    "m_Value": 0.01
+  },
+  "maxForegroundRadius": {
+    "m_OverrideState": 0,
+    "m_Value": 0.01
+  },
+  "maxBackgroundRadius": {
+    "m_OverrideState": 0,
+    "m_Value": 0.01
+  }
+}

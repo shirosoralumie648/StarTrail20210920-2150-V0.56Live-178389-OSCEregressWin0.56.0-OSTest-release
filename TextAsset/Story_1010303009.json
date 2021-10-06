@@ -1,0 +1,132 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "89a32df0-7500-461b-90bd-0508a735b290", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "ee1a6fd2-8a1c-4f45-bdd7-eddfbe8f9207", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "6b9b195a-df11-4f5e-9dd4-a72c867fd960", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010303/Story_1010303009.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "1572de6e-c053-41d8-97cb-dbc101c1d36d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "test", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010303009"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "444aa946-6508-4118-b91d-fba28b8190c9", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010303/Story_101030300901.playable", 
+					"Type" : "Common", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "6578ae1d-19ac-4ffb-9bdb-7e39c9c942a3", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 10.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "5e8d1419-e718-470c-a28c-c048f3c5ae90", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Guid" : "89a32df0-7500-461b-90bd-0508a735b290", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "ee1a6fd2-8a1c-4f45-bdd7-eddfbe8f9207", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "6b9b195a-df11-4f5e-9dd4-a72c867fd960", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					32
+				], 
+				"Guid" : "444aa946-6508-4118-b91d-fba28b8190c9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1136, 
+					16
+				], 
+				"Guid" : "6578ae1d-19ac-4ffb-9bdb-7e39c9c942a3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1152, 
+					80
+				], 
+				"Guid" : "5e8d1419-e718-470c-a28c-c048f3c5ae90", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

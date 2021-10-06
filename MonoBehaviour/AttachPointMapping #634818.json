@@ -1,0 +1,28 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1358
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 27
+  },
+  "m_Name": "",
+  "AttachPoints": [
+    {
+      "Name": "NameBoard",
+      "PointTransform": {
+        "m_FileID": 0,
+        "m_PathID": 3793
+      }
+    },
+    {
+      "Name": "Root",
+      "PointTransform": {
+        "m_FileID": 0,
+        "m_PathID": 5109
+      }
+    }
+  ]
+}

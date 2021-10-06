@@ -1,0 +1,49 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 12
+  },
+  "m_Name": "RPGVignette",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "color": {
+    "m_OverrideState": 1,
+    "m_Value": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0,
+      "a": 1.0
+    },
+    "hdr": 0,
+    "showAlpha": 0,
+    "showEyeDropper": 1
+  },
+  "center": {
+    "m_OverrideState": 1,
+    "m_Value": {
+      "x": 0.5,
+      "y": 0.5
+    }
+  },
+  "intensity": {
+    "m_OverrideState": 1,
+    "m_Value": 0.0,
+    "min": 0.0,
+    "max": 1.0
+  },
+  "smoothness": {
+    "m_OverrideState": 1,
+    "m_Value": 0.2,
+    "min": 0.01,
+    "max": 1.0
+  },
+  "rounded": {
+    "m_OverrideState": 1,
+    "m_Value": 1
+  }
+}

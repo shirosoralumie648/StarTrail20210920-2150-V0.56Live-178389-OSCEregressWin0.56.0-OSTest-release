@@ -1,0 +1,132 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "87a75991-0f1a-474f-b85d-ee31c5ab044b", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "db99a7ec-177f-4286-ad6f-a3dc237f7049", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "16bf9b0d-5bb2-4da3-afb1-61307ab9f3d2", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010001/Story_1010001999.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "a8dc69a2-5786-4591-89ca-9ffaad93d4e4", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Natasha", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "7thMarch", 
+							"AreaName" : "Story_1010001999", 
+							"AnchorName" : "Natasha01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "c873336b-be98-4966-adb6-874e141839ae", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Player", 
+							"AreaName" : "Story_1010001999", 
+							"AnchorName" : "Player01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "b2b5c588-4ffb-4cdc-a391-64e6155ad53b", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "DanHeng", 
+							"AreaName" : "Story_1010001999"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "410bc42a-a02c-441a-813b-7ab1efda08e4", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "7thMarch", 
+							"AreaName" : "Story_1010001999"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "36c819a9-c6bb-4a18-bba6-0863792f5a61", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010001/Story_101000199901.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Guid" : "87a75991-0f1a-474f-b85d-ee31c5ab044b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "db99a7ec-177f-4286-ad6f-a3dc237f7049", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "16bf9b0d-5bb2-4da3-afb1-61307ab9f3d2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					880, 
+					0
+				], 
+				"Guid" : "36c819a9-c6bb-4a18-bba6-0863792f5a61", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

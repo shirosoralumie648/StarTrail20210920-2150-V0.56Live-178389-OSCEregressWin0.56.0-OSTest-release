@@ -1,0 +1,394 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 7
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 5
+  },
+  "m_Name": "",
+  "IsSkipInit": 0,
+  "IsTaskSyncShadowAndSceneLight": 0,
+  "MainLightBoolBitSwitch": 0,
+  "MainLightRotateOffset": {
+    "x": 20.0,
+    "y": -70.0,
+    "z": 0.0
+  },
+  "TaskSetMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "TimelineKMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "UIainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "DebugMode": 0,
+  "UseLevelMainLightRoateOffset": 0,
+  "MainLightLevelRoateOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "BakedRenderers": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  ],
+  "BakedReflectionProbes": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  ],
+  "CurrentSceneProfilePath": "Assets/Scene/Stage/Maze_Demo/EnviroProfile/maze.enviroProfile.asset",
+  "CurrentProfileName": "",
+  "StartGlobalMainIntensity": 0,
+  "TargetGolbalMainIntensity": 0.0,
+  "GlobalMainIntensityFadeDuration": 1.0,
+  "_ActiveProfile": {
+    "m_FileID": 0,
+    "m_PathID": 48
+  },
+  "m_GpuParticleCS": {
+    "m_FileID": 10,
+    "m_PathID": 2731057353111280147
+  },
+  "m_GpuParticleMesh": {
+    "m_FileID": 11,
+    "m_PathID": 3149433574678638613
+  },
+  "m_QuadMesh": {
+    "m_FileID": 8,
+    "m_PathID": 10210
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 10
+  },
+  "m_Name": "RPGTemporalAntialiasing",
+  "active": 1,
+  "m_AdvancedMode": 0,
+  "mode": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "quality": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "jitterSpread": {
+    "m_OverrideState": 0,
+    "m_Value": 0.75
+  },
+  "sharpness": {
+    "m_OverrideState": 0,
+    "m_Value": 0.25
+  },
+  "stationaryBlending": {
+    "m_OverrideState": 0,
+    "m_Value": 0.95
+  },
+  "motionBlending": {
+    "m_OverrideState": 0,
+    "m_Value": 0.85
+  },
+  "standardDeviation": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "feedbackMin": {
+    "m_OverrideState": 0,
+    "m_Value": 0.88
+  },
+  "feedbackMax": {
+    "m_OverrideState": 0,
+    "m_Value": 0.97
+  }
+}

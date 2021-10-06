@@ -1,0 +1,1034 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 22
+  },
+  "m_Name": "",
+  "ProfilePath": "",
+  "DefaultTransitionTime": 0.0,
+  "EnableTransitionSceneAsset": 0,
+  "LightProbesList": [],
+  "IsSubClip": 0,
+  "IsKeepEnviroBlockData": 0,
+  "EnviroProfileClips": [
+    {
+      "EnviroClipType": 1,
+      "AsyncLoadCount": 0,
+      "AsyncLoadTotalCount": 0
+    },
+    {
+      "EnviroClipType": 2,
+      "AsyncLoadCount": 0,
+      "AsyncLoadTotalCount": 0
+    },
+    {
+      "EnviroClipType": 3,
+      "AsyncLoadCount": 0,
+      "AsyncLoadTotalCount": 0
+    },
+    {
+      "EnviroClipType": 4,
+      "AsyncLoadCount": 0,
+      "AsyncLoadTotalCount": 0
+    }
+  ],
+  "EnviroBoolProperties": [
+    {
+      "m_Type": 5,
+      "m_PropertyName": "LEVEL_ADJUST_ON",
+      "m_IsSaved": 0,
+      "m_Value": 0,
+      "m_KeyWord": ""
+    },
+    {
+      "m_Type": 5,
+      "m_PropertyName": "ENABLE_FOG",
+      "m_IsSaved": 0,
+      "m_Value": 1,
+      "m_KeyWord": ""
+    }
+  ],
+  "EnviroFloatProperties": [
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SceneLightIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 1.1
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "EmissionWeight",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "RefProbeBlendWeight",
+      "m_IsSaved": 0,
+      "m_Value": 0.5
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "aaa",
+      "m_IsSaved": 0,
+      "m_Value": 0.5
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FillLightIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 0.2
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "DiffuseScale",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SpecScale",
+      "m_IsSaved": 0,
+      "m_Value": 0.5
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "OutputCap",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "MainLightIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SPIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 0.63
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightLerpTop",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightLerpBottom",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "RimLightWidth",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "RimLightIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 0.25
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "RimShadowIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 0.25
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "LevelShadow",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "LevelMid",
+      "m_IsSaved": 0,
+      "m_Value": 0.5
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "LevelHighLight",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "ShadowStrength",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "ObjectShadowStrength",
+      "m_IsSaved": 0,
+      "m_Value": 0.4
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "ObjectShadowFade",
+      "m_IsSaved": 0,
+      "m_Value": 0.25
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudShadowCoverage",
+      "m_IsSaved": 0,
+      "m_Value": 0.473
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudShadowOpacity",
+      "m_IsSaved": 0,
+      "m_Value": 0.766
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudShadowSmoothness",
+      "m_IsSaved": 0,
+      "m_Value": 1.5
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudShadowTilling",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "GIFeedBack",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "AmbientIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SSRIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FogDensity",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FogNear",
+      "m_IsSaved": 0,
+      "m_Value": 300.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FogFar",
+      "m_IsSaved": 0,
+      "m_Value": 800.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FogSkyBoxScale",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FogHighLightAtten",
+      "m_IsSaved": 0,
+      "m_Value": 0.5
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightFogBaseHeight",
+      "m_IsSaved": 0,
+      "m_Value": 6.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightFogRange",
+      "m_IsSaved": 0,
+      "m_Value": 40.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightFogDensity",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightFogFogNear",
+      "m_IsSaved": 0,
+      "m_Value": 10.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightFogFogFar",
+      "m_IsSaved": 0,
+      "m_Value": 90.1
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "Exposure",
+      "m_IsSaved": 0,
+      "m_Value": 0.15
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CelestialLightIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 3.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CelestialSharpness",
+      "m_IsSaved": 0,
+      "m_Value": 0.8
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CelestialRimRadius",
+      "m_IsSaved": 0,
+      "m_Value": 2.42
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CelestialScale",
+      "m_IsSaved": 0,
+      "m_Value": 1.25
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HaloIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HaloSize",
+      "m_IsSaved": 0,
+      "m_Value": 0.08
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "StarBrightness",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "StarDensity",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "StarScintllation",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudHeight",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudCoverage",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudOpacity",
+      "m_IsSaved": 0,
+      "m_Value": 0.2
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudSmoothness",
+      "m_IsSaved": 0,
+      "m_Value": 0.2
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudTilling",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "WispCoverage",
+      "m_IsSaved": 0,
+      "m_Value": 0.8
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "WispOpacity",
+      "m_IsSaved": 0,
+      "m_Value": 0.4
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CurlTilling",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CurlAmplitude",
+      "m_IsSaved": 0,
+      "m_Value": 0.01
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CurlSpeed",
+      "m_IsSaved": 0,
+      "m_Value": 0.01
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudFrontAndBackFactor",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudBrightness",
+      "m_IsSaved": 0,
+      "m_Value": 0.5
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudRimIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 1.25
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "ShadowDistance",
+      "m_IsSaved": 0,
+      "m_Value": 200.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "TEMP_AoColorMode",
+      "m_IsSaved": 0,
+      "m_Value": 0.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "TEMP_AoIntensity",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SceneToCharaShadowStrength",
+      "m_IsSaved": 0,
+      "m_Value": 1.0
+    }
+  ],
+  "EnviroVectorProperties": [
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SceneLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 0.9098039,
+        "z": 0.7490196,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SceneLightDir",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 45.0000038,
+        "y": 328.0,
+        "z": 57.173,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FillLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.7372549,
+        "y": 0.870588243,
+        "z": 1.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FillLightDirection",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.0,
+        "y": 359.0,
+        "z": 0.0,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "MainLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "MainLightDir",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 45.0000038,
+        "y": 328.0,
+        "z": 57.173,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "EnvColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "AddColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SPColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightLerpTopColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightLerpMiddleColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightLerpBottomColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "RimLightOffset",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "RimLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5019608
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "RimShadowColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5019608
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "LevelSkinLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "LevelSkinShadowColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.9372549,
+        "y": 0.882352948,
+        "z": 0.9411765,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "LevelHighLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "LevelShadowColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.8,
+        "y": 0.8666667,
+        "z": 1.0,
+        "w": 0.5
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "ShadowColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.05882353,
+        "y": 0.152941182,
+        "z": 0.298039228,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "ShadowDir",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 45.0000038,
+        "y": 328.0,
+        "z": 57.173,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudShadowSpeed",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": -5.0,
+        "y": -5.0,
+        "z": 0.0,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "FogColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.388235331,
+        "y": 0.6284877,
+        "z": 1.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HeightFogColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.0250980463,
+        "y": 0.222420558,
+        "z": 0.5019608,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "SkyWorldUpDir",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CelestialLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CelestialLightDir",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 90.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "HaloColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 1.0,
+        "y": 1.0,
+        "z": 1.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudSpeed",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.5,
+        "y": 0.5,
+        "z": 0.0,
+        "w": 0.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudLightColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.8,
+        "y": 0.8,
+        "z": 0.8,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudLightBackColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudDarkColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.15,
+        "y": 0.5,
+        "z": 0.8,
+        "w": 1.0
+      }
+    },
+    {
+      "m_Type": 1,
+      "m_PropertyName": "CloudDarkBackColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0,
+        "w": 1.0
+      }
+    }
+  ],
+  "EnviroEnumProperties": [],
+  "EnviroTextureProperties": [
+    {
+      "m_Type": 3,
+      "m_PropertyName": "CloudShadowTex",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "m_FileID": 114,
+        "m_PathID": -7617126895866432945
+      },
+      "m_Path": "_shared/Effect/Textures/TaTest/Clouds_Noise_TGA.tga",
+      "m_Target_Tex": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      }
+    },
+    {
+      "m_Type": 3,
+      "m_PropertyName": "WispTex",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "m_FileID": 115,
+        "m_PathID": -2286161837984299010
+      },
+      "m_Path": "Skybox/Enviro_Clouds_Wispis.tga",
+      "m_Target_Tex": {
+        "m_FileID": 0,
+        "m_PathID": 0
+      }
+    }
+  ],
+  "EnviroGradientProperties": [
+    {
+      "m_Type": 4,
+      "m_PropertyName": "AmbientColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "key0": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "key1": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        },
+        "key2": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key3": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key4": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key5": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key6": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key7": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "ctime0": 0,
+        "ctime1": 65535,
+        "ctime2": 0,
+        "ctime3": 0,
+        "ctime4": 0,
+        "ctime5": 0,
+        "ctime6": 0,
+        "ctime7": 0,
+        "atime0": 0,
+        "atime1": 65535,
+        "atime2": 0,
+        "atime3": 0,
+        "atime4": 0,
+        "atime5": 0,
+        "atime6": 0,
+        "atime7": 0,
+        "m_Mode": 0,
+        "m_NumColorKeys": 2,
+        "m_NumAlphaKeys": 2
+      }
+    },
+    {
+      "m_Type": 4,
+      "m_PropertyName": "GradientColor",
+      "m_IsSaved": 0,
+      "m_Value": {
+        "key0": {
+          "r": 0.697474539,
+          "g": 0.805818141,
+          "b": 0.8784314,
+          "a": 1.0
+        },
+        "key1": {
+          "r": 0.1490196,
+          "g": 0.432679862,
+          "b": 1.0,
+          "a": 1.0
+        },
+        "key2": {
+          "r": 0.0,
+          "g": 0.0407499969,
+          "b": 0.162999988,
+          "a": 0.0
+        },
+        "key3": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key4": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key5": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key6": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "key7": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 0.0
+        },
+        "ctime0": 0,
+        "ctime1": 32768,
+        "ctime2": 55705,
+        "ctime3": 0,
+        "ctime4": 0,
+        "ctime5": 0,
+        "ctime6": 0,
+        "ctime7": 0,
+        "atime0": 0,
+        "atime1": 65535,
+        "atime2": 0,
+        "atime3": 0,
+        "atime4": 0,
+        "atime5": 0,
+        "atime6": 0,
+        "atime7": 0,
+        "m_Mode": 0,
+        "m_NumColorKeys": 3,
+        "m_NumAlphaKeys": 2
+      }
+    }
+  ],
+  "EnviroGpuParticleProperties": [
+    {
+      "m_Type": 51,
+      "m_PropertyName": "EnviroGpuParticle",
+      "m_IsSaved": 0,
+      "m_GpuParticles": []
+    },
+    {
+      "m_Type": 51,
+      "m_PropertyName": "Enviroment Gpu Particle",
+      "m_IsSaved": 0,
+      "m_GpuParticles": []
+    }
+  ],
+  "EnviroReflectionProbeProperties": [
+    {
+      "m_Type": 53,
+      "m_PropertyName": "Reflection Probes",
+      "m_IsSaved": 0,
+      "m_ReflectionProbes": []
+    }
+  ],
+  "EnviroPointLightProperties": [
+    {
+      "m_Type": 54,
+      "m_PropertyName": "PointLights",
+      "m_IsSaved": 0,
+      "m_PointLights": []
+    }
+  ],
+  "EnviroParticleProperties": [
+    {
+      "m_Type": 56,
+      "m_PropertyName": "Enviroment Particle",
+      "m_IsSaved": 0,
+      "m_particleSystem": []
+    }
+  ],
+  "EnviroEffectLightingProperties": [],
+  "EnviroPPVolumeProperties": []
+}

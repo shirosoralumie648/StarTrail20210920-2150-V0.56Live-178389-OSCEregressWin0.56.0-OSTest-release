@@ -1,0 +1,578 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 48
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 17
+  },
+  "m_Name": "",
+  "IsSkipInit": 0,
+  "IsTaskSyncShadowAndSceneLight": 0,
+  "MainLightBoolBitSwitch": 0,
+  "MainLightRotateOffset": {
+    "x": 20.0,
+    "y": -70.0,
+    "z": 0.0
+  },
+  "TaskSetMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "TimelineKMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "UIainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "DebugMode": 0,
+  "UseLevelMainLightRoateOffset": 0,
+  "MainLightLevelRoateOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "BakedRenderers": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 703
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 693
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 614
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 612
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 664
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 684
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 694
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 628
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 615
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 616
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 692
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 689
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 705
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 688
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 695
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 605
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 690
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 613
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 704
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 599
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 623
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 698
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 622
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 672
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 702
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 682
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 592
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 687
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 707
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 680
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 696
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 604
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 675
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 611
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 691
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 620
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 627
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 665
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 608
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 708
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 585
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 619
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 618
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 629
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 617
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 633
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 594
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 634
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 678
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 635
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 630
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 631
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 593
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 632
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 681
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 683
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 586
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 701
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 603
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 697
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 606
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 676
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 700
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 677
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 602
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 601
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 647
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 685
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 643
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 706
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 645
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 644
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 646
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 639
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 638
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 640
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 699
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 670
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 642
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 641
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 636
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 590
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 673
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 637
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 587
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 657
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 591
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 658
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 598
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 655
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 588
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 656
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 651
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 652
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 626
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 669
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 653
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 654
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 589
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 597
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 649
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 648
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 600
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 650
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 663
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 668
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 621
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 679
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 661
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 596
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 662
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 686
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 595
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 610
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 667
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 659
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 609
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 607
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 674
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 660
+    }
+  ],
+  "BakedReflectionProbes": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 968
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 965
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 966
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 970
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 971
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 967
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 969
+    }
+  ],
+  "CurrentSceneProfilePath": "Assets/Scene/Stage/BattleStage/Chapter01/Stage_Chapter01_Street_Night/EnviroProfile/Stage_Chap01_Street_Night.enviroProfile.asset",
+  "CurrentProfileName": "",
+  "StartGlobalMainIntensity": 0,
+  "TargetGolbalMainIntensity": 0.0,
+  "GlobalMainIntensityFadeDuration": 1.0,
+  "_ActiveProfile": {
+    "m_FileID": 0,
+    "m_PathID": 972
+  },
+  "m_GpuParticleCS": {
+    "m_FileID": 95,
+    "m_PathID": 2731057353111280147
+  },
+  "m_GpuParticleMesh": {
+    "m_FileID": 96,
+    "m_PathID": 3149433574678638613
+  },
+  "m_QuadMesh": {
+    "m_FileID": 35,
+    "m_PathID": 10210
+  }
+}

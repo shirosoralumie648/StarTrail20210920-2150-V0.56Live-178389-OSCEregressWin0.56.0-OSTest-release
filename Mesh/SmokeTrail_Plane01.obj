@@ -1,0 +1,16 @@
+g SmokeTrail_Plane01
+v 4.978996E-16 -0.5 5
+v 4.978996E-16 0.5 5
+v 0 0.5 0
+v 0 -0.5 0
+vt 0 0
+vt 0 1
+vt 1 1
+vt 1 0
+vn 1 0 0
+vn 1 0 0
+vn 1 0 0
+vn 1 0 0
+g SmokeTrail_Plane01_0
+f 3/3/3 2/2/2 1/1/1
+f 4/4/4 3/3/3 1/1/1

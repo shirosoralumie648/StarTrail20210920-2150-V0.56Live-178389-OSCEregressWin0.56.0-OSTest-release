@@ -1,0 +1,42 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 3463
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 18
+  },
+  "m_Name": "",
+  "TerrainRenders": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 13018
+    }
+  ],
+  "TerrainMaskTexs": [
+    {
+      "m_FileID": 352,
+      "m_PathID": -8723807193760716954
+    }
+  ],
+  "BlendObjRenders": [],
+  "Key": "",
+  "HeightBlendTex": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "HeightBlendDetailTex": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "TargetTerrainRenderer": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "BlendBaseRange": {
+    "x": 0.0,
+    "y": 0.0
+  }
+}

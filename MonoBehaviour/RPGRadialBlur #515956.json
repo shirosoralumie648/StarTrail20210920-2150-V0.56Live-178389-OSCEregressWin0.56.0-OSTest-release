@@ -1,0 +1,38 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 7
+  },
+  "m_Name": "RPGRadialBlur",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "RadialBlurX": {
+    "m_OverrideState": 0,
+    "m_Value": 0.4824806
+  },
+  "RadialBlurY": {
+    "m_OverrideState": 0,
+    "m_Value": 0.4243565
+  },
+  "RadialBlurRadius": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "RadialIteration": {
+    "m_OverrideState": 0,
+    "m_Value": 6.0
+  },
+  "RadialBlurStart": {
+    "m_OverrideState": 0,
+    "m_Value": 0.2
+  },
+  "RadialBlurFeather": {
+    "m_OverrideState": 0,
+    "m_Value": 0.1
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1765
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 38
+  },
+  "m_Name": "",
+  "ProfileName": [
+    "Chap01_CloseView_ADV_Area_Square_01_Day"
+  ],
+  "DataNode": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 2117
+    }
+  ],
+  "LightRefs": [
+    {
+      "PropLight": [],
+      "DataLight": []
+    }
+  ]
+}

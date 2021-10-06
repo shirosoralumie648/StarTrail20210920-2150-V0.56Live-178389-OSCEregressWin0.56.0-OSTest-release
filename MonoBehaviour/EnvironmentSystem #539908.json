@@ -1,0 +1,562 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 29
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 12
+  },
+  "m_Name": "",
+  "IsSkipInit": 0,
+  "IsTaskSyncShadowAndSceneLight": 0,
+  "MainLightBoolBitSwitch": 0,
+  "MainLightRotateOffset": {
+    "x": 20.0,
+    "y": -70.0,
+    "z": 0.0
+  },
+  "TaskSetMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "TimelineKMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "UIainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "DebugMode": 0,
+  "UseLevelMainLightRoateOffset": 0,
+  "MainLightLevelRoateOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "BakedRenderers": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 1417
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1258
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1254
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1371
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1379
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1378
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1376
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1418
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1374
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1242
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1257
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1225
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1281
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1384
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1275
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1345
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1416
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1368
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1221
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1373
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1426
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1362
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1382
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1237
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1355
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1253
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1377
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1267
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1295
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1340
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1247
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1438
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1213
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1264
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1296
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1259
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1301
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1302
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1303
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1298
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1299
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1300
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1366
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1369
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1214
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1395
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1236
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1383
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1243
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1394
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1315
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1311
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1424
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1313
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1312
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1314
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1307
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1306
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1308
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1393
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1310
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1309
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1304
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1305
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1215
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1325
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1326
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1224
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1323
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1216
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1324
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1319
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1320
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1294
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1321
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1322
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1217
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1223
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1317
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1316
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1234
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1318
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1331
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1274
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1329
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1330
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1222
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1252
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1327
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1249
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1246
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1354
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1328
+    }
+  ],
+  "BakedReflectionProbes": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 1977
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1979
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 1978
+    }
+  ],
+  "CurrentSceneProfilePath": "Assets/Scene/Stage/BattleStage/Chapter01/Stage_Chapter01_Street/EnviroProfile/Stage_Chap01_Street_Night.enviroProfile.asset",
+  "CurrentProfileName": "ArtistLookDev_Midday.enviroProfile",
+  "StartGlobalMainIntensity": 0,
+  "TargetGolbalMainIntensity": 0.0,
+  "GlobalMainIntensityFadeDuration": 1.0,
+  "_ActiveProfile": {
+    "m_FileID": 0,
+    "m_PathID": 1980
+  },
+  "m_GpuParticleCS": {
+    "m_FileID": 51,
+    "m_PathID": 2731057353111280147
+  },
+  "m_GpuParticleMesh": {
+    "m_FileID": 152,
+    "m_PathID": 3149433574678638613
+  },
+  "m_QuadMesh": {
+    "m_FileID": 62,
+    "m_PathID": 10210
+  }
+}

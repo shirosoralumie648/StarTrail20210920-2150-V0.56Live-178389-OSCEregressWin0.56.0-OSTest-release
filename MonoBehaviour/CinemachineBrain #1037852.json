@@ -1,0 +1,46 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 11
+  },
+  "m_Name": "",
+  "m_ExtraTimeScale": 1.0,
+  "m_ShowDebugText": 0,
+  "m_ShowCameraFrustum": 1,
+  "m_IgnoreTimeScale": 0,
+  "m_WorldUpOverride": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_UpdateMethod": 1,
+  "m_BlendUpdateMethod": 1,
+  "m_DefaultBlend": {
+    "m_Style": 0,
+    "m_Time": 2.0,
+    "m_CustomCurve": {
+      "m_Curve": [],
+      "m_PreInfinity": 2,
+      "m_PostInfinity": 2,
+      "m_RotationOrder": 4
+    }
+  },
+  "m_CustomBlends": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_CameraCutEvent": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  },
+  "m_CameraActivatedEvent": {
+    "m_PersistentCalls": {
+      "m_Calls": []
+    }
+  }
+}

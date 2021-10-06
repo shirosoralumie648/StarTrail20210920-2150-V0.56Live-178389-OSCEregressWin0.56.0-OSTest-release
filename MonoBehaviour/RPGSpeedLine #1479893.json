@@ -1,0 +1,85 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 18
+  },
+  "m_Name": "RPGSpeedLine",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "SpeedLineModeMethod": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "LineColor": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "hdr": 0,
+    "showAlpha": 0,
+    "showEyeDropper": 1
+  },
+  "Speed": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "UseTwoTone": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "WhitePercent": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "SpeedlineSeed": {
+    "m_OverrideState": 1,
+    "m_Value": {
+      "m_FileID": 8,
+      "m_PathID": 5827629236086241699
+    }
+  },
+  "LineDivide": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "LineOffset": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "LineDensity": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "PosX": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "PosY": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "StartDistance": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "EndDistance": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "LineBrightness": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "Rotation": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  }
+}

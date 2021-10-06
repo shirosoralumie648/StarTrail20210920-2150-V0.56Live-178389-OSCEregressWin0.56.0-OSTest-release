@@ -1,0 +1,174 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 23
+  },
+  "m_Name": "RPGColorGrading",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "ColorCorrectionShadowMax": {
+    "m_OverrideState": 0,
+    "m_Value": 0.09
+  },
+  "ColorCorrectionHighlightMin": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "LevelHighLightTone": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "LevelShadowTone": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "LevelColor": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "r": 1.0,
+      "g": 1.0,
+      "b": 1.0,
+      "a": 1.0
+    },
+    "hdr": 0,
+    "showAlpha": 1,
+    "showEyeDropper": 1
+  },
+  "ColorSaturationGlobal": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 0.9821869,
+      "y": 0.992885649,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorContrastGlobal": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorGainGlobal": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorSaturationShadow": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorContrastShadow": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorGainShadow": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorSaturationMidtone": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorContrastMidtone": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorGainMidtone": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorSaturationHighlight": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorContrastHighlight": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorGainHighlight": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "x": 1.0,
+      "y": 1.0,
+      "z": 1.0,
+      "w": 1.0
+    }
+  },
+  "ColorGradingGradualParam": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "CenterX": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "CenterY": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "StartRadius": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "BlendRadius": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "Angle": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  }
+}

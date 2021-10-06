@@ -1,0 +1,285 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+	"OnInitSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelInitSequeceConfig", 
+			"$guid" : "7f7546d3-71cf-4f4b-8727-ae33c2739cdb", 
+			"TaskList" : 
+			[
+			]
+		}
+	], 
+	"OnStartSequece" : 
+	[
+		
+		// 故事开始
+        
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "ef0da125-2373-4259-9075-67893d5ab7ed", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "CS_Chap01_Act040", 
+					"Type" : "Cutscene", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+			{
+				"$type" : "RPG.GameCore.LockPlayerControl", 
+				"$guid" : "a5ee085b-dc3e-4845-837d-36111bf08284", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.ShowTalkUI", 
+				"$guid" : "bf4446e1-7aa0-451a-8306-4de2f8feafa9", 
+				"TaskEnabled" : true, 
+				"Show" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "43172b30-f268-487f-9247-7b7fb061f396", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "3909a22c-6a60-4d6b-8b27-c2cdbf56ba3e", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010701, 
+						"ProtectTime" : 0.000000
+					}, 
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "143cd552-9b63-40d3-87fb-abbda020cd81", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010702, 
+						"ProtectTime" : 0.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.ShowTalkUI", 
+				"$guid" : "39b1dee9-25bb-463b-aef8-7ff1d51cca8d", 
+				"TaskEnabled" : true, 
+				"Show" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.UnLockPlayerControl", 
+				"$guid" : "857c0ec0-7acb-4e14-a587-071015fa75ec", 
+				"TaskEnabled" : true
+			}
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					-48, 
+					32
+				], 
+				"Comment" : "触发剧情打退追兵", 
+				"Guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					320, 
+					32
+				], 
+				"Guid" : "7f7546d3-71cf-4f4b-8727-ae33c2739cdb", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					320, 
+					240
+				], 
+				"Guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					992, 
+					80
+				], 
+				"Guid" : "ef0da125-2373-4259-9075-67893d5ab7ed", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1712, 
+					112
+				], 
+				"Guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					384, 
+					944
+				], 
+				"Guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					544, 
+					256
+				], 
+				"Guid" : "a5ee085b-dc3e-4845-837d-36111bf08284", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					256
+				], 
+				"Guid" : "bf4446e1-7aa0-451a-8306-4de2f8feafa9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1136, 
+					256
+				], 
+				"Guid" : "43172b30-f268-487f-9247-7b7fb061f396", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1440, 
+					256
+				], 
+				"Guid" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1040, 
+					944
+				], 
+				"Guid" : "39b1dee9-25bb-463b-aef8-7ff1d51cca8d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1280, 
+					944
+				], 
+				"Guid" : "857c0ec0-7acb-4e14-a587-071015fa75ec", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+			{
+				"From" : 
+				{
+					"Node" : "a5ee085b-dc3e-4845-837d-36111bf08284", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "bf4446e1-7aa0-451a-8306-4de2f8feafa9", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "bf4446e1-7aa0-451a-8306-4de2f8feafa9", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "43172b30-f268-487f-9247-7b7fb061f396", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "43172b30-f268-487f-9247-7b7fb061f396", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "39b1dee9-25bb-463b-aef8-7ff1d51cca8d", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "39b1dee9-25bb-463b-aef8-7ff1d51cca8d", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "857c0ec0-7acb-4e14-a587-071015fa75ec", 
+					"Port" : "<-"
+				}
+			}
+		], 
+		"SerializeVersion" : 1
+	}
+}

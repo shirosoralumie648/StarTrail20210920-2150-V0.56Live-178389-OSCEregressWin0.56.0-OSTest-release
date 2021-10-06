@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 24
+  },
+  "m_Name": "",
+  "ProfilePath": "",
+  "DefaultTransitionTime": 0.0,
+  "EnableTransitionSceneAsset": 0,
+  "LightProbesList": [],
+  "IsSubClip": 0,
+  "IsKeepEnviroBlockData": 0,
+  "EnviroProfileClips": [],
+  "EnviroBoolProperties": [],
+  "EnviroFloatProperties": [],
+  "EnviroVectorProperties": [],
+  "EnviroEnumProperties": [],
+  "EnviroTextureProperties": [],
+  "EnviroGradientProperties": [],
+  "EnviroGpuParticleProperties": [],
+  "EnviroReflectionProbeProperties": [],
+  "EnviroPointLightProperties": [],
+  "EnviroParticleProperties": [],
+  "EnviroEffectLightingProperties": [],
+  "EnviroPPVolumeProperties": []
+}

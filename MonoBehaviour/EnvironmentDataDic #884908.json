@@ -1,0 +1,27 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2360
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 22
+  },
+  "m_Name": "",
+  "ProfileName": [
+    "Chap01_Maze_01"
+  ],
+  "DataNode": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 4911
+    }
+  ],
+  "LightRefs": [
+    {
+      "PropLight": [],
+      "DataLight": []
+    }
+  ]
+}

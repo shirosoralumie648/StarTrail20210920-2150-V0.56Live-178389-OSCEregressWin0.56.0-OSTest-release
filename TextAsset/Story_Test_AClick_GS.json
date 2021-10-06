@@ -1,0 +1,262 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "1f7b2872-1fc5-42d2-9a99-d08d9c0fb920", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	
+	// 3002 芽衣
+    // 3003 瓦尔特
+    // 3004 乔伊斯
+    
+	[
+		
+		// 故事开始
+        
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "f30d986f-7b2a-47f9-8827-2c7be353894d", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "c4ea680a-8585-40a0-ae2d-7542b16aaa8c", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/Story_Test_AClick_GS.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "57c7432a-5f06-4ba7-9c92-609e192ef410", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Gepard", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Natasha_00", 
+							"AreaName" : "Story_Test_AClick_GS", 
+							"AnchorName" : "MeiAnchor01"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterTriggerAnimState", 
+					"$guid" : "1f11b0aa-1ab9-4196-9175-1b83dcb549b9", 
+					"TaskEnabled" : true, 
+					"CharType" : "None", 
+					"CharacterUniqueName" : "Gepard", 
+					"ChangeAnimatorCatgory" : true, 
+					"Catgory" : "Default", 
+					"AutoExitToDefault" : false, 
+					"UseMotionID" : true, 
+					"StoryAvatarID" : "Natasha_00", 
+					"StartMotion" : "Chat01BS", 
+					"NormalizedTimeStart" : 0.000000, 
+					"NormalizedTransitionDuration" : 0.100000, 
+					"NormalizedTimeWait" : 0.000000, 
+					"StoryMotionID" : 1105005
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "e14c7e85-524e-4b2d-8512-f4b121a3f47c", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 10.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterTriggerAnimState", 
+					"$guid" : "ac53802d-96ed-451c-b93f-7a7a05279169", 
+					"TaskEnabled" : true, 
+					"CharType" : "None", 
+					"CharacterUniqueName" : "Gepard", 
+					"ChangeAnimatorCatgory" : true, 
+					"Catgory" : "Default", 
+					"AutoExitToDefault" : false, 
+					"UseMotionID" : true, 
+					"StoryAvatarID" : "Natasha_00", 
+					"StartMotion" : "Chat02BS", 
+					"NormalizedTimeStart" : 0.000000, 
+					"NormalizedTransitionDuration" : 0.100000, 
+					"NormalizedTimeWait" : 0.000000, 
+					"StoryMotionID" : 1105008
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "5b127650-5c75-4434-ac82-fed41c80a408", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 10.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterTriggerAnimState", 
+					"$guid" : "041a1924-f3f5-458a-b703-f6300b2d028c", 
+					"TaskEnabled" : true, 
+					"CharType" : "None", 
+					"CharacterUniqueName" : "Gepard", 
+					"ChangeAnimatorCatgory" : true, 
+					"Catgory" : "Default", 
+					"AutoExitToDefault" : false, 
+					"UseMotionID" : true, 
+					"StoryAvatarID" : "Natasha_00", 
+					"StartMotion" : "Nod01", 
+					"NormalizedTimeStart" : 0.000000, 
+					"NormalizedTransitionDuration" : 0.100000, 
+					"NormalizedTimeWait" : 0.000000, 
+					"StoryMotionID" : 1105001
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "33e2888b-611c-4629-a362-02f27edc8f18", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 3.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "881b7d31-af80-4efb-96b2-e7b21772ab24", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "4c2bbf82-c646-4ecb-b48f-47165e680549", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "d86f41a9-7b51-4d82-b1ec-8fd530b8a49f", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Guid" : "1f7b2872-1fc5-42d2-9a99-d08d9c0fb920", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					256, 
+					0
+				], 
+				"Guid" : "f30d986f-7b2a-47f9-8827-2c7be353894d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					512, 
+					0
+				], 
+				"Guid" : "c4ea680a-8585-40a0-ae2d-7542b16aaa8c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					0
+				], 
+				"Guid" : "1f11b0aa-1ab9-4196-9175-1b83dcb549b9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					256
+				], 
+				"Guid" : "e14c7e85-524e-4b2d-8512-f4b121a3f47c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1088, 
+					0
+				], 
+				"Guid" : "ac53802d-96ed-451c-b93f-7a7a05279169", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1088, 
+					256
+				], 
+				"Guid" : "5b127650-5c75-4434-ac82-fed41c80a408", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1408, 
+					0
+				], 
+				"Guid" : "041a1924-f3f5-458a-b703-f6300b2d028c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1408, 
+					256
+				], 
+				"Guid" : "33e2888b-611c-4629-a362-02f27edc8f18", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1408, 
+					384
+				], 
+				"Guid" : "881b7d31-af80-4efb-96b2-e7b21772ab24", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					256, 
+					256
+				], 
+				"Guid" : "4c2bbf82-c646-4ecb-b48f-47165e680549", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					512, 
+					256
+				], 
+				"Guid" : "d86f41a9-7b51-4d82-b1ec-8fd530b8a49f", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

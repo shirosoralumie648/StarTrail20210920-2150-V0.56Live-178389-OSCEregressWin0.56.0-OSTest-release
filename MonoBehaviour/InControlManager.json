@@ -1,0 +1,30 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 7
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 35
+  },
+  "m_Name": "",
+  "logDebugInfo": 1,
+  "invertYAxis": 0,
+  "useFixedUpdate": 0,
+  "dontDestroyOnLoad": 1,
+  "suspendInBackground": 0,
+  "updateMode": 0,
+  "enableICade": 0,
+  "enableXInput": 0,
+  "xInputOverrideUpdateRate": 0,
+  "xInputUpdateRate": 0,
+  "xInputOverrideBufferSize": 0,
+  "xInputBufferSize": 0,
+  "enableNativeInput": 1,
+  "nativeInputEnableXInput": 1,
+  "nativeInputEnableMFi": 0,
+  "nativeInputPreventSleep": 0,
+  "nativeInputOverrideUpdateRate": 0,
+  "nativeInputUpdateRate": 0
+}

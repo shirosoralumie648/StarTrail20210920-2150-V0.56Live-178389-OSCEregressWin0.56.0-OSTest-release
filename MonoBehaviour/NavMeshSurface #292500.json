@@ -1,0 +1,40 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 126
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 27
+  },
+  "m_Name": "",
+  "m_AgentTypeID": 0,
+  "m_CollectObjects": 0,
+  "m_Size": {
+    "x": 10.0,
+    "y": 10.0,
+    "z": 10.0
+  },
+  "m_Center": {
+    "x": 0.0,
+    "y": 2.0,
+    "z": 0.0
+  },
+  "m_LayerMask": {
+    "m_Bits": 4294967295
+  },
+  "m_UseGeometry": 1,
+  "m_DefaultArea": 0,
+  "m_IgnoreNavMeshAgent": 1,
+  "m_IgnoreNavMeshObstacle": 1,
+  "m_OverrideTileSize": 0,
+  "m_TileSize": 256,
+  "m_OverrideVoxelSize": 0,
+  "m_VoxelSize": 0.1,
+  "m_BuildHeightMesh": 0,
+  "m_NavMeshData": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  }
+}

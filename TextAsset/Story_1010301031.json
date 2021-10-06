@@ -1,0 +1,223 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "36eb054f-5475-4a56-ad0e-57587c1f0b29", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "d5fd113a-0792-4c81-bd33-44fa6917e563", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "51c3a057-2e6d-43cb-bf02-2d30eb147a9a", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010301/Story_1010301031.prefab", 
+					"LockPlayControl" : true, 
+					"LockCamera" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "d0f18771-34a8-4173-a1ae-f527029b3994", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "b9c63542-1a59-4db0-8a66-6902a38cde5a", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mar_7th", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010301031", 
+							"AnchorName" : "Mar_7th01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "2bf5f4bd-a7af-4733-8026-bc8c46056850", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010301031", 
+							"AnchorName" : "DanHeng01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "4e426caf-4886-4f95-8180-ea64538150cd", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010301031", 
+							"AnchorName" : "Player01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "7b42be08-5779-4e70-85dd-a0f71b628938", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "XP", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "NPC_XP_Minion01_01", 
+							"AreaName" : "Story_1010301031", 
+							"AnchorName" : "XP01"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false, 
+					"EnableRootMotion" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "e7a9568a-fa8b-4adf-b307-a930d727650d", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010301/Story_101030103101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "c4a8cd40-c6fc-49a7-a3c7-b555a2cac220", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "ba7d4175-f401-4a6f-97b2-8ca8fc519e3c", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "65e799c6-b8a0-49ff-a832-c77e1179fbcd", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "c6a138dc-36fe-420e-a42a-31862534da51", 
+					"TaskEnabled" : true, 
+					"CustomString" : "Story_1010301031"
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "c8f9af58-179b-4897-bfdb-d4d65cde3c95", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "第一次见怪", 
+				"Guid" : "36eb054f-5475-4a56-ad0e-57587c1f0b29", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "d5fd113a-0792-4c81-bd33-44fa6917e563", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "51c3a057-2e6d-43cb-bf02-2d30eb147a9a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					832, 
+					0
+				], 
+				"Guid" : "e7a9568a-fa8b-4adf-b307-a930d727650d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1072, 
+					0
+				], 
+				"Guid" : "c4a8cd40-c6fc-49a7-a3c7-b555a2cac220", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					112
+				], 
+				"Guid" : "ba7d4175-f401-4a6f-97b2-8ca8fc519e3c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					560, 
+					128
+				], 
+				"Guid" : "65e799c6-b8a0-49ff-a832-c77e1179fbcd", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					208
+				], 
+				"Guid" : "c6a138dc-36fe-420e-a42a-31862534da51", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1024, 
+					160
+				], 
+				"Guid" : "c8f9af58-179b-4897-bfdb-d4d65cde3c95", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

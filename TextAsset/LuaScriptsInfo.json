@@ -1,0 +1,67 @@
+{
+	"DebugTest3": [
+		{
+			"case": "BattleTest"
+		}
+	],
+    "MazeSmokeTest": [
+		{
+			"case": "MazeMedicTest"
+		}
+	],
+    "QuestTest": [
+		{
+			"case": "GetPrevError",
+		},
+		{
+			"case": "EnterStory",
+		},
+		{
+			"case": "QuestSmokeTest",
+		},
+		{
+			"case": "QuestTest",
+		}
+	],
+    "QuestSmokeTest": [
+		{
+			"case": "GetPrevError",
+		},
+		{
+			"case": "EnterStory",
+			"extraInfo": {
+				"ha": "ha1",
+				"ha2": "ha21",
+			}
+		},
+		{
+			"case": "QuestSmokeTest",
+			"extraInfo": {
+				"ha": "ha1",
+				"ha2": "ha21",
+			}
+		},
+	],
+	"DebugTest": [
+		{ 
+			"case" :"GetPrevError", 
+		},
+		{ 
+			"case" :"SmokeTest",
+		},
+		{ 
+			"case" :"SmokeBigWorld",
+		},
+	],
+	"EditorSmoke": [
+		{ 
+			"case" :"GetPrevError", 
+		},
+		{ 
+			"case" :"EditorSmokeLogin",
+		},
+		{ 
+			"case" :"SmokeBigWorld",
+		},
+	]
+}

@@ -1,0 +1,52 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 260
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 10
+  },
+  "m_Name": "",
+  "m_ExcludedPropertiesInInspector": [
+    "m_Script"
+  ],
+  "m_LockStageInInspector": [],
+  "m_StreamingVersion": 20170927,
+  "m_Priority": 22,
+  "m_StandbyUpdate": 2,
+  "m_LookAt": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Follow": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Lens": {
+    "FieldOfView": 45.0,
+    "OrthographicSize": 5.0,
+    "NearClipPlane": 0.1,
+    "FarClipPlane": 1024.0,
+    "Dutch": 0.0,
+    "LensShift": {
+      "x": 0.0,
+      "y": 0.0
+    }
+  },
+  "m_Transitions": {
+    "m_BlendHint": 0,
+    "m_InheritPosition": 0,
+    "m_OnCameraLive": {
+      "m_PersistentCalls": {
+        "m_Calls": []
+      }
+    }
+  },
+  "m_LegacyBlendHint": 0,
+  "m_ComponentOwner": {
+    "m_FileID": 0,
+    "m_PathID": 511
+  }
+}

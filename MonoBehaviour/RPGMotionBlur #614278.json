@@ -1,0 +1,30 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 22
+  },
+  "m_Name": "RPGMotionBlur",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "MotionBlurMethod": {
+    "m_OverrideState": 1,
+    "m_Value": 2
+  },
+  "MotionBlurQuality": {
+    "m_OverrideState": 0,
+    "m_Value": 1
+  },
+  "MotionBlurAmount": {
+    "m_OverrideState": 0,
+    "m_Value": 0.5
+  },
+  "MotionBlurMax": {
+    "m_OverrideState": 0,
+    "m_Value": 5
+  }
+}

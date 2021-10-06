@@ -1,0 +1,19 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 186
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 29
+  },
+  "m_Name": "",
+  "BlurQuality": 1,
+  "BlurIteation": 1,
+  "MaxBlurScale": 0.05,
+  "GlassSmoothRange": {
+    "x": 0.01,
+    "y": 60.0
+  }
+}

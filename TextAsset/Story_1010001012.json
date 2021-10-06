@@ -1,0 +1,194 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "df440c50-39f5-4c6e-898e-98004b696477", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "0df7159c-b03a-4aa1-b118-07592eef0d69", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "0832ddf1-c71f-4dc7-acfb-e23fafadc177", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010001/Story_1010001012.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "055829f2-c6bf-481f-91c7-ba63b4818c26", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "89ccfae3-d6ac-423f-a5fd-899c153c8b57", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010001012", 
+							"AnchorName" : "7thMarch01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "8352854e-cb6e-4075-a6fe-4ab71b567937", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010001012", 
+							"AnchorName" : "Player01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "0e580fbb-1697-478f-ae86-13aa063d029d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Pam", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Pam_00", 
+							"AreaName" : "Story_1010001012", 
+							"AnchorName" : "Pam01"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "b63b82ab-d320-47b9-8008-cbb9ff43fce0", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010001/Story_101000101201.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "e24433bb-d4e4-4cf7-bac4-727f7400e9aa", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "93eccd80-f815-4c3b-8370-a1dee7e6fc13", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "bc08a638-eeb3-4f2e-9cb3-cec74524a711", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "cefe043a-6774-4390-aa77-0fed2a08fe02", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "帕姆登场", 
+				"Guid" : "df440c50-39f5-4c6e-898e-98004b696477", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "0df7159c-b03a-4aa1-b118-07592eef0d69", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "0832ddf1-c71f-4dc7-acfb-e23fafadc177", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					832, 
+					0
+				], 
+				"Guid" : "b63b82ab-d320-47b9-8008-cbb9ff43fce0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1136, 
+					48
+				], 
+				"Guid" : "e24433bb-d4e4-4cf7-bac4-727f7400e9aa", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					416, 
+					176
+				], 
+				"Guid" : "93eccd80-f815-4c3b-8370-a1dee7e6fc13", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					672, 
+					208
+				], 
+				"Guid" : "bc08a638-eeb3-4f2e-9cb3-cec74524a711", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					960, 
+					208
+				], 
+				"Guid" : "cefe043a-6774-4390-aa77-0fed2a08fe02", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

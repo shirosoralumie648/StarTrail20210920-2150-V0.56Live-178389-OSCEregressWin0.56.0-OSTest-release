@@ -1,0 +1,9 @@
+{
+	"$type" : "RPG.GameCore.StageLodMapConfig", 
+	"$guid" : "0f9f8e41-5155-4ad5-8751-0f995d7bf2fa", 
+	"LodMap" : 
+	{
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap00_INT_Train_01b.prefab" : "CutSceneControlled", 
+		"Stages/OriginalResPos/Chapter01/Prefab/Chap00_INT_Train_01a.prefab" : "CutSceneControlled"
+	}
+}

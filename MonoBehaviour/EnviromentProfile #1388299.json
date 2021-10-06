@@ -1,0 +1,79 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 12
+  },
+  "m_Name": "",
+  "ProfilePath": "",
+  "DefaultTransitionTime": 0.0,
+  "EnableTransitionSceneAsset": 0,
+  "LightProbesList": [
+    {
+      "Properties": {
+        "EnvColor": {
+          "r": 1.0,
+          "g": 0.9758065,
+          "b": 0.95,
+          "a": 1.0
+        },
+        "AddColor": {
+          "r": 0.0,
+          "g": 0.0,
+          "b": 0.0,
+          "a": 1.0
+        }
+      },
+      "Radius": 50.0,
+      "attenuateCurve": {
+        "m_Curve": [
+          {
+            "time": 0.0,
+            "value": 1.0,
+            "inSlope": 0.0,
+            "outSlope": -1.0,
+            "weightedMode": 0,
+            "inWeight": 0.0,
+            "outWeight": 0.0
+          },
+          {
+            "time": 1.0,
+            "value": 0.0,
+            "inSlope": -1.0,
+            "outSlope": 0.0,
+            "weightedMode": 0,
+            "inWeight": 0.0,
+            "outWeight": 0.0
+          }
+        ],
+        "m_PreInfinity": 2,
+        "m_PostInfinity": 2,
+        "m_RotationOrder": 4
+      },
+      "EntityTrans": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    }
+  ],
+  "IsSubClip": 0,
+  "IsKeepEnviroBlockData": 0,
+  "EnviroProfileClips": [],
+  "EnviroBoolProperties": [],
+  "EnviroFloatProperties": [],
+  "EnviroVectorProperties": [],
+  "EnviroEnumProperties": [],
+  "EnviroTextureProperties": [],
+  "EnviroGradientProperties": [],
+  "EnviroGpuParticleProperties": [],
+  "EnviroReflectionProbeProperties": [],
+  "EnviroPointLightProperties": [],
+  "EnviroParticleProperties": [],
+  "EnviroEffectLightingProperties": [],
+  "EnviroPPVolumeProperties": []
+}

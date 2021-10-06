@@ -1,0 +1,237 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "9dce8a16-c63f-41e8-8913-f02b907ee5c9", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "b35d2aa0-a228-4e8a-abe8-54cb378b5558", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "330bf196-9b2e-4e2f-a07a-4337dc45a88f", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010601/Story_1010601051.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "1d875f81-1da9-42e0-ae75-dd44606f6076", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Fersman", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Male_Fersman", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "Fersman01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "9073f87c-40ad-4d97-8e3c-4ec0ec097229", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Svarog", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Svarog_00", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "Svarog01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "ff4ad730-a4b1-4b06-9566-90c47eac93e9", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Seele", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "Seele01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "a60d000c-1711-48cd-9a6b-9daab51d5521", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "Bronya01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "f827cc10-6669-4b59-b7b4-6a0e57b707d7", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Default", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "Player01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "4f5b016b-ccf3-4e0a-a551-2c7e1de82cac", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "7thMarch01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "454cd7f8-e23b-46c7-8e42-5d8128f7799c", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Danheng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "Danheng01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "0fc6b62d-9bb4-4487-ab44-7b1319af9ecf", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mecha01", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "NPC_W1_Mecha04_00", 
+							"AreaName" : "Story_1010601051", 
+							"AnchorName" : "Mecha0101"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "f8847bb3-ffda-405d-8008-2751518567b8", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010601/Story_101060105101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "1b8cf59e-4253-428c-a8ee-f9a421625e28", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "d426a725-c191-4700-8de1-375ab6b2ed01", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "0325f031-c442-481c-b152-50f3baaa5bb9", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "1f4b033f-c841-4138-aadb-a599b5473871", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "再会史瓦罗和费斯曼", 
+				"Guid" : "9dce8a16-c63f-41e8-8913-f02b907ee5c9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "b35d2aa0-a228-4e8a-abe8-54cb378b5558", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "330bf196-9b2e-4e2f-a07a-4337dc45a88f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					880, 
+					0
+				], 
+				"Guid" : "f8847bb3-ffda-405d-8008-2751518567b8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1168, 
+					64
+				], 
+				"Guid" : "1b8cf59e-4253-428c-a8ee-f9a421625e28", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					128
+				], 
+				"Guid" : "d426a725-c191-4700-8de1-375ab6b2ed01", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					624, 
+					192
+				], 
+				"Guid" : "0325f031-c442-481c-b152-50f3baaa5bb9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					896, 
+					224
+				], 
+				"Guid" : "1f4b033f-c841-4138-aadb-a599b5473871", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

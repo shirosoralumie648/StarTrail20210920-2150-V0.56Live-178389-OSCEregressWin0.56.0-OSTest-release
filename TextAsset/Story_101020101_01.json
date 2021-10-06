@@ -1,0 +1,3502 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		
+		// 故事开始
+        
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "91fdbca2-8442-47d7-bff2-c6471edbf3d5", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010201/Story_101020101_01.prefab", 
+					"LockPlayControl" : true, 
+					"LockCamera" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "90814942-763f-4d71-a2f4-d352e52d2be6", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "7caf076b-29b1-4518-9294-d7e88f86a21b", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "7thMarch01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "c558ef53-f9ba-4bf6-87f7-c0206d3c4838", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "Player01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "eae4604c-f2ce-4478-9b8f-278cb65870b6", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "DanHeng01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "86901f1b-f00f-4016-bb6a-8333eb5f755d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Gepard", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Gepard_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "Gepard01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "20754bd0-59c0-4186-b570-aa054e387c3a", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC_01", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Soldier01_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "NPC_A01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "46fbdb68-220d-4cfb-86da-5a10d23ebaff", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC_02", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Soldier01_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "NPC_B01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "046d6fd2-fd2a-4d97-89ae-bea16f21750d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC_03", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Soldier01_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "NPC_C01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "21f19ff0-a57f-4ad7-9816-473e18c787aa", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC_04", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Soldier01_00", 
+							"AreaName" : "Story_101020101_01", 
+							"AnchorName" : "NPC_D01"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false, 
+					"EnableRootMotion" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SetMainLightDir", 
+					"$guid" : "1b1b4e96-5022-418e-9fb0-92f8abcd2a25", 
+					"TaskEnabled" : true, 
+					"IsSyncSceneLight" : false, 
+					"IsSetActive" : true, 
+					"Rotation" : 
+					{
+						"x" : 0.000000, 
+						"y" : 2.240000, 
+						"z" : 0.000000
+					}, 
+					"UseCharacterShadowFactor" : false, 
+					"CharacterShadowFactor" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "76beff0f-188e-4c9e-9636-acd83be7372b", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "7thMarch", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "7thMarch01", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "2dc7b6d1-2401-4215-904a-6a3548dbbbe5", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "DanHeng", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "DanHeng01", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "5278391d-03fb-4c7b-a786-235afbed4d5e", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "Player", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Player01", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "72e9b300-d7c6-4c58-85ca-3535f6ec3100", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "Gepard", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Gepard01", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "02f53fb7-cbcd-49aa-81c8-df094127cb31", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_01", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0101", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "3757ac9e-9239-4099-9199-6c1e801e33fa", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_02", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0201", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "d4b2e1f8-6c6d-49e0-b570-30f81bb3b751", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_03", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0301", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "3df89f0a-01fb-4ff9-ac3a-495be4d8012d", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_04", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0401", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "8e8a22ea-ed00-4ab6-9af8-f028f9a33af3", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "7thMarchwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "53c845bc-13d3-4656-b561-050248354148", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Playerwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "44a7d3c5-44b3-49f8-9ddf-d8c2f2455f6f", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "DanHengwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "b62be061-e7d5-461b-9f67-f2b401b860a7", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Gepard", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Gepardwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "d8a96663-5161-4d27-8088-21bf12fc44c2", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_01", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_01walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "01c0f568-0f3f-4607-bef4-8651c945e2bb", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_02", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_02walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "a2ecba70-f9bf-4c17-8588-05ed4153fd13", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_03", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_03walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "b1b76cfb-3381-4409-b573-f45180bfef68", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_04", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_04walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "87a7303a-97e3-4d81-a45a-8ba5124b7468", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.100000
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "5d1abd7f-5c6b-4a89-b6fd-3aac2154e541", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam01", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : true, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "c13ebe93-17be-4223-91d6-20c51eda1a75", 
+						"BlendType" : "Cut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 0.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "34fe9e89-7909-4a4a-9b56-ff3f59d5e6c4", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam01b", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : false, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "50b0e7b6-9334-4181-9a4d-6c4d45be7e6d", 
+						"BlendType" : "EaseInOut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 5.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "8e040a80-3f11-4792-af27-ad7b0c5c8090", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 3.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "d408b073-a132-4157-94a5-faff8273f852", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam02", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : true, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "cb57ef5b-db91-4c1c-9fe7-b7fbcbc6ffbc", 
+						"BlendType" : "Cut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 0.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "1f1fb271-da3b-4e85-8fd1-26806c238940", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam02b", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : false, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "42dd5321-0ea8-47be-beca-7797267d50b0", 
+						"BlendType" : "EaseInOut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 4.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "f6777a79-8130-495c-935b-de6d498c0147", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 4.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "70fb9410-410d-4e8e-9989-30264c656ddf", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "7thMarch", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "7thMarch03", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "8926f17f-ac5d-4ffd-a59f-6b449ffcb4bc", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "DanHeng", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "DanHeng03", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "775a54de-35c4-4c75-9f0c-95b50cbe74d3", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "Player", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Player03", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "bcd5ba5d-6042-4619-9445-e4e1ad02bef6", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "Gepard", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Gepard03", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "c1c1a217-f72d-4ae1-90ba-ae93f1c233bc", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_01", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0103", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "72ba73ef-5603-46e3-9d5e-328a8e889fca", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_02", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0203", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "999a90e6-f477-4252-aab7-dd8d0cbead22", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_03", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0303", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "da907605-2d40-4ada-9ed4-9d52b8c91e10", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_04", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0403", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "8a7669c0-833d-42af-b5d3-eaeced3054e5", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam03b", 
+					"IsActive" : true, 
+					"FollowTargetUniqueName" : "DanHeng", 
+					"WaitBlendFinish" : true, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "a7d95350-a944-42b8-902b-19157174c74d", 
+						"BlendType" : "Cut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 0.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 1.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 0.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "6958f9b4-5b7b-4c2d-89d3-35a396e595df", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "7thMarchwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 19.500000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "9437e65e-4aa0-4ed3-9d54-a52c4183d5b3", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Playerwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 18.500000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "2184531c-2407-4096-9107-b1b7825259e4", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "DanHengwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "54d3af93-f4da-4754-a2d4-f0294c5c573b", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Gepard", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Gepardwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "e8cfdab7-4c97-4863-ab63-972e0efdd9c1", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_01", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_01walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "7509ac5c-0297-4305-aee5-e0c984a051ae", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_02", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_02walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "43ddc414-1715-479f-be4b-daba8c06977c", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_03", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_03walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "da7197b4-b8df-41bc-9488-395488245230", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_04", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_04walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 20.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "712710ed-65e8-495e-8a46-05ac3c3b5c45", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "7thMarchlook02", 
+					"KeepTracking" : false, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "71e30163-34d4-4981-aff2-7a5c35fe116a", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "5d4be979-2433-40bd-a1e3-bbf1f69abbaf", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.500000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "be2d0102-8a17-4cb0-b3cb-77db9143553f", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "7thMarchlook02", 
+					"KeepTracking" : false, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "1e2f99f9-d8b2-4415-817b-85be4e76d442", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "8634335d-38d2-404c-b33d-de6de343b619", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "9842166d-4ce6-46b9-b9dd-1cd931fea6cf", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_Player_C03_01.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"Player"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "f9de3c8c-485a-4d1c-ba2d-e9e270e1a8a4", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "1117939c-4def-4264-b972-d077e49e569b", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.500000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "d4b2cc7e-e2b9-4fbe-916d-131a9a3a352b", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "7thMarchlook01", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "b007605f-b443-4beb-984d-58a6f5a52924", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "7a141248-d4ae-4de4-a8c8-4acfc9366f32", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "63146426-bcdc-400c-918c-72a46ea5ae90", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_DanHeng_C03_01.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"DanHeng"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "2a1f0ef5-c46a-45d1-98cb-b5d59660ee67", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "121e68ff-dc6a-49b2-a589-21cfdf376803", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 1.300000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "32af4fb6-5515-4c74-8d4b-1d4acc93588a", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "7thMarchlook01", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "4541bb45-3ab8-4ffa-8fcb-bc9a13c4696b", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "89f4ca4f-8014-4212-be05-810ede70ade5", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.100000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "2c8d6d57-b241-4fc9-82f4-e23f35e0efd1", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "7thMarchlook01", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "4541bb45-3ab8-4ffa-8fcb-bc9a13c4696b", 
+						"YawMax" : 90.000000, 
+						"PitchMax" : 90.000000
+					}, 
+					"WaitUntilFinish" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "c3f8c1be-ee14-4d41-bb5d-bb65b88b3065", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 1.500000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "efb62102-1baa-4a60-b202-1239e951c049", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "7thMarchlook02", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "b007605f-b443-4beb-984d-58a6f5a52924", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "d48c5b05-b756-4e8d-a74e-861f5b23f622", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.500000
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "cbcabc2d-98cd-4d43-8638-3b8ce83b12d6", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "72064e87-ef09-467a-a5e9-f7aa53544539", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_7thMarch_C03_01.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"7thMarch"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "c6d652f5-309f-46f7-a5bc-4c9c7df45c2d", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "43172b30-f268-487f-9247-7b7fb061f396", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "239f2591-941b-4f65-b542-da6219cfc837", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010101, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "c7659fd4-0888-48a3-bc23-32930c676130", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "7thMarchlook03", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "d882fd4d-bea0-4fd8-a471-e1c6f10ee0cf", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "7edf81c2-55eb-4ad8-9d96-c4087222df0a", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 1.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadStopLookAt", 
+					"$guid" : "e359ecae-ee34-4ac8-a494-768def5be69f", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"FadeOutTime" : -1.000000, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "b8503fe5-f581-4b07-bfe7-1912a4847acb", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 1.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "b31133f7-9cc6-4de9-8ce6-3c12dd7a6563", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"TargetCharacterUniqueName" : "7thMarch", 
+					"TargetCharacterAttachPoint" : "Head", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"KeepTracking" : true, 
+					"Duration" : -1.000000, 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "b007605f-b443-4beb-984d-58a6f5a52924", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "2c1664dc-69bd-4857-b9e9-7aea99dd75d3", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 3.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "f1f1d7bf-d4ea-4e0d-a2bd-4a80d7545229", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "7thMarch", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "7thMarch04", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "e7b5d9b8-09f6-47cd-a82a-782da66dc522", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "DanHeng", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "DanHeng04", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "b514e750-b6b0-4775-94c3-7d8e4aaa4912", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "Player", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Player04", 
+					"ResetAnimation" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "e3f7c84e-8b85-4993-9089-be9ceeec2117", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "Gepard", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Gepard04", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "e2342b76-1c65-4a10-9cd2-929b5181fa33", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_01", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0104", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "5c50e60d-5166-487e-a65b-b2970167e0a7", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_02", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0204", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "c1aea13c-1e91-4623-8b52-b7121260a30e", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_03", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0304", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+					"$guid" : "151ad948-cf09-48f7-b914-86f5f2f48380", 
+					"TaskEnabled" : true, 
+					"IsLocalPlayer" : false, 
+					"CharacterUniqueName" : "NPC_04", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_0404", 
+					"ResetAnimation" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "db757dc4-e8e0-4f2f-a8fd-14d19a09ea4d", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "7thMarchwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "5adb1abb-a192-4d03-b869-1a65adcc3822", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Playerwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "1afff66b-1e05-4e1d-8fd5-a38f12d91353", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "DanHengwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "1bf8d2b7-0186-4b50-a2f2-c6cb5a9f72f8", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Gepard", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Gepardwalk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "eb3cf630-aa79-47f0-a641-2a0c6b5422ab", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_01", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_01walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "6b50644b-2292-4c76-8271-e7c0e8c0f6a8", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_02", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_02walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "e9a934b9-2276-4098-9d5a-cd052940daa8", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_03", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_03walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "522a61c6-2f75-4025-9103-48eee656035e", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_04", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_04walk01", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : -1.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "06a02de2-c79a-4931-bdce-009f8e8c2b2e", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam04", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : true, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "cd855cd5-914c-470e-9598-04128739eeb6", 
+						"BlendType" : "Cut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 0.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "79250e8c-006a-4ab8-a1d0-0cb2e964d316", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam04b", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : false, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "cd855cd5-914c-470e-9598-04128739eeb6", 
+						"BlendType" : "EaseIn", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 10.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "4d3ca760-4481-45bc-ad65-f224b3bb60ff", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Gepard", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "Gepardlook01", 
+					"KeepTracking" : true, 
+					"Duration" : 1.200000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "aba824e0-cedf-4c88-bd99-fd20da15fcce", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "9eea46ee-4385-4c39-991a-9365115966db", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "d17dedde-a636-4525-9b7b-4529a6bd54f8", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010102, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "b9d0008e-b539-42bc-b904-a95bdb25ae06", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.500000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "10493ac6-0a97-4941-90b5-d2e114c46923", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"TargetCharacterUniqueName" : "Gepard", 
+					"TargetCharacterAttachPoint" : "Head", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"KeepTracking" : true, 
+					"Duration" : 1.200000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "8b8cec6b-b7c5-4c0e-b1e6-7453095fe24a", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "dcfa43ef-7900-4f19-83d0-31c1e01755d4", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "f128fce1-4ec8-48d2-944b-6f1a78d2ddf6", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "c6b083fb-d393-4490-a31c-e19ca4e559a7", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010103, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadStopLookAt", 
+					"$guid" : "d82386cd-9bf0-4ab7-91e5-5f3fc87d0541", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"FadeOutTime" : -1.000000, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "29b7c03f-e4c9-4c7d-8abc-2e568b1f158d", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "6fa2a350-4a9c-43a2-be37-9b49ac041218", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "ced2d1b3-d5ae-491e-b60d-b516b6bfa1c1", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010104, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "0ca261c3-dbe8-4cde-8793-29f20e1c2304", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "31808cf4-99b9-4d53-baa1-eb7d8b1ec9eb", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"TargetCharacterUniqueName" : "Gepard", 
+					"TargetCharacterAttachPoint" : "Head", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"KeepTracking" : true, 
+					"Duration" : 0.010000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "291563af-608b-4aaf-8e10-7f9124dbd865", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "006de688-5b47-476d-bce9-5485d2754728", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam05", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : true, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "466f40c6-b59d-4b00-97a6-63c35d10b334", 
+						"BlendType" : "Cut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 0.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "a2b28437-43e9-4463-ac95-9358f4d03d43", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam05b", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : false, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "5557c38b-d4b4-4e3a-86fd-38ff00ad0efc", 
+						"BlendType" : "EaseIn", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 7.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "046fd673-af10-4342-9dbe-a815c5713f75", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "68db44d0-1281-4d2e-96eb-625ec5e4b225", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_DanHeng_C05_01.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"DanHeng"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "4340752c-16bb-4820-8d1b-b4434e02c501", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "f8c0f0b5-8bb0-4dec-bb78-7d1f2e432c1d", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_7thMarch_C05_01.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"7thMarch"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "69f33e95-30d4-4fbd-af2e-b5e90a69f256", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "7aa1542a-4135-4b96-bed7-7326d0bac76c", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010108, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "22e769f5-551b-4dc3-b201-92ebeb516cf2", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "9a7cc055-098b-4240-b419-f6276a332915", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "68a71750-3b5f-474b-92c0-b253be904ee9", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "fcd55ee1-ecf7-4a3a-883c-3743cc939bab", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"TargetCharacterUniqueName" : "Gepard", 
+					"TargetCharacterAttachPoint" : "Head", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "d2e636fe-7dbc-4fec-830e-5325fa90c024", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "97cf8e92-6274-4d23-b720-61aa84373387", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "c85feee7-3e3c-42a8-9b0d-ae6e76d86278", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_DanHeng_C05_02.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"DanHeng"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "1753d030-812c-42cb-8e2a-61ef35ee78ed", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "4d6f0ef7-a4a7-4dda-a37a-fbcd4a307961", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010109, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "1fa57392-ef14-415f-afad-867e6c9df540", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "12dbf219-5edb-4afa-9607-9a491eaf5830", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "66e0d3f5-2043-4d5f-9bac-0d37a23e3e6c", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "af48a679-e113-4e3c-8d31-59eaef2a6815", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_DanHeng_C05_03.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"DanHeng"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "0c013210-c800-42d5-9645-4d84779bfe60", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "Playerlook01", 
+					"KeepTracking" : true, 
+					"Duration" : 0.500000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "88580614-d01c-4666-a0f1-1e29c8d4b9be", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "a5e9de5c-6fc8-4c15-ace0-c9317c4840f0", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "b7e12c66-4e13-4acb-b388-dc60bd498343", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_7thMarch_C05_02.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"7thMarch"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "8c8202bd-a239-4cf8-9381-351ac4d2f79e", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "268172be-dbe2-46ea-83d3-9c4ca9368219", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010110, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "1fdc33e4-cdd3-4c09-a163-06c503e57ec1", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"TargetCharacterUniqueName" : "Gepard", 
+					"TargetCharacterAttachPoint" : "Head", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "d2e636fe-7dbc-4fec-830e-5325fa90c024", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "93d92291-d221-4afc-abe8-cc7dfe6cdf41", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.010000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "4c4931c4-7bce-45fc-81d8-d817ce7e7129", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"TargetCharacterUniqueName" : "Gepard", 
+					"TargetCharacterAttachPoint" : "Head", 
+					"KeepTracking" : true, 
+					"Duration" : 0.600000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "291563af-608b-4aaf-8e10-7f9124dbd865", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "7c3b3137-0875-4261-971c-bafa960e77bd", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "63e77435-c1d9-48e7-97ee-2e663aa5b570", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "09688822-7efc-46ac-8861-728adb5e639f", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+					"$guid" : "d5bc610a-662e-4222-82ec-4f8d3a10a73b", 
+					"TaskEnabled" : true, 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "cam06", 
+					"IsActive" : true, 
+					"WaitBlendFinish" : true, 
+					"BlendConfig" : 
+					{
+						"$type" : "RPG.GameCore.VCameraBlend", 
+						"$guid" : "77a53868-0572-465b-b6f2-5007690f88f0", 
+						"BlendType" : "Cut", 
+						"UseDefaultBlendCurve" : false, 
+						"BlendTime" : 0.000000, 
+						"FOVSmoothDampTime" : -1.000000, 
+						"FrameBlendSwitch" : false, 
+						"FrameBlendDelay" : 0.000000, 
+						"FrameBlendWeightStart" : 1.000000, 
+						"FrameBlendDuration" : 1.000000
+					}, 
+					"VCameraDitherNPCOn" : false, 
+					"VCameraDitherMaxDistance" : 0.000000, 
+					"VCameraDitherAlphaMin" : 0.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "f2784e59-76dc-441f-8069-ec4eaa3695ba", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_Gepard_C06_01.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"Gepard"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "ccfaeb9d-12de-42fb-9ef2-8a9a3db760af", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "294958be-df4b-4ed6-80f9-694c9d2c00a6", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010111, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+					"$guid" : "a2e18763-c32d-4400-988f-d54cbe5cc7f0", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Gepard", 
+					"TargetAreaName" : "Story_101020101_01", 
+					"TargetAnchorName" : "Gepardlook02", 
+					"KeepTracking" : true, 
+					"Duration" : 1.000000, 
+					"CurveName" : "TestCurve_B", 
+					"Constraint" : 
+					{
+						"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+						"$guid" : "88580614-d01c-4666-a0f1-1e29c8d4b9be", 
+						"YawMax" : -1.000000, 
+						"PitchMax" : -1.000000
+					}, 
+					"WaitUntilFinish" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "30aea200-f7f6-4990-bc36-71808ef247a3", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "77545887-de8e-47fc-9489-16ea759748f2", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Gepard", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Gepardwalk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "af1e1eef-9607-405f-bf74-f31681ecc254", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.500000
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "945e1a13-7155-4ac1-9743-12d7ff9f1198", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "b44c60bd-4823-4bef-8cd4-4b6937806323", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020101_01_7thMarch_C06_01.playable", 
+					"Type" : "Emotion", 
+					"Parameters" : 
+					[
+						"7thMarch"
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "4c6cb087-8834-4bc4-925b-0e95de938254", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlaySimpleTalk", 
+					"$guid" : "fc18bdf6-9d97-4cf2-8a4e-f12c09f19a11", 
+					"TaskEnabled" : true, 
+					"SimpleTalkList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.SimpleTalkInfo", 
+							"$guid" : "61a7791d-0903-45fd-82fc-bcd891a9b7ef", 
+							"TextSpeed" : 20.000000, 
+							"VoiceID" : 101010112, 
+							"ProtectTime" : 1.000000, 
+							"ForceToNextTime" : 0.000000
+						}
+					], 
+					"KeepDisplay" : true, 
+					"BlackMask" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "c22a2df7-1aea-4261-8153-cd18fb780ece", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 2.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+					"$guid" : "ec3b058c-09ee-453a-81d4-812ffa9683c0", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "0ffad61d-082d-4e15-8058-b5d974bf8af6", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 1.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "313f5f21-7fc2-4f41-a3e9-9428a3fda009", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "DanHeng", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "DanHengwalk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "64941160-de69-4138-9a34-7778156ac512", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "7thMarch", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "7thMarchwalk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "e1196c6c-fd72-4a98-9324-9f3985844b55", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.300000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "deeb86db-45a7-4c28-a8f5-4ab7118835df", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_02", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_02walk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "5dd9a49f-77a3-40b1-a55c-758edc1ef665", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_04", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_04walk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "ea48518f-eb49-4db1-82ac-55151b415ae6", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.300000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "64b59c93-31f7-47a5-8e1b-bd5efdc94aa6", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "Player", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "Playerwalk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "d863c108-fa49-490e-a790-8370edc36614", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 0.300000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "6404c194-e5e9-440c-ba78-e26ea1dc7612", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_01", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_01walk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "056f80ae-03ca-414c-9b95-90f74daed81a", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 1.500000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterNavigateTo", 
+					"$guid" : "62f89a32-161e-4901-b137-674eaf4c0cbc", 
+					"TaskEnabled" : true, 
+					"CharacterUniqueName" : "NPC_03", 
+					"AreaName" : "Story_101020101_01", 
+					"AnchorName" : "NPC_03walk02", 
+					"MotionFlag" : "Walk", 
+					"WaitUntilFinish" : false, 
+					"Duration" : 16.000000, 
+					"AvoidOthers" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "d780d5c5-59a2-48fc-a469-cf141df77c2f", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "481257c4-0d0c-40da-ad13-38d1edcc23c2", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "a2a92d4b-f6a2-49df-8343-72d6c4218270", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Player", 
+				"TargetCharacterUniqueName" : "7thMarch", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"TargetAreaName" : "Story_101020101_01", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "4541bb45-3ab8-4ffa-8fcb-bc9a13c4696b", 
+					"YawMax" : 180.000000, 
+					"PitchMax" : 180.000000
+				}, 
+				"WaitUntilFinish" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "cb7788c1-3426-416a-9b42-641356058be6", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 0.010000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "e856a02c-00a0-45c8-b5a3-ffdafc9ebda1", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010201/Story_101020101_0101.playable", 
+				"Type" : "Story", 
+				"Parameters" : 
+				[
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterTriggerAnimState", 
+				"$guid" : "90f6918c-9637-44c4-88f3-1d843db1a4ad", 
+				"TaskEnabled" : true, 
+				"CharType" : "None", 
+				"CharacterUniqueName" : "7thMarch", 
+				"ChangeAnimatorCatgory" : false, 
+				"Catgory" : "Default", 
+				"AutoExitToDefault" : false, 
+				"UseMotionID" : true, 
+				"StoryAvatarID" : "Mar_7th_00", 
+				"StartMotion" : "Shrug01AS", 
+				"NormalizedTimeStart" : 0.000000, 
+				"NormalizedTransitionDuration" : 0.000000, 
+				"NormalizedTimeWait" : 0.000000, 
+				"StoryMotionID" : 1001045
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterTriggerAnimState", 
+				"$guid" : "b5e9e237-0d29-41af-8753-c5986662e7b1", 
+				"TaskEnabled" : true, 
+				"CharType" : "None", 
+				"CharacterUniqueName" : "7thMarch", 
+				"ChangeAnimatorCatgory" : false, 
+				"Catgory" : "Default", 
+				"AutoExitToDefault" : false, 
+				"UseMotionID" : true, 
+				"StoryAvatarID" : "Mar_7th_00", 
+				"StartMotion" : "Shrug01BS", 
+				"NormalizedTimeStart" : 0.000000, 
+				"NormalizedTransitionDuration" : 0.000000, 
+				"NormalizedTimeWait" : 0.000000, 
+				"StoryMotionID" : 1001043
+			}
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					-416, 
+					-1296
+				], 
+				"Comment" : "跟随杰帕德进入城市", 
+				"Guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-32, 
+					-1280
+				], 
+				"Guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					224, 
+					-1264
+				], 
+				"Guid" : "91fdbca2-8442-47d7-bff2-c6471edbf3d5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					368, 
+					-1360
+				], 
+				"Guid" : "1b1b4e96-5022-418e-9fb0-92f8abcd2a25", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					496, 
+					-1264
+				], 
+				"Guid" : "76beff0f-188e-4c9e-9636-acd83be7372b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					720, 
+					-1264
+				], 
+				"Guid" : "2dc7b6d1-2401-4215-904a-6a3548dbbbe5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					960, 
+					-1264
+				], 
+				"Guid" : "5278391d-03fb-4c7b-a786-235afbed4d5e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1184, 
+					-1264
+				], 
+				"Guid" : "72e9b300-d7c6-4c58-85ca-3535f6ec3100", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1424, 
+					-1264
+				], 
+				"Guid" : "02f53fb7-cbcd-49aa-81c8-df094127cb31", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1680, 
+					-1264
+				], 
+				"Guid" : "3757ac9e-9239-4099-9199-6c1e801e33fa", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1904, 
+					-1264
+				], 
+				"Guid" : "d4b2e1f8-6c6d-49e0-b570-30f81bb3b751", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2176, 
+					-1264
+				], 
+				"Guid" : "3df89f0a-01fb-4ff9-ac3a-495be4d8012d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					224, 
+					-1184
+				], 
+				"Guid" : "8e8a22ea-ed00-4ab6-9af8-f028f9a33af3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					480, 
+					-1184
+				], 
+				"Guid" : "53c845bc-13d3-4656-b561-050248354148", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					736, 
+					-1184
+				], 
+				"Guid" : "44a7d3c5-44b3-49f8-9ddf-d8c2f2455f6f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					992, 
+					-1184
+				], 
+				"Guid" : "b62be061-e7d5-461b-9f67-f2b401b860a7", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1248, 
+					-1184
+				], 
+				"Guid" : "d8a96663-5161-4d27-8088-21bf12fc44c2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1520, 
+					-1184
+				], 
+				"Guid" : "01c0f568-0f3f-4607-bef4-8651c945e2bb", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1792, 
+					-1184
+				], 
+				"Guid" : "a2ecba70-f9bf-4c17-8588-05ed4153fd13", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2064, 
+					-1184
+				], 
+				"Guid" : "b1b76cfb-3381-4409-b573-f45180bfef68", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2336, 
+					-1184
+				], 
+				"Guid" : "87a7303a-97e3-4d81-a45a-8ba5124b7468", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					224, 
+					-1072
+				], 
+				"Comment" : "C01", 
+				"Guid" : "5d1abd7f-5c6b-4a89-b6fd-3aac2154e541", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					496, 
+					-1072
+				], 
+				"Comment" : "C01B", 
+				"Guid" : "34fe9e89-7909-4a4a-9b56-ff3f59d5e6c4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					-1072
+				], 
+				"Guid" : "8e040a80-3f11-4792-af27-ad7b0c5c8090", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1040, 
+					-1072
+				], 
+				"Comment" : "C02", 
+				"Guid" : "d408b073-a132-4157-94a5-faff8273f852", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1280, 
+					-1072
+				], 
+				"Comment" : "C02B", 
+				"Guid" : "1f1fb271-da3b-4e85-8fd1-26806c238940", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1520, 
+					-1072
+				], 
+				"Guid" : "f6777a79-8130-495c-935b-de6d498c0147", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1808, 
+					-1072
+				], 
+				"Guid" : "70fb9410-410d-4e8e-9989-30264c656ddf", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2032, 
+					-1072
+				], 
+				"Guid" : "8926f17f-ac5d-4ffd-a59f-6b449ffcb4bc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2304, 
+					-1072
+				], 
+				"Guid" : "775a54de-35c4-4c75-9f0c-95b50cbe74d3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2560, 
+					-1072
+				], 
+				"Guid" : "bcd5ba5d-6042-4619-9445-e4e1ad02bef6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2832, 
+					-1072
+				], 
+				"Guid" : "c1c1a217-f72d-4ae1-90ba-ae93f1c233bc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3088, 
+					-1072
+				], 
+				"Guid" : "72ba73ef-5603-46e3-9d5e-328a8e889fca", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					224, 
+					-976
+				], 
+				"Guid" : "999a90e6-f477-4252-aab7-dd8d0cbead22", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					496, 
+					-976
+				], 
+				"Guid" : "da907605-2d40-4ada-9ed4-9d52b8c91e10", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					752, 
+					-976
+				], 
+				"Comment" : "C03", 
+				"Guid" : "8a7669c0-833d-42af-b5d3-eaeced3054e5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1280, 
+					-976
+				], 
+				"Guid" : "6958f9b4-5b7b-4c2d-89d3-35a396e595df", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1552, 
+					-976
+				], 
+				"Guid" : "9437e65e-4aa0-4ed3-9d54-a52c4183d5b3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1808, 
+					-976
+				], 
+				"Guid" : "2184531c-2407-4096-9107-b1b7825259e4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2080, 
+					-976
+				], 
+				"Guid" : "54d3af93-f4da-4754-a2d4-f0294c5c573b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2352, 
+					-976
+				], 
+				"Guid" : "e8cfdab7-4c97-4863-ab63-972e0efdd9c1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2624, 
+					-976
+				], 
+				"Guid" : "7509ac5c-0297-4305-aee5-e0c984a051ae", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2880, 
+					-976
+				], 
+				"Guid" : "43ddc414-1715-479f-be4b-daba8c06977c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3152, 
+					-976
+				], 
+				"Guid" : "da7197b4-b8df-41bc-9488-395488245230", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					240, 
+					-880
+				], 
+				"Guid" : "712710ed-65e8-495e-8a46-05ac3c3b5c45", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					496, 
+					-880
+				], 
+				"Guid" : "5d4be979-2433-40bd-a1e3-bbf1f69abbaf", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					720, 
+					-880
+				], 
+				"Guid" : "be2d0102-8a17-4cb0-b3cb-77db9143553f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					816, 
+					-784
+				], 
+				"Guid" : "8634335d-38d2-404c-b33d-de6de343b619", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					992, 
+					-880
+				], 
+				"Comment" : "主角表情", 
+				"Guid" : "9842166d-4ce6-46b9-b9dd-1cd931fea6cf", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1104, 
+					-784
+				], 
+				"Guid" : "f9de3c8c-485a-4d1c-ba2d-e9e270e1a8a4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1264, 
+					-880
+				], 
+				"Guid" : "1117939c-4def-4264-b972-d077e49e569b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1536, 
+					-880
+				], 
+				"Guid" : "d4b2cc7e-e2b9-4fbe-916d-131a9a3a352b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1632, 
+					-784
+				], 
+				"Guid" : "7a141248-d4ae-4de4-a8c8-4acfc9366f32", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1760, 
+					-880
+				], 
+				"Comment" : "丹恒表情", 
+				"Guid" : "63146426-bcdc-400c-918c-72a46ea5ae90", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1952, 
+					-768
+				], 
+				"Guid" : "2a1f0ef5-c46a-45d1-98cb-b5d59660ee67", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1984, 
+					-880
+				], 
+				"Guid" : "121e68ff-dc6a-49b2-a589-21cfdf376803", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2192, 
+					-912
+				], 
+				"Guid" : "32af4fb6-5515-4c74-8d4b-1d4acc93588a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2208, 
+					-848
+				], 
+				"Guid" : "89f4ca4f-8014-4212-be05-810ede70ade5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2512, 
+					-800
+				], 
+				"Guid" : "2c8d6d57-b241-4fc9-82f4-e23f35e0efd1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2784, 
+					-880
+				], 
+				"Guid" : "c3f8c1be-ee14-4d41-bb5d-bb65b88b3065", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3136, 
+					-880
+				], 
+				"Guid" : "efb62102-1baa-4a60-b202-1239e951c049", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3424, 
+					-880
+				], 
+				"Guid" : "d48c5b05-b756-4e8d-a74e-861f5b23f622", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-320, 
+					-608
+				], 
+				"Guid" : "cbcabc2d-98cd-4d43-8638-3b8ce83b12d6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-48, 
+					-608
+				], 
+				"Comment" : "三月七表情", 
+				"Guid" : "72064e87-ef09-467a-a5e9-f7aa53544539", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					224, 
+					-624
+				], 
+				"Guid" : "c6d652f5-309f-46f7-a5bc-4c9c7df45c2d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					512, 
+					-448
+				], 
+				"Guid" : "43172b30-f268-487f-9247-7b7fb061f396", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					800, 
+					-448
+				], 
+				"Guid" : "c7659fd4-0888-48a3-bc23-32930c676130", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1072, 
+					-448
+				], 
+				"Guid" : "7edf81c2-55eb-4ad8-9d96-c4087222df0a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1344, 
+					-576
+				], 
+				"Guid" : "e359ecae-ee34-4ac8-a494-768def5be69f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1600, 
+					-448
+				], 
+				"Guid" : "b8503fe5-f581-4b07-bfe7-1912a4847acb", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1872, 
+					-448
+				], 
+				"Guid" : "b31133f7-9cc6-4de9-8ce6-3c12dd7a6563", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2144, 
+					-448
+				], 
+				"Guid" : "2c1664dc-69bd-4857-b9e9-7aea99dd75d3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2400, 
+					-448
+				], 
+				"Guid" : "f1f1d7bf-d4ea-4e0d-a2bd-4a80d7545229", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2704, 
+					-448
+				], 
+				"Guid" : "e7b5d9b8-09f6-47cd-a82a-782da66dc522", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2992, 
+					-448
+				], 
+				"Guid" : "b514e750-b6b0-4775-94c3-7d8e4aaa4912", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3264, 
+					-448
+				], 
+				"Guid" : "e3f7c84e-8b85-4993-9089-be9ceeec2117", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3536, 
+					-448
+				], 
+				"Guid" : "e2342b76-1c65-4a10-9cd2-929b5181fa33", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3808, 
+					-448
+				], 
+				"Guid" : "5c50e60d-5166-487e-a65b-b2970167e0a7", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4080, 
+					-448
+				], 
+				"Guid" : "c1aea13c-1e91-4623-8b52-b7121260a30e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4352, 
+					-448
+				], 
+				"Guid" : "151ad948-cf09-48f7-b914-86f5f2f48380", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					256, 
+					-304
+				], 
+				"Guid" : "db757dc4-e8e0-4f2f-a8fd-14d19a09ea4d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					544, 
+					-304
+				], 
+				"Guid" : "5adb1abb-a192-4d03-b869-1a65adcc3822", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					-304
+				], 
+				"Guid" : "1afff66b-1e05-4e1d-8fd5-a38f12d91353", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1152, 
+					-304
+				], 
+				"Guid" : "1bf8d2b7-0186-4b50-a2f2-c6cb5a9f72f8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1440, 
+					-304
+				], 
+				"Guid" : "eb3cf630-aa79-47f0-a641-2a0c6b5422ab", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1728, 
+					-304
+				], 
+				"Guid" : "6b50644b-2292-4c76-8271-e7c0e8c0f6a8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2016, 
+					-304
+				], 
+				"Guid" : "e9a934b9-2276-4098-9d5a-cd052940daa8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2304, 
+					-304
+				], 
+				"Guid" : "522a61c6-2f75-4025-9103-48eee656035e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2624, 
+					-304
+				], 
+				"Comment" : "C04", 
+				"Guid" : "06a02de2-c79a-4931-bdce-009f8e8c2b2e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2912, 
+					-304
+				], 
+				"Comment" : "C04", 
+				"Guid" : "79250e8c-006a-4ab8-a1d0-0cb2e964d316", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3136, 
+					-304
+				], 
+				"Guid" : "4d3ca760-4481-45bc-ad65-f224b3bb60ff", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3392, 
+					-304
+				], 
+				"Guid" : "9eea46ee-4385-4c39-991a-9365115966db", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3664, 
+					-304
+				], 
+				"Guid" : "b9d0008e-b539-42bc-b904-a95bdb25ae06", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3904, 
+					-304
+				], 
+				"Guid" : "10493ac6-0a97-4941-90b5-d2e114c46923", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-16, 
+					-160
+				], 
+				"Guid" : "dcfa43ef-7900-4f19-83d0-31c1e01755d4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					224, 
+					-160
+				], 
+				"Guid" : "f128fce1-4ec8-48d2-944b-6f1a78d2ddf6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					624, 
+					-208
+				], 
+				"Guid" : "d82386cd-9bf0-4ab7-91e5-5f3fc87d0541", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					848, 
+					-160
+				], 
+				"Guid" : "29b7c03f-e4c9-4c7d-8abc-2e568b1f158d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1168, 
+					-160
+				], 
+				"Guid" : "6fa2a350-4a9c-43a2-be37-9b49ac041218", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1440, 
+					-160
+				], 
+				"Guid" : "0ca261c3-dbe8-4cde-8793-29f20e1c2304", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1712, 
+					-160
+				], 
+				"Guid" : "31808cf4-99b9-4d53-baa1-eb7d8b1ec9eb", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1968, 
+					-160
+				], 
+				"Comment" : "C05", 
+				"Guid" : "006de688-5b47-476d-bce9-5485d2754728", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2192, 
+					-160
+				], 
+				"Comment" : "C05B", 
+				"Guid" : "a2b28437-43e9-4463-ac95-9358f4d03d43", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2416, 
+					-208
+				], 
+				"Guid" : "046fd673-af10-4342-9dbe-a815c5713f75", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2416, 
+					-128
+				], 
+				"Comment" : "丹恒表情", 
+				"Guid" : "68db44d0-1281-4d2e-96eb-625ec5e4b225", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2672, 
+					-224
+				], 
+				"Guid" : "4340752c-16bb-4820-8d1b-b4434e02c501", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2688, 
+					-128
+				], 
+				"Comment" : "三月七表情", 
+				"Guid" : "f8c0f0b5-8bb0-4dec-bb78-7d1f2e432c1d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2816, 
+					-224
+				], 
+				"Guid" : "69f33e95-30d4-4fbd-af2e-b5e90a69f256", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2960, 
+					-80
+				], 
+				"Guid" : "22e769f5-551b-4dc3-b201-92ebeb516cf2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2928, 
+					32
+				], 
+				"Guid" : "9a7cc055-098b-4240-b419-f6276a332915", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3232, 
+					-160
+				], 
+				"Guid" : "68a71750-3b5f-474b-92c0-b253be904ee9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3488, 
+					-160
+				], 
+				"Guid" : "fcd55ee1-ecf7-4a3a-883c-3743cc939bab", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3728, 
+					-192
+				], 
+				"Guid" : "97cf8e92-6274-4d23-b720-61aa84373387", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3728, 
+					-96
+				], 
+				"Comment" : "丹恒表情", 
+				"Guid" : "c85feee7-3e3c-42a8-9b0d-ae6e76d86278", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3984, 
+					-144
+				], 
+				"Guid" : "1753d030-812c-42cb-8e2a-61ef35ee78ed", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3984, 
+					-80
+				], 
+				"Guid" : "1fa57392-ef14-415f-afad-867e6c9df540", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4224, 
+					-144
+				], 
+				"Guid" : "12dbf219-5edb-4afa-9607-9a491eaf5830", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4448, 
+					-224
+				], 
+				"Guid" : "66e0d3f5-2043-4d5f-9bac-0d37a23e3e6c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4448, 
+					-144
+				], 
+				"Comment" : "丹恒表情", 
+				"Guid" : "af48a679-e113-4e3c-8d31-59eaef2a6815", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4688, 
+					-144
+				], 
+				"Guid" : "0c013210-c800-42d5-9645-4d84779bfe60", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4912, 
+					-240
+				], 
+				"Guid" : "a5e9de5c-6fc8-4c15-ace0-c9317c4840f0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4912, 
+					-144
+				], 
+				"Comment" : "三月七表情", 
+				"Guid" : "b7e12c66-4e13-4acb-b388-dc60bd498343", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-128, 
+					0
+				], 
+				"Guid" : "8c8202bd-a239-4cf8-9381-351ac4d2f79e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					112, 
+					0
+				], 
+				"Guid" : "1fdc33e4-cdd3-4c09-a163-06c503e57ec1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-112, 
+					96
+				], 
+				"Guid" : "93d92291-d221-4afc-abe8-cc7dfe6cdf41", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					128, 
+					96
+				], 
+				"Guid" : "4c4931c4-7bce-45fc-81d8-d817ce7e7129", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					432, 
+					0
+				], 
+				"Guid" : "7c3b3137-0875-4261-971c-bafa960e77bd", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					432, 
+					64
+				], 
+				"Guid" : "63e77435-c1d9-48e7-97ee-2e663aa5b570", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					720, 
+					16
+				], 
+				"Guid" : "09688822-7efc-46ac-8861-728adb5e639f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					992, 
+					16
+				], 
+				"Comment" : "C06", 
+				"Guid" : "d5bc610a-662e-4222-82ec-4f8d3a10a73b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1312, 
+					16
+				], 
+				"Comment" : "杰帕德表情", 
+				"Guid" : "f2784e59-76dc-441f-8069-ec4eaa3695ba", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1536, 
+					16
+				], 
+				"Guid" : "ccfaeb9d-12de-42fb-9ef2-8a9a3db760af", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1792, 
+					16
+				], 
+				"Guid" : "a2e18763-c32d-4400-988f-d54cbe5cc7f0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					32, 
+					624
+				], 
+				"Guid" : "30aea200-f7f6-4990-bc36-71808ef247a3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					272, 
+					624
+				], 
+				"Guid" : "77545887-de8e-47fc-9489-16ea759748f2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					496, 
+					624
+				], 
+				"Guid" : "af1e1eef-9607-405f-bf74-f31681ecc254", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					944, 
+					528
+				], 
+				"Guid" : "945e1a13-7155-4ac1-9743-12d7ff9f1198", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					992, 
+					640
+				], 
+				"Comment" : "三月七表情", 
+				"Guid" : "b44c60bd-4823-4bef-8cd4-4b6937806323", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					992, 
+					704
+				], 
+				"Guid" : "4c6cb087-8834-4bc4-925b-0e95de938254", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1312, 
+					432
+				], 
+				"Guid" : "fc18bdf6-9d97-4cf2-8a4e-f12c09f19a11", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1312, 
+					528
+				], 
+				"Guid" : "c22a2df7-1aea-4261-8153-cd18fb780ece", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1312, 
+					848
+				], 
+				"Guid" : "ec3b058c-09ee-453a-81d4-812ffa9683c0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1616, 
+					848
+				], 
+				"Guid" : "0ffad61d-082d-4e15-8058-b5d974bf8af6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1952, 
+					848
+				], 
+				"Guid" : "313f5f21-7fc2-4f41-a3e9-9428a3fda009", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2272, 
+					848
+				], 
+				"Guid" : "64941160-de69-4138-9a34-7778156ac512", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2672, 
+					848
+				], 
+				"Guid" : "e1196c6c-fd72-4a98-9324-9f3985844b55", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2960, 
+					832
+				], 
+				"Guid" : "deeb86db-45a7-4c28-a8f5-4ab7118835df", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3344, 
+					832
+				], 
+				"Guid" : "5dd9a49f-77a3-40b1-a55c-758edc1ef665", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3680, 
+					832
+				], 
+				"Guid" : "ea48518f-eb49-4db1-82ac-55151b415ae6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3936, 
+					832
+				], 
+				"Guid" : "64b59c93-31f7-47a5-8e1b-bd5efdc94aa6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4240, 
+					832
+				], 
+				"Guid" : "d863c108-fa49-490e-a790-8370edc36614", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4528, 
+					832
+				], 
+				"Guid" : "6404c194-e5e9-440c-ba78-e26ea1dc7612", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4912, 
+					832
+				], 
+				"Guid" : "056f80ae-03ca-414c-9b95-90f74daed81a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					5184, 
+					832
+				], 
+				"Guid" : "62f89a32-161e-4901-b137-674eaf4c0cbc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					5952, 
+					832
+				], 
+				"Guid" : "d780d5c5-59a2-48fc-a469-cf141df77c2f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					176, 
+					1024
+				], 
+				"Guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					464, 
+					1040
+				], 
+				"Guid" : "481257c4-0d0c-40da-ad13-38d1edcc23c2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					736, 
+					1056
+				], 
+				"Guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1344, 
+					-448
+				], 
+				"Guid" : "a2a92d4b-f6a2-49df-8343-72d6c4218270", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1024, 
+					-976
+				], 
+				"Guid" : "cb7788c1-3426-416a-9b42-641356058be6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2336, 
+					688
+				], 
+				"Guid" : "e856a02c-00a0-45c8-b5a3-ffdafc9ebda1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1328, 
+					624
+				], 
+				"Guid" : "90f6918c-9637-44c4-88f3-1d843db1a4ad", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					736, 
+					624
+				], 
+				"Guid" : "b5e9e237-0d29-41af-8753-c5986662e7b1", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

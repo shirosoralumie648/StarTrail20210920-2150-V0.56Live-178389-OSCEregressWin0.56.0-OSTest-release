@@ -1,0 +1,14 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2434
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 37
+  },
+  "m_Name": "",
+  "SnowTexPath": "Stages/OriginalResPos/Chapter01/_dependencies/Texture/Objects_Chap01_Grd_Area_Square_07_Mask_Tex",
+  "UseHeightBlend": 0
+}

@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 135
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 23
+  },
+  "m_Name": "",
+  "m_TrackedObjectOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "m_LookaheadTime": 0.0,
+  "m_LookaheadSmoothing": 0.0,
+  "m_LookaheadIgnoreY": 0,
+  "m_HorizontalDamping": 0.5,
+  "m_VerticalDamping": 0.5,
+  "m_ScreenX": 0.5,
+  "m_ScreenY": 0.5,
+  "m_DeadZoneWidth": 0.0,
+  "m_DeadZoneHeight": 0.0,
+  "m_SoftZoneWidth": 0.8,
+  "m_SoftZoneHeight": 0.8,
+  "m_BiasX": 0.0,
+  "m_BiasY": 0.0,
+  "m_CenterOnActivate": 1
+}

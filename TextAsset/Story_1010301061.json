@@ -1,0 +1,194 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "fafafcd7-7360-4ed6-a4b0-88af1aed5ef4", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "e0bc9c0e-9525-48c3-8c55-c8982dbc7fd3", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "0b802aef-7579-452d-89f7-7df206ff258f", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010301/Story_1010301061.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "788ec861-1b74-493b-9dfd-4fb826ccf2f8", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "3e2fbe5c-7621-409a-b2ef-212d1e54e8ec", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010301061", 
+							"AnchorName" : "DanHeng01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "15d19b1f-caee-42d1-b6d0-3d614a871a25", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mar_7th", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010301061", 
+							"AnchorName" : "Mar_7th01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "a435f471-eebc-4430-8709-5784f7619fd6", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010301061", 
+							"AnchorName" : "Player01"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "59e41842-f984-43f9-bdc6-2f337139d993", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010301/Story_101030106101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "fd706ae5-7927-4cd6-b0b0-d7a127ff64bd", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "1cade55e-2e78-4b8b-95db-71418051a595", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "9b97b1cc-010f-45d3-ad24-8d6c59df9f6e", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "2e31f7d7-968e-4d57-bf3e-475f202b9037", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "最后的门", 
+				"Guid" : "fafafcd7-7360-4ed6-a4b0-88af1aed5ef4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "e0bc9c0e-9525-48c3-8c55-c8982dbc7fd3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "0b802aef-7579-452d-89f7-7df206ff258f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					832, 
+					0
+				], 
+				"Guid" : "59e41842-f984-43f9-bdc6-2f337139d993", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1088, 
+					0
+				], 
+				"Guid" : "fd706ae5-7927-4cd6-b0b0-d7a127ff64bd", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					320, 
+					240
+				], 
+				"Guid" : "1cade55e-2e78-4b8b-95db-71418051a595", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					256
+				], 
+				"Guid" : "9b97b1cc-010f-45d3-ad24-8d6c59df9f6e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					880, 
+					256
+				], 
+				"Guid" : "2e31f7d7-968e-4d57-bf3e-475f202b9037", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

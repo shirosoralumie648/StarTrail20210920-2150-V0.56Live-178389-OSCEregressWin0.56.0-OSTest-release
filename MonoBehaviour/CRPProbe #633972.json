@@ -1,0 +1,31 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 32
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 32
+  },
+  "m_Name": "",
+  "Weight": 0.0,
+  "IsGlobal": 0,
+  "StencilCenter": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "StencilSize": {
+    "x": 10.0,
+    "y": 10.0,
+    "z": 10.0
+  },
+  "UseAddStencil": 0,
+  "RotAngle": 0.0,
+  "ParentVolumn": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "InnerRangePercent": 0.99
+}

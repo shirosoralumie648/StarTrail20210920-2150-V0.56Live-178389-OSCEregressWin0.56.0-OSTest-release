@@ -1,0 +1,193 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "76576516-cab0-4635-aa14-5a463b108af8", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "8678ed83-1f90-4d72-94fc-edf28c2a695e", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "19398ea5-ee29-4418-b9f7-e55618fc7f77", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010802/Story_1010802102.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "e60fbeb9-6820-49d5-9c1e-ef7c3ef9a3f5", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "ac270552-656c-499a-aa7b-9ab9f39e5649", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Gepard", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Gepard_00", 
+							"AreaName" : "Story_1010802102"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "051f3762-9f15-43d3-9e41-50087900d025", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Cocolia", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Cocolia_00", 
+							"AreaName" : "Story_1010802102"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "6a3b8626-ac5a-433e-bbaa-2a450568c3be", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010802102"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : true, 
+					"EnableRootMotion" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "cf646483-26de-4cdd-a423-28d9ad93d217", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010802/Story_101080210201.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "2839340a-6a7b-4f03-bf6a-1cb5972909e8", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "f7cbb8f8-2e02-4c22-ba0f-0e8950a7b7ad", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "c35c7fe8-cd9e-4a8f-98d9-f00003b55ebd", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "56b4eaac-4837-423a-82a7-d9184e23ba11", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : {
+	"DanglingNodes" : 
+	[
+	], 
+	"ClassMeta" : 
+	[
+		{
+			"Position" : 
+			[
+				0, 
+				0
+			], 
+			"Comment" : "布洛妮娅向可可利亚汇报", 
+			"Guid" : "76576516-cab0-4635-aa14-5a463b108af8", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				304, 
+				0
+			], 
+			"Guid" : "8678ed83-1f90-4d72-94fc-edf28c2a695e", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				592, 
+				0
+			], 
+			"Guid" : "19398ea5-ee29-4418-b9f7-e55618fc7f77", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				896, 
+				0
+			], 
+			"Guid" : "cf646483-26de-4cdd-a423-28d9ad93d217", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				1184, 
+				0
+			], 
+			"Guid" : "2839340a-6a7b-4f03-bf6a-1cb5972909e8", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				320, 
+				160
+			], 
+			"Guid" : "f7cbb8f8-2e02-4c22-ba0f-0e8950a7b7ad", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				608, 
+				176
+			], 
+			"Guid" : "c35c7fe8-cd9e-4a8f-98d9-f00003b55ebd", 
+			"Locked" : false
+		}, 
+		{
+			"Position" : 
+			[
+				864, 
+				176
+			], 
+			"Guid" : "56b4eaac-4837-423a-82a7-d9184e23ba11", 
+			"Locked" : false
+		}
+	], 
+	"Connections" : 
+	[
+	], 
+	"SerializeVersion" : 1
+}
+}

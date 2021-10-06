@@ -1,0 +1,285 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "fbfca5eb-701c-4276-b066-3f83c225b0c3", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "ea7b4661-5a52-470a-9ba6-5b60cd610052", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "e34836d5-701d-407d-bf04-52794b92ca3c", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010601/Story_1010601031.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "4ebf37a3-bafb-4971-832c-cfd1eae26273", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "f14883f1-e126-46ca-ad0e-178ae1b103ad", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Seele", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Seele01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "757f504c-9af0-494b-83f3-648a93392b6b", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Bronya01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "a3f2b7ac-aed2-467f-bff8-4be5d5da18b2", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mar_7th", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Mar_7th01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "5a0717d9-b6a7-4db8-b172-9677450a437d", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Hook", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Hook_00", 
+							"AreaName" : "Story_1010601031"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "6d830c3c-05c2-48b2-990f-58329cb9a242", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "PlayerBoy", 
+							"Catgory" : "Default", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "PlayerBoy01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "919a5567-49d7-4401-8614-f08d1579d47a", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "DanHeng01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "7ac0b82e-b4ae-414e-be7e-dd648731004f", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Svarog", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Svarog_00", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Svarog01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "265243e3-0be6-4266-9b96-296260af55aa", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mecha01", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Mecha01_01", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Mecha00"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "75a4d511-630f-4484-8e6e-0cb9bd820834", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mecha02", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Mecha01_01", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Mecha00"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "dd101f9b-3367-48b5-ba77-6d7eb69e4d6a", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mecha03", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Mecha01_01", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Mecha00"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "0bcf8b6a-707d-4d0c-aa4f-0706e2760736", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mecha04", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Mecha01_01", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Mecha00"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "c2fc0b09-b2bc-4582-a848-6e0a5e78d5df", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Mecha05", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Mecha01_01", 
+							"AreaName" : "Story_1010601031", 
+							"AnchorName" : "Mecha00"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "088ebd21-ccb5-4eb0-98ae-85d4ceb65086", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010601/Story_101060103101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "71571eb7-4f24-430c-8268-72f8c365c425", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "98c28461-8f05-4936-b34f-d6e606150fb4", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "f695257c-e9d3-47a1-aef5-07a0ef59f4be", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "5340d8b7-2f0c-4484-99aa-b690a0ede4c0", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "初遇史瓦罗", 
+				"Guid" : "fbfca5eb-701c-4276-b066-3f83c225b0c3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "ea7b4661-5a52-470a-9ba6-5b60cd610052", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "e34836d5-701d-407d-bf04-52794b92ca3c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					0
+				], 
+				"Guid" : "088ebd21-ccb5-4eb0-98ae-85d4ceb65086", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1136, 
+					0
+				], 
+				"Guid" : "71571eb7-4f24-430c-8268-72f8c365c425", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					320, 
+					128
+				], 
+				"Guid" : "98c28461-8f05-4936-b34f-d6e606150fb4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					608, 
+					144
+				], 
+				"Guid" : "f695257c-e9d3-47a1-aef5-07a0ef59f4be", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					912, 
+					144
+				], 
+				"Guid" : "5340d8b7-2f0c-4484-99aa-b690a0ede4c0", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

@@ -1,0 +1,33 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 1428
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 21
+  },
+  "m_Name": "",
+  "Tag": "TagName",
+  "StreamingLayerOverride": "",
+  "blockBlendConfig": {
+    "HeightBlendTex": "",
+    "HeightBlendDetailTex": "",
+    "BlockBound": {
+      "BoundType": 0,
+      "Center": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "Size": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      }
+    },
+    "BlendBaseRangeX": 0.0,
+    "BlendBaseRangeY": 0.0
+  }
+}

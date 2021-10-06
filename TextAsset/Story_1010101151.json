@@ -1,0 +1,192 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "c7738dce-3fea-4c08-b2ff-a519cd27ddd7", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "46793a16-63b1-4355-af52-1c6408cd86fe", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "f94fe89c-6b93-4845-90d4-f1462e4f6acc", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010101/Story_1010101151.prefab", 
+					"LockPlayControl" : true, 
+					"LockCamera" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "74bf9f7f-8304-42bd-a657-650a09239195", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "a56c3a06-5a85-40f6-893d-6943592140f7", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Gepard", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Gepard_00", 
+							"AreaName" : "Story_1010101151"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : false, 
+					"EnableRootMotion" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "6a50786a-af73-4d7d-9a1b-42be0bedbec5", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010101/Story_101010115101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "729cacb8-bae2-4c36-8272-b32c8b962fea", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "5acb2d85-237a-42db-8df9-2ba36b890621", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "7734e45d-a520-474d-8330-e4d4fc862361", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.TriggerCustomString", 
+					"$guid" : "ec9b5355-83be-4b90-8354-b161a2d73b70", 
+					"TaskEnabled" : true, 
+					"CustomString" : "Act_101010111"
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "fc435bb0-8e4c-411d-baba-a0a7e218ae3f", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "俯瞰共同体", 
+				"Guid" : "c7738dce-3fea-4c08-b2ff-a519cd27ddd7", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "46793a16-63b1-4355-af52-1c6408cd86fe", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "f94fe89c-6b93-4845-90d4-f1462e4f6acc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					848, 
+					0
+				], 
+				"Guid" : "6a50786a-af73-4d7d-9a1b-42be0bedbec5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1392, 
+					0
+				], 
+				"Guid" : "729cacb8-bae2-4c36-8272-b32c8b962fea", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					128
+				], 
+				"Guid" : "5acb2d85-237a-42db-8df9-2ba36b890621", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					144
+				], 
+				"Guid" : "7734e45d-a520-474d-8330-e4d4fc862361", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					928, 
+					144
+				], 
+				"Guid" : "ec9b5355-83be-4b90-8354-b161a2d73b70", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1232, 
+					144
+				], 
+				"Guid" : "fc435bb0-8e4c-411d-baba-a0a7e218ae3f", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

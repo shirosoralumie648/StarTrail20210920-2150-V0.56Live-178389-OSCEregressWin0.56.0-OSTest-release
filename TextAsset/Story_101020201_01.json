@@ -1,0 +1,3581 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		
+		// 故事开始
+        
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "43408920-951b-4c0d-9945-64c4796464ed", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010202/Story_101020201_01.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "9680c616-df5c-4bc6-b7cf-2352104ba022", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "60bf37d7-cab9-4cef-ba5a-d1ef1e9d51dd", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_101020201_01", 
+							"AnchorName" : "Player01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "9e777302-5436-446e-a05f-e790af701556", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_101020201_01", 
+							"AnchorName" : "DanHeng01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "82a1f452-5aa3-4886-a909-0b6c005ae41b", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_101020201_01", 
+							"AnchorName" : "7thMarch01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "ad278021-5105-4bd3-8e2d-23246abec7b6", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Pela", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Pela_00", 
+							"AreaName" : "Story_101020201_01", 
+							"AnchorName" : "Pela01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "a930d816-9c5a-4624-9646-1e50d2cee123", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Serval", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Serval_00", 
+							"AreaName" : "Story_101020201_01", 
+							"AnchorName" : "Serval01"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "c440be57-94c5-4535-93dd-4f234d6452c9", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010202/Story_101020201_0101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "ecb92562-b519-4ca2-89bb-14912346d944", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "3e274eec-31e8-4352-9e10-282a946c52af", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "2550cac6-d943-4848-aa73-f079951c8662", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Serval", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 1.500000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "3101a9ca-340e-41b5-a9d8-53109c9f73e3", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam01", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "ff75650e-e39c-4c40-9c29-a491b472640b", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "c67f4263-9d13-4ae5-9e1c-eced1dedacbc", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Serval_C01_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Serval"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "d6d07a5f-40d4-4997-9c07-273e19577d7a", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam01b", 
+				"WaitBlendFinish" : false, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "ff75650e-e39c-4c40-9c29-a491b472640b", 
+					"BlendType" : "EaseIn", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 6.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "218bb630-a05b-49c4-aba8-be023fab6ca9", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "da9610f1-a18e-43b6-92aa-ffd068a88afd", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 1.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "ca8878b5-9fdd-4e56-8639-99eb2f632833", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "7thMarch", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 1.200000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "87355220-511f-4434-b931-fbbecb8bdbf3", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "2826ca09-8a51-48d6-b1ba-53bfe876f357", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Player", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 1.000000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "a930cb9b-8e8e-4d1d-a576-b84f3922886d", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "15e456c2-0000-4e5e-951b-5f4a5abaebb6", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "DanHeng", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 1.500000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "08e53691-d786-421f-a44d-f3207534ff8a", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "12f2fc7f-259f-4cf3-9f05-67fa2cbb99d1", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 1.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "c9abc7c6-f1f4-48bf-ad84-3b8067ab11d5", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam02", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "a9774bd2-6678-4121-8602-e990075ed39f", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "7424ce34-bb51-4729-9c9d-10b2b4c6a57f", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Serval_C02_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Serval"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "43172b30-f268-487f-9247-7b7fb061f396", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "44788d06-9778-48f9-b41c-f8b43026c59d", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010401, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "c9158f17-8c18-4af1-9ece-784604b48428", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "7thMarch", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 1.200000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "87355220-511f-4434-b931-fbbecb8bdbf3", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "1e91b346-e556-4a39-81b8-7aa1867ffd5d", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Player", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 1.000000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "a930cb9b-8e8e-4d1d-a576-b84f3922886d", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "b10edb73-25e8-4ce2-a349-06425c76f3a4", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "DanHeng", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 1.500000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "08e53691-d786-421f-a44d-f3207534ff8a", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "0ce2a32b-6ae3-43ff-889f-3e5d984d8c39", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam03", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "a7edaa82-07b0-4c89-aaea-a27c50ad1155", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "498d5223-5dbe-49a1-8c71-0f3d01b63f84", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam03b", 
+				"WaitBlendFinish" : false, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "6b364216-1111-4596-8d06-4e4952d8a2a7", 
+					"BlendType" : "EaseIn", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 6.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "c01a670a-716c-48b9-a396-5357984818fc", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Pela_C03_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Pela"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "60666d52-6ddc-43e2-9195-b3ab9f4effa9", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_DanHeng_C03_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"DanHeng"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "aa18d119-5345-4294-adca-11b23e6a0b3d", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetAreaName" : "Story_101020201_01", 
+				"TargetAnchorName" : "Pelalook01", 
+				"KeepTracking" : true, 
+				"Duration" : 0.800000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "860d9cf9-dd91-4538-b1be-56fe0a58bb29", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 1.500000
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "7e4341f7-f7dd-4f49-bec1-776bb158cb40", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 0.800000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "6a12cd32-a347-4357-ada1-e3f38bbb2d62", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 1.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterNavigateTo", 
+				"$guid" : "6570e97a-f734-44ef-84f8-cdb30a56a217", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Pela02", 
+				"MotionFlag" : "Walk", 
+				"WaitUntilFinish" : false, 
+				"Duration" : -1.000000, 
+				"AvoidOthers" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "297c2dbb-0efd-4edc-ad7d-88346f69e4bb", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 1.500000
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "b840b942-98ec-492d-87a2-c0306c9c7f16", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "7thMarch", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "444532da-4445-4381-985b-a5c23de6e8f0", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "725f3f5d-f3a1-43d1-b6bc-6e7fd45143c3", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Player", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "9fa78727-4b0f-417b-a2fd-53a07c2adbee", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "0a9ae921-42ce-433d-8e42-ae8218bace04", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "DanHeng", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "a28e65c4-c425-48be-96c0-1ce8b6442358", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "4aa53764-2b1f-454d-81bb-69d051c160b6", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "82e21746-4907-4b93-819b-3d48a42af11a", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010402, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadStopLookAt", 
+				"$guid" : "964185a9-3c66-4c16-9c0b-09156b547597", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"FadeOutTime" : 0.010000, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "f2ac6451-a7ce-421c-a198-5c02272c42f9", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "Serval", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Serval02", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "583c495c-1c09-42ec-8159-4f5b72159a27", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 0.010000
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "7c2cec7d-ca6c-4377-b113-6b099aaf92d4", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 0.100000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "6053f377-2770-4b9e-ae96-2b9e32a5ccbc", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "Pela", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Pela03", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSecond", 
+				"$guid" : "d1cc4555-374d-4740-a6fe-7a2fa4fbac46", 
+				"TaskEnabled" : true, 
+				"WaitTime" : 0.010000
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "267af4ad-d698-44eb-813c-20a771f7b1e0", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam04", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "1fceee69-0d96-4338-81ec-37032ba8cf4b", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "db39bd14-7735-4752-809f-1f2acd58cdc7", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam04b", 
+				"WaitBlendFinish" : false, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "1fceee69-0d96-4338-81ec-37032ba8cf4b", 
+					"BlendType" : "EaseIn", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 8.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "1a7da502-6065-4b40-9b14-bbddc9b71d43", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "f0f4014d-03dd-4398-9531-82cd72e7c7d5", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "a99d394a-04d0-47a5-a7ca-81d9f23d68cf", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010403, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "43dae77a-d300-46d4-a857-d317bb107337", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Serval_C04_02.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Serval"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "e9279f62-c1cd-47e0-95b7-324f987173f5", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "309b8fe8-b093-4906-af69-d3404a624a2e", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "70ac90e1-dfdf-43e6-934a-cdf43ac3b34b", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010404, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "426bb0a6-d45c-4a9d-8e9b-8a7fb9b2e3c2", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "c1f97a88-9cfa-43e1-94c6-4237f3a58e83", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam05", 
+				"WaitBlendFinish" : false, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "cc818581-27d9-4460-b324-0ea54bb0b4fa", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "eaf46930-1862-4dd7-9c45-62361ba7cd0f", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "beb2b1d9-d1a1-472a-aa8f-313b0ebf44d5", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010405, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "0256a949-7edf-49f7-9a89-36c53801d86a", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "b725b873-9b91-4afe-b5e7-5a2ffb329a42", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam06", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "b6adc990-9173-47c5-a521-eb59f7ffc966", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "ef578a81-25f7-4445-9437-159bd34e25fd", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "4eb235d0-0612-4e97-8932-5a7e920c6f3f", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010406, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "0aa9fa0e-70fe-4dae-b461-5174c2c7d032", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Pela_C06_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Pela"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "d2ee2c51-663e-48dd-84ca-ac2773381ee8", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "88e41d4e-821a-4719-9d3f-82fea957c2e3", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "Serval", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Serval03", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "33c73f84-e820-4dca-a78e-4a8c8d67d81a", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "Pela", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Pela04", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "709c53b4-b1ae-4337-ae2f-9732a1389462", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "Player", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Player02", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "a36092ab-0c53-47d4-8faf-7ef74c31c9b2", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "DanHeng", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "DanHeng02", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "f6e928f7-d148-48ac-9a10-b6566b4b7112", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam07", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "35633e25-bfd0-4f63-a702-3f134e19ad3b", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "8bb74a8c-4721-4686-81e5-3ce99616d987", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam07b", 
+				"WaitBlendFinish" : false, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "ac547c09-9a15-42ce-aead-0aafa69b8c82", 
+					"BlendType" : "EaseIn", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 4.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "809e2c63-d6f6-49b8-9e35-e9e98ecce7cf", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Pela_C07_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Pela"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadStopLookAt", 
+				"$guid" : "1ea22ecb-f4c4-47ce-b2e0-ad697e5b4182", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Serval", 
+				"FadeOutTime" : -1.000000, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "2cc1e55b-5bc1-46aa-9400-e085e2f7cc4d", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "7thMarch", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "87355220-511f-4434-b931-fbbecb8bdbf3", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "0cb34652-5400-48e1-8d10-65027adad6a0", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Player", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "a930cb9b-8e8e-4d1d-a576-b84f3922886d", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "c1e62689-53c1-4d93-8978-2d8e8e587e49", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "DanHeng", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "08e53691-d786-421f-a44d-f3207534ff8a", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterNavigateTo", 
+				"$guid" : "6fc0495f-cb70-49e6-ad04-2cbe3e45c8ce", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Serval", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Servalwalk01", 
+				"MotionFlag" : "Walk", 
+				"WaitUntilFinish" : true, 
+				"Duration" : -1.000000, 
+				"AvoidOthers" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "76b634ea-c859-4076-8628-ea0c23c453e7", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "8f481ad5-d7e6-4178-a1cd-f7436a033500", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010407, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "d23455af-7f28-49ea-b49d-04979349788e", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "ad963ab1-b01f-4857-89df-7501b1537d2a", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "2634153a-1a4e-4c07-a425-af0356d9e90b", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010408, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "80b920bc-8f97-4872-a9ef-4f75dbe02a69", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetCharacterUniqueName" : "Player", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "11b3a569-b7be-4d97-9cd0-e5d4d9badde6", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "45d12cc4-7bd0-4bd5-b984-39cad34c4531", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "Serval", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Serval04", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "63a868a2-e081-4568-85b7-936b05c0d897", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam08", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "d7de2e5e-d5f5-4a28-8752-e6ec3c7cedee", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "3e2d79ce-df1a-4795-8fd4-16df6f053380", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam08b", 
+				"WaitBlendFinish" : false, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "d7de2e5e-d5f5-4a28-8752-e6ec3c7cedee", 
+					"BlendType" : "EaseOut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 6.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "f6d880f4-0234-41db-b62f-4d3f12c7facf", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Serval_C08_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Serval"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "bb8caa9e-3389-4b4c-ae22-660272672f41", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 0.700000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "ceeec3ab-e776-4a6a-a992-18bb5aa0847f", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Serval", 
+				"TargetAreaName" : "Story_101020201_01", 
+				"TargetAnchorName" : "Servallook01", 
+				"KeepTracking" : true, 
+				"Duration" : 1.200000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "d218c8e1-431f-410f-bb39-31ddaef142a4", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "6014a7c0-8dc2-4bb8-8c52-fb5552b81eac", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010409, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "c92c77ed-cd0b-4271-be07-08707a2f4a08", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadStopLookAt", 
+				"$guid" : "5140c331-0a73-4b5e-8ae7-4b6162fdde6c", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"FadeOutTime" : 0.010000, 
+				"WaitUntilFinish" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "34c7fb8b-2d45-4d0d-b155-27d2fcd103dd", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Serval", 
+				"TargetCharacterUniqueName" : "Pela", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : 0.010000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "a930cb9b-8e8e-4d1d-a576-b84f3922886d", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "b34071a4-9999-41de-a829-ab54a42a13f9", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam09", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "3e9610f8-fb30-4a62-bffd-6024902242ee", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "37491d0e-37d0-475a-96c9-270d4b31ba20", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "4f3aec4e-1c6d-4ba7-85b4-81e889a5ce4c", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010410, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "31d2416a-9d8b-409e-9860-822adc19177f", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Pela_C09_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Pela"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "cd58e42f-7858-460d-9048-0be708311e6b", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "fe9b2970-9573-4dc1-b762-67faaafdf17b", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetCharacterUniqueName" : "Serval", 
+				"TargetCharacterAttachPoint" : "Head", 
+				"KeepTracking" : true, 
+				"Duration" : -1.000000, 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "a930cb9b-8e8e-4d1d-a576-b84f3922886d", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.SwitchCharacterAnchor", 
+				"$guid" : "391556c4-17a7-4e44-b645-8076ced9cc1f", 
+				"TaskEnabled" : true, 
+				"IsLocalPlayer" : false, 
+				"CharacterUniqueName" : "Serval", 
+				"AreaName" : "Story_101020201_01", 
+				"AnchorName" : "Serval05", 
+				"ResetAnimation" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "f5148d2b-7915-4c41-8151-418c67b54b86", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam10", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "3e9610f8-fb30-4a62-bffd-6024902242ee", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "a748eeae-d28e-4ea2-87c6-66b3a6030cb7", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam10b", 
+				"WaitBlendFinish" : false, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "3e9610f8-fb30-4a62-bffd-6024902242ee", 
+					"BlendType" : "EaseIn", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 8.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "56642a2d-c719-473e-9cf1-82a89b19f843", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "eb162449-136e-4bbf-b212-081d7b14d2e8", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010411, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "c467b247-0473-4763-88ed-917f562b679e", 
+				"TaskEnabled" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.CharacterHeadLookAt", 
+				"$guid" : "1cdd4326-f62a-4846-8ebc-fc260ee6c5a0", 
+				"TaskEnabled" : true, 
+				"CharacterUniqueName" : "Pela", 
+				"TargetAreaName" : "Story_101020201_01", 
+				"TargetAnchorName" : "Playerlook10", 
+				"KeepTracking" : true, 
+				"Duration" : 0.010000, 
+				"CurveName" : "TestCurve_B", 
+				"Constraint" : 
+				{
+					"$type" : "RPG.GameCore.CharacterHeadConstraint", 
+					"$guid" : "2d85cebe-a460-46e0-85ba-4b24a292eb2c", 
+					"YawMax" : -1.000000, 
+					"PitchMax" : -1.000000
+				}, 
+				"WaitUntilFinish" : false
+			}, 
+			{
+				"$type" : "RPG.GameCore.ActiveVirtualCamera", 
+				"$guid" : "5da11a18-f583-407d-890a-a63914a164b4", 
+				"TaskEnabled" : true, 
+				"AreaName" : "Story_101020201_01", 
+				"IsActive" : true, 
+				"AnchorName" : "cam11", 
+				"WaitBlendFinish" : true, 
+				"BlendConfig" : 
+				{
+					"$type" : "RPG.GameCore.VCameraBlend", 
+					"$guid" : "a31ec7c4-1523-4837-8eae-ba1d59afb779", 
+					"BlendType" : "Cut", 
+					"UseDefaultBlendCurve" : false, 
+					"BlendTime" : 0.000000, 
+					"FOVSmoothDampTime" : -1.000000, 
+					"FrameBlendSwitch" : false, 
+					"FrameBlendDelay" : 0.000000, 
+					"FrameBlendWeightStart" : 1.000000, 
+					"FrameBlendDuration" : 1.000000
+				}, 
+				"VCameraDitherNPCOn" : false, 
+				"VCameraDitherMaxDistance" : 1.000000, 
+				"VCameraDitherAlphaMin" : 0.000000
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlaySimpleTalk", 
+				"$guid" : "e94f2390-c16c-45a1-abf0-46122366b8b5", 
+				"TaskEnabled" : true, 
+				"SimpleTalkList" : 
+				[
+					{
+						"$type" : "RPG.GameCore.SimpleTalkInfo", 
+						"$guid" : "b183030b-12ae-466f-a53d-cebe29d3e56f", 
+						"TextSpeed" : 20.000000, 
+						"VoiceID" : 101010412, 
+						"ProtectTime" : 1.000000
+					}
+				], 
+				"KeepDisplay" : true
+			}, 
+			{
+				"$type" : "RPG.GameCore.PlayTimeline", 
+				"$guid" : "1f850671-3e5b-4c37-b457-48ba362e060a", 
+				"TaskEnabled" : true, 
+				"TimelineName" : "Story/Mission/1010202/Story_101020201_01_Pela_C10_01.playable", 
+				"Type" : "Emotion", 
+				"Parameters" : 
+				[
+					"Pela"
+				]
+			}, 
+			{
+				"$type" : "RPG.GameCore.WaitSimpleTalkFinish", 
+				"$guid" : "75eaf5ce-9bb8-492b-b32d-f90490f9014d", 
+				"TaskEnabled" : true
+			}
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					-3616, 
+					-656
+				], 
+				"Comment" : "跟随佩拉前往酒店（路过机械屋）", 
+				"Guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-3360, 
+					-640
+				], 
+				"Guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-3136, 
+					-624
+				], 
+				"Guid" : "43408920-951b-4c0d-9945-64c4796464ed", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-2896, 
+					-624
+				], 
+				"Guid" : "c440be57-94c5-4535-93dd-4f234d6452c9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-2640, 
+					-624
+				], 
+				"Guid" : "ecb92562-b519-4ca2-89bb-14912346d944", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-3360, 
+					-480
+				], 
+				"Guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-3136, 
+					-480
+				], 
+				"Guid" : "3e274eec-31e8-4352-9e10-282a946c52af", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-2896, 
+					-480
+				], 
+				"Guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-496, 
+					-272
+				], 
+				"Guid" : "2550cac6-d943-4848-aa73-f079951c8662", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-224, 
+					-272
+				], 
+				"Comment" : "C01", 
+				"Guid" : "3101a9ca-340e-41b5-a9d8-53109c9f73e3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-32, 
+					-752
+				], 
+				"Guid" : "c67f4263-9d13-4ae5-9e1c-eced1dedacbc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					160, 
+					-272
+				], 
+				"Comment" : "C01-PAN", 
+				"Guid" : "d6d07a5f-40d4-4997-9c07-273e19577d7a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					384, 
+					-272
+				], 
+				"Guid" : "218bb630-a05b-49c4-aba8-be023fab6ca9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					608, 
+					-272
+				], 
+				"Guid" : "da9610f1-a18e-43b6-92aa-ffd068a88afd", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					832, 
+					-272
+				], 
+				"Guid" : "ca8878b5-9fdd-4e56-8639-99eb2f632833", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1056, 
+					-272
+				], 
+				"Guid" : "2826ca09-8a51-48d6-b1ba-53bfe876f357", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1296, 
+					-272
+				], 
+				"Guid" : "15e456c2-0000-4e5e-951b-5f4a5abaebb6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1520, 
+					-272
+				], 
+				"Guid" : "12f2fc7f-259f-4cf3-9f05-67fa2cbb99d1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1760, 
+					-272
+				], 
+				"Comment" : "C02", 
+				"Guid" : "c9abc7c6-f1f4-48bf-ad84-3b8067ab11d5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1952, 
+					-768
+				], 
+				"Guid" : "7424ce34-bb51-4729-9c9d-10b2b4c6a57f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2096, 
+					-272
+				], 
+				"Guid" : "43172b30-f268-487f-9247-7b7fb061f396", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2336, 
+					-272
+				], 
+				"Guid" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2608, 
+					-272
+				], 
+				"Guid" : "c9158f17-8c18-4af1-9ece-784604b48428", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2816, 
+					-272
+				], 
+				"Guid" : "1e91b346-e556-4a39-81b8-7aa1867ffd5d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3024, 
+					-272
+				], 
+				"Guid" : "b10edb73-25e8-4ce2-a349-06425c76f3a4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3296, 
+					-272
+				], 
+				"Comment" : "C03", 
+				"Guid" : "0ce2a32b-6ae3-43ff-889f-3e5d984d8c39", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3536, 
+					-272
+				], 
+				"Comment" : "C03跟拍", 
+				"Guid" : "498d5223-5dbe-49a1-8c71-0f3d01b63f84", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-1040, 
+					-144
+				], 
+				"Guid" : "c01a670a-716c-48b9-a396-5357984818fc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-752, 
+					-144
+				], 
+				"Guid" : "60666d52-6ddc-43e2-9195-b3ab9f4effa9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-448, 
+					-144
+				], 
+				"Guid" : "aa18d119-5345-4294-adca-11b23e6a0b3d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-176, 
+					-144
+				], 
+				"Guid" : "860d9cf9-dd91-4538-b1be-56fe0a58bb29", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					96, 
+					-144
+				], 
+				"Guid" : "7e4341f7-f7dd-4f49-bec1-776bb158cb40", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					384, 
+					-144
+				], 
+				"Guid" : "6a12cd32-a347-4357-ada1-e3f38bbb2d62", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					688, 
+					-144
+				], 
+				"Guid" : "6570e97a-f734-44ef-84f8-cdb30a56a217", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					976, 
+					-128
+				], 
+				"Guid" : "297c2dbb-0efd-4edc-ad7d-88346f69e4bb", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1216, 
+					-128
+				], 
+				"Guid" : "b840b942-98ec-492d-87a2-c0306c9c7f16", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1504, 
+					-128
+				], 
+				"Guid" : "725f3f5d-f3a1-43d1-b6bc-6e7fd45143c3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1744, 
+					-128
+				], 
+				"Guid" : "0a9ae921-42ce-433d-8e42-ae8218bace04", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-1072, 
+					96
+				], 
+				"Guid" : "4aa53764-2b1f-454d-81bb-69d051c160b6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-784, 
+					96
+				], 
+				"Guid" : "964185a9-3c66-4c16-9c0b-09156b547597", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-512, 
+					96
+				], 
+				"Guid" : "f2ac6451-a7ce-421c-a198-5c02272c42f9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-256, 
+					96
+				], 
+				"Guid" : "583c495c-1c09-42ec-8159-4f5b72159a27", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					32, 
+					96
+				], 
+				"Guid" : "7c2cec7d-ca6c-4377-b113-6b099aaf92d4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					96
+				], 
+				"Guid" : "6053f377-2770-4b9e-ae96-2b9e32a5ccbc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					96
+				], 
+				"Guid" : "d1cc4555-374d-4740-a6fe-7a2fa4fbac46", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					96
+				], 
+				"Comment" : "C04", 
+				"Guid" : "267af4ad-d698-44eb-813c-20a771f7b1e0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1152, 
+					96
+				], 
+				"Comment" : "C04", 
+				"Guid" : "db39bd14-7735-4752-809f-1f2acd58cdc7", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1424, 
+					96
+				], 
+				"Guid" : "1a7da502-6065-4b40-9b14-bbddc9b71d43", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1744, 
+					96
+				], 
+				"Guid" : "f0f4014d-03dd-4398-9531-82cd72e7c7d5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1920, 
+					432
+				], 
+				"Guid" : "43dae77a-d300-46d4-a857-d317bb107337", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2096, 
+					96
+				], 
+				"Guid" : "e9279f62-c1cd-47e0-95b7-324f987173f5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2400, 
+					96
+				], 
+				"Guid" : "309b8fe8-b093-4906-af69-d3404a624a2e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2688, 
+					96
+				], 
+				"Guid" : "426bb0a6-d45c-4a9d-8e9b-8a7fb9b2e3c2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3008, 
+					96
+				], 
+				"Comment" : "C05", 
+				"Guid" : "c1f97a88-9cfa-43e1-94c6-4237f3a58e83", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3296, 
+					96
+				], 
+				"Guid" : "eaf46930-1862-4dd7-9c45-62361ba7cd0f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3584, 
+					96
+				], 
+				"Guid" : "0256a949-7edf-49f7-9a89-36c53801d86a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3888, 
+					96
+				], 
+				"Comment" : "C06", 
+				"Guid" : "b725b873-9b91-4afe-b5e7-5a2ffb329a42", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4224, 
+					80
+				], 
+				"Guid" : "ef578a81-25f7-4445-9437-159bd34e25fd", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4400, 
+					384
+				], 
+				"Guid" : "0aa9fa0e-70fe-4dae-b461-5174c2c7d032", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4560, 
+					80
+				], 
+				"Guid" : "d2ee2c51-663e-48dd-84ca-ac2773381ee8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-1104, 
+					544
+				], 
+				"Guid" : "88e41d4e-821a-4719-9d3f-82fea957c2e3", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-832, 
+					544
+				], 
+				"Guid" : "33c73f84-e820-4dca-a78e-4a8c8d67d81a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-560, 
+					544
+				], 
+				"Guid" : "709c53b4-b1ae-4337-ae2f-9732a1389462", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-320, 
+					544
+				], 
+				"Guid" : "a36092ab-0c53-47d4-8faf-7ef74c31c9b2", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-48, 
+					544
+				], 
+				"Comment" : "C07", 
+				"Guid" : "f6e928f7-d148-48ac-9a10-b6566b4b7112", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					240, 
+					544
+				], 
+				"Comment" : "C07-PAN", 
+				"Guid" : "8bb74a8c-4721-4686-81e5-3ce99616d987", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					368, 
+					832
+				], 
+				"Guid" : "809e2c63-d6f6-49b8-9e35-e9e98ecce7cf", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					544, 
+					544
+				], 
+				"Guid" : "1ea22ecb-f4c4-47ce-b2e0-ad697e5b4182", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					544
+				], 
+				"Guid" : "2cc1e55b-5bc1-46aa-9400-e085e2f7cc4d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1008, 
+					544
+				], 
+				"Guid" : "0cb34652-5400-48e1-8d10-65027adad6a0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1264, 
+					544
+				], 
+				"Guid" : "c1e62689-53c1-4d93-8978-2d8e8e587e49", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1584, 
+					832
+				], 
+				"Guid" : "6fc0495f-cb70-49e6-ad04-2cbe3e45c8ce", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1728, 
+					560
+				], 
+				"Guid" : "76b634ea-c859-4076-8628-ea0c23c453e7", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2000, 
+					560
+				], 
+				"Guid" : "d23455af-7f28-49ea-b49d-04979349788e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2496, 
+					560
+				], 
+				"Guid" : "ad963ab1-b01f-4857-89df-7501b1537d2a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2720, 
+					560
+				], 
+				"Guid" : "80b920bc-8f97-4872-a9ef-4f75dbe02a69", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2960, 
+					560
+				], 
+				"Guid" : "11b3a569-b7be-4d97-9cd0-e5d4d9badde6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3232, 
+					560
+				], 
+				"Guid" : "45d12cc4-7bd0-4bd5-b984-39cad34c4531", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3504, 
+					560
+				], 
+				"Comment" : "C08", 
+				"Guid" : "63a868a2-e081-4568-85b7-936b05c0d897", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3744, 
+					560
+				], 
+				"Comment" : "C08", 
+				"Guid" : "3e2d79ce-df1a-4795-8fd4-16df6f053380", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3920, 
+					896
+				], 
+				"Guid" : "f6d880f4-0234-41db-b62f-4d3f12c7facf", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4096, 
+					560
+				], 
+				"Guid" : "bb8caa9e-3389-4b4c-ae22-660272672f41", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4320, 
+					560
+				], 
+				"Guid" : "ceeec3ab-e776-4a6a-a992-18bb5aa0847f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4624, 
+					592
+				], 
+				"Guid" : "d218c8e1-431f-410f-bb39-31ddaef142a4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4928, 
+					592
+				], 
+				"Guid" : "c92c77ed-cd0b-4271-be07-08707a2f4a08", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					5200, 
+					592
+				], 
+				"Guid" : "5140c331-0a73-4b5e-8ae7-4b6162fdde6c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					5472, 
+					608
+				], 
+				"Guid" : "34c7fb8b-2d45-4d0d-b155-27d2fcd103dd", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-160, 
+					1456
+				], 
+				"Comment" : "C09", 
+				"Guid" : "b34071a4-9999-41de-a829-ab54a42a13f9", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					240, 
+					1456
+				], 
+				"Guid" : "37491d0e-37d0-475a-96c9-270d4b31ba20", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					496, 
+					1136
+				], 
+				"Guid" : "31d2416a-9d8b-409e-9860-822adc19177f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					736, 
+					1456
+				], 
+				"Guid" : "cd58e42f-7858-460d-9048-0be708311e6b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1120, 
+					1456
+				], 
+				"Guid" : "fe9b2970-9573-4dc1-b762-67faaafdf17b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1408, 
+					1456
+				], 
+				"Guid" : "391556c4-17a7-4e44-b645-8076ced9cc1f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1696, 
+					1456
+				], 
+				"Comment" : "C09", 
+				"Guid" : "f5148d2b-7915-4c41-8151-418c67b54b86", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1968, 
+					1456
+				], 
+				"Comment" : "C09", 
+				"Guid" : "a748eeae-d28e-4ea2-87c6-66b3a6030cb7", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2272, 
+					1456
+				], 
+				"Guid" : "56642a2d-c719-473e-9cf1-82a89b19f843", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					2576, 
+					1456
+				], 
+				"Guid" : "c467b247-0473-4763-88ed-917f562b679e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3280, 
+					1456
+				], 
+				"Guid" : "1cdd4326-f62a-4846-8ebc-fc260ee6c5a0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3552, 
+					1456
+				], 
+				"Comment" : "C10", 
+				"Guid" : "5da11a18-f583-407d-890a-a63914a164b4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					3824, 
+					1456
+				], 
+				"Guid" : "e94f2390-c16c-45a1-abf0-46122366b8b5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4000, 
+					1216
+				], 
+				"Guid" : "1f850671-3e5b-4c37-b457-48ba362e060a", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					4208, 
+					1456
+				], 
+				"Guid" : "75eaf5ce-9bb8-492b-b32d-f90490f9014d", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+			{
+				"From" : 
+				{
+					"Node" : "2550cac6-d943-4848-aa73-f079951c8662", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "3101a9ca-340e-41b5-a9d8-53109c9f73e3", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "3101a9ca-340e-41b5-a9d8-53109c9f73e3", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c67f4263-9d13-4ae5-9e1c-eced1dedacbc", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c67f4263-9d13-4ae5-9e1c-eced1dedacbc", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "d6d07a5f-40d4-4997-9c07-273e19577d7a", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "d6d07a5f-40d4-4997-9c07-273e19577d7a", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "218bb630-a05b-49c4-aba8-be023fab6ca9", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "218bb630-a05b-49c4-aba8-be023fab6ca9", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "da9610f1-a18e-43b6-92aa-ffd068a88afd", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "da9610f1-a18e-43b6-92aa-ffd068a88afd", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "ca8878b5-9fdd-4e56-8639-99eb2f632833", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "ca8878b5-9fdd-4e56-8639-99eb2f632833", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "2826ca09-8a51-48d6-b1ba-53bfe876f357", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "2826ca09-8a51-48d6-b1ba-53bfe876f357", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "15e456c2-0000-4e5e-951b-5f4a5abaebb6", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "15e456c2-0000-4e5e-951b-5f4a5abaebb6", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "12f2fc7f-259f-4cf3-9f05-67fa2cbb99d1", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "12f2fc7f-259f-4cf3-9f05-67fa2cbb99d1", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c9abc7c6-f1f4-48bf-ad84-3b8067ab11d5", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c9abc7c6-f1f4-48bf-ad84-3b8067ab11d5", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "7424ce34-bb51-4729-9c9d-10b2b4c6a57f", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "7424ce34-bb51-4729-9c9d-10b2b4c6a57f", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "43172b30-f268-487f-9247-7b7fb061f396", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "43172b30-f268-487f-9247-7b7fb061f396", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "613874a5-01f8-4bf0-8e28-6ddbad746a0a", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c9158f17-8c18-4af1-9ece-784604b48428", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c9158f17-8c18-4af1-9ece-784604b48428", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "1e91b346-e556-4a39-81b8-7aa1867ffd5d", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "1e91b346-e556-4a39-81b8-7aa1867ffd5d", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "b10edb73-25e8-4ce2-a349-06425c76f3a4", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "b10edb73-25e8-4ce2-a349-06425c76f3a4", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "0ce2a32b-6ae3-43ff-889f-3e5d984d8c39", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "0ce2a32b-6ae3-43ff-889f-3e5d984d8c39", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "498d5223-5dbe-49a1-8c71-0f3d01b63f84", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "498d5223-5dbe-49a1-8c71-0f3d01b63f84", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c01a670a-716c-48b9-a396-5357984818fc", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c01a670a-716c-48b9-a396-5357984818fc", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "60666d52-6ddc-43e2-9195-b3ab9f4effa9", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "60666d52-6ddc-43e2-9195-b3ab9f4effa9", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "aa18d119-5345-4294-adca-11b23e6a0b3d", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "aa18d119-5345-4294-adca-11b23e6a0b3d", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "860d9cf9-dd91-4538-b1be-56fe0a58bb29", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "860d9cf9-dd91-4538-b1be-56fe0a58bb29", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "7e4341f7-f7dd-4f49-bec1-776bb158cb40", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "7e4341f7-f7dd-4f49-bec1-776bb158cb40", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "6a12cd32-a347-4357-ada1-e3f38bbb2d62", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "6a12cd32-a347-4357-ada1-e3f38bbb2d62", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "6570e97a-f734-44ef-84f8-cdb30a56a217", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "6570e97a-f734-44ef-84f8-cdb30a56a217", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "297c2dbb-0efd-4edc-ad7d-88346f69e4bb", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "297c2dbb-0efd-4edc-ad7d-88346f69e4bb", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "b840b942-98ec-492d-87a2-c0306c9c7f16", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "b840b942-98ec-492d-87a2-c0306c9c7f16", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "725f3f5d-f3a1-43d1-b6bc-6e7fd45143c3", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "725f3f5d-f3a1-43d1-b6bc-6e7fd45143c3", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "0a9ae921-42ce-433d-8e42-ae8218bace04", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "0a9ae921-42ce-433d-8e42-ae8218bace04", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "4aa53764-2b1f-454d-81bb-69d051c160b6", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "4aa53764-2b1f-454d-81bb-69d051c160b6", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "964185a9-3c66-4c16-9c0b-09156b547597", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "964185a9-3c66-4c16-9c0b-09156b547597", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "f2ac6451-a7ce-421c-a198-5c02272c42f9", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "f2ac6451-a7ce-421c-a198-5c02272c42f9", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "583c495c-1c09-42ec-8159-4f5b72159a27", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "583c495c-1c09-42ec-8159-4f5b72159a27", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "7c2cec7d-ca6c-4377-b113-6b099aaf92d4", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "7c2cec7d-ca6c-4377-b113-6b099aaf92d4", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "6053f377-2770-4b9e-ae96-2b9e32a5ccbc", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "6053f377-2770-4b9e-ae96-2b9e32a5ccbc", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "d1cc4555-374d-4740-a6fe-7a2fa4fbac46", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "d1cc4555-374d-4740-a6fe-7a2fa4fbac46", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "267af4ad-d698-44eb-813c-20a771f7b1e0", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "267af4ad-d698-44eb-813c-20a771f7b1e0", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "db39bd14-7735-4752-809f-1f2acd58cdc7", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "db39bd14-7735-4752-809f-1f2acd58cdc7", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "1a7da502-6065-4b40-9b14-bbddc9b71d43", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "1a7da502-6065-4b40-9b14-bbddc9b71d43", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "f0f4014d-03dd-4398-9531-82cd72e7c7d5", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "f0f4014d-03dd-4398-9531-82cd72e7c7d5", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "43dae77a-d300-46d4-a857-d317bb107337", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "43dae77a-d300-46d4-a857-d317bb107337", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "e9279f62-c1cd-47e0-95b7-324f987173f5", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "e9279f62-c1cd-47e0-95b7-324f987173f5", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "309b8fe8-b093-4906-af69-d3404a624a2e", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "309b8fe8-b093-4906-af69-d3404a624a2e", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "426bb0a6-d45c-4a9d-8e9b-8a7fb9b2e3c2", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "426bb0a6-d45c-4a9d-8e9b-8a7fb9b2e3c2", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c1f97a88-9cfa-43e1-94c6-4237f3a58e83", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c1f97a88-9cfa-43e1-94c6-4237f3a58e83", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "eaf46930-1862-4dd7-9c45-62361ba7cd0f", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "eaf46930-1862-4dd7-9c45-62361ba7cd0f", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "0256a949-7edf-49f7-9a89-36c53801d86a", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "0256a949-7edf-49f7-9a89-36c53801d86a", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "b725b873-9b91-4afe-b5e7-5a2ffb329a42", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "b725b873-9b91-4afe-b5e7-5a2ffb329a42", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "ef578a81-25f7-4445-9437-159bd34e25fd", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "ef578a81-25f7-4445-9437-159bd34e25fd", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "0aa9fa0e-70fe-4dae-b461-5174c2c7d032", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "0aa9fa0e-70fe-4dae-b461-5174c2c7d032", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "d2ee2c51-663e-48dd-84ca-ac2773381ee8", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "d2ee2c51-663e-48dd-84ca-ac2773381ee8", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "88e41d4e-821a-4719-9d3f-82fea957c2e3", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "88e41d4e-821a-4719-9d3f-82fea957c2e3", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "33c73f84-e820-4dca-a78e-4a8c8d67d81a", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "33c73f84-e820-4dca-a78e-4a8c8d67d81a", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "709c53b4-b1ae-4337-ae2f-9732a1389462", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "709c53b4-b1ae-4337-ae2f-9732a1389462", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "a36092ab-0c53-47d4-8faf-7ef74c31c9b2", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "a36092ab-0c53-47d4-8faf-7ef74c31c9b2", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "f6e928f7-d148-48ac-9a10-b6566b4b7112", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "f6e928f7-d148-48ac-9a10-b6566b4b7112", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "8bb74a8c-4721-4686-81e5-3ce99616d987", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "8bb74a8c-4721-4686-81e5-3ce99616d987", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "809e2c63-d6f6-49b8-9e35-e9e98ecce7cf", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "809e2c63-d6f6-49b8-9e35-e9e98ecce7cf", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "1ea22ecb-f4c4-47ce-b2e0-ad697e5b4182", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "1ea22ecb-f4c4-47ce-b2e0-ad697e5b4182", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "2cc1e55b-5bc1-46aa-9400-e085e2f7cc4d", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "2cc1e55b-5bc1-46aa-9400-e085e2f7cc4d", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "0cb34652-5400-48e1-8d10-65027adad6a0", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "0cb34652-5400-48e1-8d10-65027adad6a0", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c1e62689-53c1-4d93-8978-2d8e8e587e49", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c1e62689-53c1-4d93-8978-2d8e8e587e49", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "6fc0495f-cb70-49e6-ad04-2cbe3e45c8ce", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "6fc0495f-cb70-49e6-ad04-2cbe3e45c8ce", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "76b634ea-c859-4076-8628-ea0c23c453e7", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "76b634ea-c859-4076-8628-ea0c23c453e7", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "d23455af-7f28-49ea-b49d-04979349788e", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "d23455af-7f28-49ea-b49d-04979349788e", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "ad963ab1-b01f-4857-89df-7501b1537d2a", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "ad963ab1-b01f-4857-89df-7501b1537d2a", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "80b920bc-8f97-4872-a9ef-4f75dbe02a69", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "80b920bc-8f97-4872-a9ef-4f75dbe02a69", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "11b3a569-b7be-4d97-9cd0-e5d4d9badde6", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "11b3a569-b7be-4d97-9cd0-e5d4d9badde6", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "45d12cc4-7bd0-4bd5-b984-39cad34c4531", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "45d12cc4-7bd0-4bd5-b984-39cad34c4531", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "63a868a2-e081-4568-85b7-936b05c0d897", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "63a868a2-e081-4568-85b7-936b05c0d897", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "3e2d79ce-df1a-4795-8fd4-16df6f053380", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "3e2d79ce-df1a-4795-8fd4-16df6f053380", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "f6d880f4-0234-41db-b62f-4d3f12c7facf", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "f6d880f4-0234-41db-b62f-4d3f12c7facf", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "bb8caa9e-3389-4b4c-ae22-660272672f41", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "bb8caa9e-3389-4b4c-ae22-660272672f41", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "ceeec3ab-e776-4a6a-a992-18bb5aa0847f", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "ceeec3ab-e776-4a6a-a992-18bb5aa0847f", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "d218c8e1-431f-410f-bb39-31ddaef142a4", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "d218c8e1-431f-410f-bb39-31ddaef142a4", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c92c77ed-cd0b-4271-be07-08707a2f4a08", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c92c77ed-cd0b-4271-be07-08707a2f4a08", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "5140c331-0a73-4b5e-8ae7-4b6162fdde6c", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "5140c331-0a73-4b5e-8ae7-4b6162fdde6c", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "34c7fb8b-2d45-4d0d-b155-27d2fcd103dd", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "34c7fb8b-2d45-4d0d-b155-27d2fcd103dd", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "b34071a4-9999-41de-a829-ab54a42a13f9", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "b34071a4-9999-41de-a829-ab54a42a13f9", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "37491d0e-37d0-475a-96c9-270d4b31ba20", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "37491d0e-37d0-475a-96c9-270d4b31ba20", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "31d2416a-9d8b-409e-9860-822adc19177f", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "31d2416a-9d8b-409e-9860-822adc19177f", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "cd58e42f-7858-460d-9048-0be708311e6b", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "cd58e42f-7858-460d-9048-0be708311e6b", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "fe9b2970-9573-4dc1-b762-67faaafdf17b", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "fe9b2970-9573-4dc1-b762-67faaafdf17b", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "391556c4-17a7-4e44-b645-8076ced9cc1f", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "391556c4-17a7-4e44-b645-8076ced9cc1f", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "f5148d2b-7915-4c41-8151-418c67b54b86", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "f5148d2b-7915-4c41-8151-418c67b54b86", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "a748eeae-d28e-4ea2-87c6-66b3a6030cb7", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "a748eeae-d28e-4ea2-87c6-66b3a6030cb7", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "56642a2d-c719-473e-9cf1-82a89b19f843", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "56642a2d-c719-473e-9cf1-82a89b19f843", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "c467b247-0473-4763-88ed-917f562b679e", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "c467b247-0473-4763-88ed-917f562b679e", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "1cdd4326-f62a-4846-8ebc-fc260ee6c5a0", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "1cdd4326-f62a-4846-8ebc-fc260ee6c5a0", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "5da11a18-f583-407d-890a-a63914a164b4", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "5da11a18-f583-407d-890a-a63914a164b4", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "e94f2390-c16c-45a1-abf0-46122366b8b5", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "e94f2390-c16c-45a1-abf0-46122366b8b5", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "1f850671-3e5b-4c37-b457-48ba362e060a", 
+					"Port" : "<-"
+				}
+			}, 
+			{
+				"From" : 
+				{
+					"Node" : "1f850671-3e5b-4c37-b457-48ba362e060a", 
+					"Port" : "->"
+				}, 
+				"To" : 
+				{
+					"Node" : "75eaf5ce-9bb8-492b-b32d-f90490f9014d", 
+					"Port" : "<-"
+				}
+			}
+		], 
+		"SerializeVersion" : 1
+	}
+}

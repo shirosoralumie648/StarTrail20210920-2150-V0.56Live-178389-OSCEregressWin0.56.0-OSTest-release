@@ -1,0 +1,170 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 162
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 29
+  },
+  "m_Name": "",
+  "IsSkipInit": 0,
+  "IsTaskSyncShadowAndSceneLight": 0,
+  "MainLightBoolBitSwitch": 0,
+  "MainLightRotateOffset": {
+    "x": 20.0,
+    "y": -70.0,
+    "z": 0.0
+  },
+  "TaskSetMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "TimelineKMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "UIainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "DebugMode": 0,
+  "UseLevelMainLightRoateOffset": 0,
+  "MainLightLevelRoateOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "BakedRenderers": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 693
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 775
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 746
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 731
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 826
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 691
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 702
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 681
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 708
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 680
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 713
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 706
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 707
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 827
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 823
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 674
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 820
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 704
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 705
+    }
+  ],
+  "BakedReflectionProbes": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  ],
+  "CurrentSceneProfilePath": "Assets/Scene/Stage/AdventureStage/Chapter01/Area_Square/EnviroProfile/Area_Square_Midday.enviroProfile.asset",
+  "CurrentProfileName": "",
+  "StartGlobalMainIntensity": 0,
+  "TargetGolbalMainIntensity": 0.0,
+  "GlobalMainIntensityFadeDuration": 1.0,
+  "_ActiveProfile": {
+    "m_FileID": 0,
+    "m_PathID": 1024
+  },
+  "m_GpuParticleCS": {
+    "m_FileID": 24,
+    "m_PathID": 2731057353111280147
+  },
+  "m_GpuParticleMesh": {
+    "m_FileID": 87,
+    "m_PathID": 3149433574678638613
+  },
+  "m_QuadMesh": {
+    "m_FileID": 55,
+    "m_PathID": 10210
+  }
+}

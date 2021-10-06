@@ -1,0 +1,303 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "6e77d511-b5d5-48c1-82b4-7ba0feb3e5f5", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "69c1f5b4-0533-4840-84c5-31411253751b", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "91a2a485-6bfe-4719-a2e7-13adb9d151c7", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010303/Story_1010303011.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "ab2a9f74-8151-45c7-8c90-ba5b9df24ae1", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : false
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "f49eab54-b5b5-4373-936f-f865409a52d5", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Gepard", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Gepard_00", 
+							"AreaName" : "Story_1010303011", 
+							"AnchorName" : "StartAnchor"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "381ba89e-562f-4c22-89d8-ff1f7403da29", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Natasha", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Natasha_00", 
+							"AreaName" : "Story_1010303011", 
+							"AnchorName" : "StartAnchor"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.SetStageItemState", 
+					"$guid" : "0af26614-b9c2-4e24-ab61-c2272176a89c", 
+					"TaskEnabled" : true, 
+					"ItemList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.StageItemAlias", 
+							"$guid" : "e67e5f87-8628-46e7-b6c3-9fd5390772cc", 
+							"BlockAlias" : "Chap00_CloseView_INT_Train_01", 
+							"PrefabAlias" : "Chap00_Prop_Chair_02__7_"
+						}
+					], 
+					"EnableState" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterTriggerAnimState", 
+					"$guid" : "fd3342d7-e65e-4f19-b4a7-ec5968459089", 
+					"TaskEnabled" : false, 
+					"CharType" : "None", 
+					"CharacterUniqueName" : "Natasha", 
+					"ChangeAnimatorCatgory" : true, 
+					"Catgory" : "Performance", 
+					"AutoExitToDefault" : false, 
+					"UseMotionID" : false, 
+					"StoryAvatarID" : "Seele_00", 
+					"StartMotion" : "Chat01BS", 
+					"NormalizedTimeStart" : 0.000000, 
+					"NormalizedTransitionDuration" : 0.250000, 
+					"NormalizedTimeWait" : 0.000000, 
+					"StoryMotionID" : 1102005
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "1cb0c7d0-cb95-40f9-84a2-293cf676d61b", 
+					"TaskEnabled" : false, 
+					"WaitTime" : 2.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.CharacterTriggerAnimState", 
+					"$guid" : "f7635e2a-f7ca-4b6b-90c9-58ec6d0268ff", 
+					"TaskEnabled" : false, 
+					"CharType" : "None", 
+					"CharacterUniqueName" : "Natasha", 
+					"ChangeAnimatorCatgory" : true, 
+					"Catgory" : "Performance", 
+					"AutoExitToDefault" : false, 
+					"UseMotionID" : false, 
+					"StoryAvatarID" : "Seele_00", 
+					"StartMotion" : "Akimbo01BS", 
+					"NormalizedTimeStart" : 0.000000, 
+					"NormalizedTransitionDuration" : 0.250000, 
+					"NormalizedTimeWait" : 0.000000, 
+					"StoryMotionID" : 1102011
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "d7505a04-d387-45f3-af19-7b7c2ec8aca8", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 2.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableAutoBlink", 
+					"$guid" : "baec2170-e972-438b-8e81-82f32e465d66", 
+					"TaskEnabled" : false, 
+					"CharacterUniqueName" : "Natasha", 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "75aa7a79-883b-449a-b9ac-89f5c79d5dca", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010303/Story_10103030111.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitSecond", 
+					"$guid" : "55b388bc-738b-4037-871b-032edc649f9d", 
+					"TaskEnabled" : true, 
+					"WaitTime" : 2.000000
+				}, 
+				{
+					"$type" : "RPG.GameCore.SetStageItemState", 
+					"$guid" : "8dde4db1-91e0-45c7-aa80-bcb72b1c3a3b", 
+					"TaskEnabled" : true, 
+					"ItemList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.StageItemAlias", 
+							"$guid" : "e67e5f87-8628-46e7-b6c3-9fd5390772cc", 
+							"BlockAlias" : "Chap00_CloseView_INT_Train_01", 
+							"PrefabAlias" : "Chap00_Prop_Chair_02__7_"
+						}
+					], 
+					"EnableState" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "08767870-331a-4330-8ca2-10199a1b7337", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "功能测试用json - 高珊", 
+				"Guid" : "6e77d511-b5d5-48c1-82b4-7ba0feb3e5f5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					256, 
+					0
+				], 
+				"Guid" : "69c1f5b4-0533-4840-84c5-31411253751b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					-160
+				], 
+				"Guid" : "91a2a485-6bfe-4719-a2e7-13adb9d151c7", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					800, 
+					-160
+				], 
+				"Guid" : "0af26614-b9c2-4e24-ab61-c2272176a89c", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					0
+				], 
+				"Comment" : "freestyle状态机测试", 
+				"Guid" : "fd3342d7-e65e-4f19-b4a7-ec5968459089", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1024, 
+					0
+				], 
+				"Guid" : "1cb0c7d0-cb95-40f9-84a2-293cf676d61b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1280, 
+					0
+				], 
+				"Guid" : "f7635e2a-f7ca-4b6b-90c9-58ec6d0268ff", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1536, 
+					0
+				], 
+				"Guid" : "d7505a04-d387-45f3-af19-7b7c2ec8aca8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					256
+				], 
+				"Comment" : "AutoBlink测试", 
+				"Guid" : "baec2170-e972-438b-8e81-82f32e465d66", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					768, 
+					448
+				], 
+				"Comment" : "C类timeline测试", 
+				"Guid" : "75aa7a79-883b-449a-b9ac-89f5c79d5dca", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1040, 
+					448
+				], 
+				"Guid" : "8dde4db1-91e0-45c7-aa80-bcb72b1c3a3b", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1280, 
+					448
+				], 
+				"Guid" : "08767870-331a-4330-8ca2-10199a1b7337", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1033.417, 
+					378.6728
+				], 
+				"Guid" : "55b388bc-738b-4037-871b-032edc649f9d", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

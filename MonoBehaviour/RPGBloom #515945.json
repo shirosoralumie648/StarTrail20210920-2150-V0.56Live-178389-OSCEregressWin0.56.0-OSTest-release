@@ -1,0 +1,73 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 32
+  },
+  "m_Name": "RPGBloom",
+  "active": 1,
+  "m_AdvancedMode": 0,
+  "BloomQualityParam": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  },
+  "BloomThreshold": {
+    "m_OverrideState": 1,
+    "m_Value": 0.75
+  },
+  "BloomIntensity": {
+    "m_OverrideState": 1,
+    "m_Value": 0.675
+  },
+  "AllBloomStageParam": {
+    "m_OverrideState": 1,
+    "m_Value": {
+      "Stages": [
+        {
+          "RenderTargetDivision": 4,
+          "KernelSize": 5,
+          "KernelSigma": 2.0,
+          "LayerIntensity": 1.0
+        },
+        {
+          "RenderTargetDivision": 8,
+          "KernelSize": 5,
+          "KernelSigma": 2.0,
+          "LayerIntensity": 1.0
+        },
+        {
+          "RenderTargetDivision": 16,
+          "KernelSize": 7,
+          "KernelSigma": 2.5,
+          "LayerIntensity": 1.0
+        },
+        {
+          "RenderTargetDivision": 32,
+          "KernelSize": 15,
+          "KernelSigma": 4.5,
+          "LayerIntensity": 1.0
+        }
+      ]
+    }
+  },
+  "BloomR": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "BloomG": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "BloomB": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "DebugMode": {
+    "m_OverrideState": 0,
+    "m_Value": 0
+  }
+}

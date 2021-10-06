@@ -1,0 +1,90 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 31
+  },
+  "m_Name": "RPGTonemapping",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "Tonemapping": {
+    "m_OverrideState": 1,
+    "m_Value": 2
+  },
+  "BlueCorrection": {
+    "m_OverrideState": 0,
+    "m_Value": 0.6
+  },
+  "ExpandGamut": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "Slope": {
+    "m_OverrideState": 0,
+    "m_Value": 0.88
+  },
+  "Toe": {
+    "m_OverrideState": 0,
+    "m_Value": 0.55
+  },
+  "Shoulder": {
+    "m_OverrideState": 0,
+    "m_Value": 0.26
+  },
+  "BlackClip": {
+    "m_OverrideState": 0,
+    "m_Value": 0.0
+  },
+  "WhiteClip": {
+    "m_OverrideState": 0,
+    "m_Value": 0.04
+  },
+  "ToneCurveToeStrength": {
+    "m_OverrideState": 1,
+    "m_Value": 0.415
+  },
+  "ToneCurveToeLength": {
+    "m_OverrideState": 1,
+    "m_Value": 0.614
+  },
+  "ToneCurveShoulderStrength": {
+    "m_OverrideState": 1,
+    "m_Value": 0.0
+  },
+  "ToneCurveShoulderLength": {
+    "m_OverrideState": 0,
+    "m_Value": 1.0
+  },
+  "ToneCurveShoulderAngle": {
+    "m_OverrideState": 0,
+    "m_Value": 0.1
+  },
+  "ToneCurveGamma": {
+    "m_OverrideState": 1,
+    "m_Value": 1.0
+  },
+  "ACES_A": {
+    "m_OverrideState": 0,
+    "m_Value": 2.785085
+  },
+  "ACES_B": {
+    "m_OverrideState": 0,
+    "m_Value": 0.107772
+  },
+  "ACES_C": {
+    "m_OverrideState": 0,
+    "m_Value": 2.936045
+  },
+  "ACES_D": {
+    "m_OverrideState": 0,
+    "m_Value": 0.887122
+  },
+  "ACES_E": {
+    "m_OverrideState": 0,
+    "m_Value": 0.806889
+  }
+}

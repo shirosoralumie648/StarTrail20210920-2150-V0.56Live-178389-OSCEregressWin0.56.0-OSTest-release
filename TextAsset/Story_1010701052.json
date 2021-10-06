@@ -1,0 +1,214 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "3508ce0c-11c4-47a1-bbb7-60cbe05fec6e", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "58a63ae2-1f05-45a2-83d2-bd3826d7840e", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "cc1e28d0-0c96-4f2c-95a9-240a3acad367", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010701/Story_1010701052.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "e5e23b04-c3a6-404f-9341-01b3da505bbd", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Seele", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Seele_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "9bf94081-a32d-43b1-8dfa-2ea9330f3eea", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Natasha", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Natasha_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "86a40442-220a-47ee-90d8-c14844b6a98c", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Sampo", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Sampo_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "1a8a4d02-a3ae-45a2-8797-31a8cccf5cf7", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "6e5479fa-5ea8-433e-9f6f-72c1a474d2d7", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Default", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "e494ed8a-0a3b-4617-bd5d-0043a4642243", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "PlayerBoy", 
+							"Catgory" : "Default", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "120b873d-083a-4fbf-b009-02813696e28b", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "6909c528-3c24-4c5a-8922-6b0a3cc6ece6", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Svarog", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Svarog_00", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC伊雷恩", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Lady_13", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC约书亚", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Male_12", 
+							"AreaName" : "Story_1010701052"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC约书亚马克西姆", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Male_10"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "NPC矿灯巴列维", 
+							"Catgory" : "Default", 
+							"AvatarID" : "NPC_W1_Male_09", 
+							"AreaName" : "Story_1010701052"
+						}
+					], 
+					"CloseFootIK" : false, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : false, 
+					"HideEffect" : true, 
+					"HideProp" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "27673e23-cc76-40c4-96a6-bfa56963cde6", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010701/Story_101070105201.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "d0a3d3fc-800c-4fe8-9dc6-4df1c5f89aeb", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					-272, 
+					-48
+				], 
+				"Comment" : "娜塔莎登场", 
+				"Guid" : "3508ce0c-11c4-47a1-bbb7-60cbe05fec6e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					160, 
+					-32
+				], 
+				"Guid" : "58a63ae2-1f05-45a2-83d2-bd3826d7840e", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					400, 
+					-16
+				], 
+				"Guid" : "cc1e28d0-0c96-4f2c-95a9-240a3acad367", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					640, 
+					-16
+				], 
+				"Guid" : "27673e23-cc76-40c4-96a6-bfa56963cde6", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					944, 
+					16
+				], 
+				"Guid" : "d0a3d3fc-800c-4fe8-9dc6-4df1c5f89aeb", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

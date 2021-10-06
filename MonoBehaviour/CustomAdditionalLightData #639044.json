@@ -1,0 +1,49 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 131
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 10
+  },
+  "m_Name": "",
+  "customLightType": 0,
+  "customLightFlag": 1,
+  "localMainLerpPercentage": 0.75,
+  "localMainShadowMode": 1,
+  "objectShadowStrength": 0.75,
+  "objectShadowFade": 0.65,
+  "objectShadowRange": 128.0,
+  "StencilDelegates": [],
+  "sourceRadius": 0.0,
+  "softSourceRadius": 0.0,
+  "legecyFalloff": 1,
+  "falloffExp": 2.0,
+  "useShadowForLighting": 0,
+  "usePerObjectShadow": 0,
+  "shadowLightingFactor": 1.0,
+  "ShadowStrength": 0.0,
+  "useDirectionalAttenuation": 0,
+  "DirectionalBS": {
+    "x": 0.0,
+    "y": 1.0
+  },
+  "CharacterLightFix": {
+    "x": 0.0,
+    "y": 0.0
+  },
+  "SceneLightFix": {
+    "x": 1.0,
+    "y": 1.0
+  },
+  "ColorCookie": 0,
+  "SpotLightScale": 10.0,
+  "CookieAtten": 0.5,
+  "LodRangeScale": 0.5,
+  "flag": {
+    "_Flag": 16
+  },
+  "_UsePipelineSettings": 0
+}

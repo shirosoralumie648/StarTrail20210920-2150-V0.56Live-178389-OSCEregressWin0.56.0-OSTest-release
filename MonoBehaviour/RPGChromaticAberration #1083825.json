@@ -1,0 +1,27 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 16
+  },
+  "m_Name": "RPGChromaticAberration",
+  "active": 0,
+  "m_AdvancedMode": 0,
+  "spectralLut": {
+    "m_OverrideState": 0,
+    "m_Value": {
+      "m_FileID": 0,
+      "m_PathID": 0
+    }
+  },
+  "intensity": {
+    "m_OverrideState": 0,
+    "m_Value": 0.365,
+    "min": 0.0,
+    "max": 1.0
+  }
+}

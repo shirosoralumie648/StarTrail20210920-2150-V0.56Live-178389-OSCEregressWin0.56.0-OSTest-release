@@ -1,0 +1,194 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "b459c859-8dfb-4b83-a0a1-faa087273795", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "cf1815ba-c999-490d-8fde-3406c7624cd0", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "0107e6e5-ce56-4447-9844-d4d1b757a646", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010101/Story_1010101011.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "e66e2d73-c404-4205-ad70-1746cbca8d20", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "dfba4382-f9d6-420e-bd1d-640e68c270b7", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "7thMarch", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "Mar_7th_00", 
+							"AreaName" : "Story_1010101011", 
+							"AnchorName" : "7thMarch01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "f10fc598-05d5-45d0-8e3d-2bdf4291c7db", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Player", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "PlayerBoy_00", 
+							"AreaName" : "Story_1010101011", 
+							"AnchorName" : "Player01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "6babdf29-a0b9-421b-9404-3e131277c04c", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "DanHeng", 
+							"Catgory" : "Performance", 
+							"AvatarID" : "DanHeng_00", 
+							"AreaName" : "Story_1010101011", 
+							"AnchorName" : "DanHeng01"
+						}
+					], 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "6664296c-29b3-4ab9-8a18-0441817d5173", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010101/Story_101010101101.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "e151b02d-a711-441f-a8da-01657292a1dc", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "f72e6a42-cb9b-401a-bf19-8c19556bcf02", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "79f9f5f4-2ff2-4084-83d0-a15a2e883ca5", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "b13c3248-aeba-401d-bb9b-cb8dced11db9", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					0, 
+					0
+				], 
+				"Comment" : "抵达地面", 
+				"Guid" : "b459c859-8dfb-4b83-a0a1-faa087273795", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					304, 
+					0
+				], 
+				"Guid" : "cf1815ba-c999-490d-8fde-3406c7624cd0", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					592, 
+					0
+				], 
+				"Guid" : "0107e6e5-ce56-4447-9844-d4d1b757a646", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					864, 
+					32
+				], 
+				"Guid" : "6664296c-29b3-4ab9-8a18-0441817d5173", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					1152, 
+					96
+				], 
+				"Guid" : "e151b02d-a711-441f-a8da-01657292a1dc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					288, 
+					160
+				], 
+				"Guid" : "f72e6a42-cb9b-401a-bf19-8c19556bcf02", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					608, 
+					224
+				], 
+				"Guid" : "79f9f5f4-2ff2-4084-83d0-a15a2e883ca5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					880, 
+					256
+				], 
+				"Guid" : "b13c3248-aeba-401d-bb9b-cb8dced11db9", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}

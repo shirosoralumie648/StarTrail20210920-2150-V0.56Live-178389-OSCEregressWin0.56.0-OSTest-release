@@ -1,0 +1,14 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 331
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 31
+  },
+  "m_Name": "",
+  "SnowTexPath": "Stages/OriginalResPos/Chapter01/_dependencies/Texture/Chap01_CloseView_MAZ_M01_MazeLink01_Chap01_Maze_L01_Ground_Arch_Mask_Tex",
+  "UseHeightBlend": 0
+}

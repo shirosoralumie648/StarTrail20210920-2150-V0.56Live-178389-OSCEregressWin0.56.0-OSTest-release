@@ -1,0 +1,394 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 245
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 28
+  },
+  "m_Name": "",
+  "IsSkipInit": 0,
+  "IsTaskSyncShadowAndSceneLight": 0,
+  "MainLightBoolBitSwitch": 0,
+  "MainLightRotateOffset": {
+    "x": 20.0,
+    "y": -70.0,
+    "z": 0.0
+  },
+  "TaskSetMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "TimelineKMainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "UIainLightDirVal": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0,
+    "w": 0.0
+  },
+  "DebugMode": 0,
+  "UseLevelMainLightRoateOffset": 0,
+  "MainLightLevelRoateOffset": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "BakedRenderers": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 5503
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4985
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5267
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5250
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5357
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4986
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5125
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5156
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5071
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5060
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5481
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4899
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4930
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4821
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4820
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4819
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4818
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4817
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4816
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4815
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4965
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4814
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4813
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4812
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4811
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4810
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4809
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5377
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4808
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4807
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4806
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4972
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4963
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4964
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5483
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4805
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4804
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4803
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4802
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4801
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4800
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4799
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4798
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4797
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4796
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5445
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4961
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4795
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4794
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5450
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4793
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4792
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4791
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4790
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4788
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4904
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4787
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4786
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4785
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4962
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4784
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4783
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4782
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4781
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5380
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4780
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4779
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4778
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4777
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4776
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4775
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4774
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4773
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4772
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 5443
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4771
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 4770
+    }
+  ],
+  "BakedReflectionProbes": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 7535
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 0
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7536
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7534
+    }
+  ],
+  "CurrentSceneProfilePath": "Assets/Scene/Stage/AdventureStage/Chapter01/Area_Square/EnviroProfile/Area_Square_Midday.enviroProfile.asset",
+  "CurrentProfileName": "",
+  "StartGlobalMainIntensity": 0,
+  "TargetGolbalMainIntensity": 0.0,
+  "GlobalMainIntensityFadeDuration": 1.0,
+  "_ActiveProfile": {
+    "m_FileID": 0,
+    "m_PathID": 7539
+  },
+  "m_GpuParticleCS": {
+    "m_FileID": 53,
+    "m_PathID": 2731057353111280147
+  },
+  "m_GpuParticleMesh": {
+    "m_FileID": 228,
+    "m_PathID": 3149433574678638613
+  },
+  "m_QuadMesh": {
+    "m_FileID": 93,
+    "m_PathID": 10210
+  }
+}

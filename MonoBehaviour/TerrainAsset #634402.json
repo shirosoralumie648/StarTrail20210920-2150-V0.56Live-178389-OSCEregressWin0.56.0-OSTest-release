@@ -1,0 +1,98 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 2098
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 1,
+    "m_PathID": 34
+  },
+  "m_Name": "",
+  "TerrainRenders": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 6904
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7081
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6483
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7179
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6792
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6846
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 7087
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 6847
+    }
+  ],
+  "TerrainMaskTexs": [
+    {
+      "m_FileID": 371,
+      "m_PathID": -5792991353262281812
+    },
+    {
+      "m_FileID": 372,
+      "m_PathID": 906795839524587343
+    },
+    {
+      "m_FileID": 373,
+      "m_PathID": 4672147919610200168
+    },
+    {
+      "m_FileID": 374,
+      "m_PathID": -4449460958595799185
+    },
+    {
+      "m_FileID": 375,
+      "m_PathID": -2120343714976150817
+    },
+    {
+      "m_FileID": 373,
+      "m_PathID": 4672147919610200168
+    },
+    {
+      "m_FileID": 376,
+      "m_PathID": 1645838359811316071
+    },
+    {
+      "m_FileID": 376,
+      "m_PathID": 1645838359811316071
+    }
+  ],
+  "BlendObjRenders": [],
+  "Key": "",
+  "HeightBlendTex": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "HeightBlendDetailTex": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "TargetTerrainRenderer": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "BlendBaseRange": {
+    "x": 0.0,
+    "y": 0.0
+  }
+}

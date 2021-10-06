@@ -1,0 +1,92 @@
+{
+  "m_GameObject": {
+    "m_FileID": 0,
+    "m_PathID": 0
+  },
+  "m_Enabled": 1,
+  "m_Script": {
+    "m_FileID": 0,
+    "m_PathID": 16
+  },
+  "m_Name": "AkWwiseInitializationSettings",
+  "PlatformSettingsNameList": [
+    "Android",
+    "iOS",
+    "Windows"
+  ],
+  "PlatformSettingsList": [
+    {
+      "m_FileID": 0,
+      "m_PathID": 50
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 52
+    },
+    {
+      "m_FileID": 0,
+      "m_PathID": 51
+    }
+  ],
+  "InvalidReferencePlatforms": [],
+  "UserSettings": {
+    "m_BasePath": "Audio\\GeneratedSoundBanks",
+    "m_StartupLanguage": "Chinese(PRC)",
+    "m_CallbackManagerBufferSize": 4096,
+    "m_EngineLogging": 0,
+    "m_MaximumNumberOfPositioningPaths": 255,
+    "m_CommandQueueSize": 262144,
+    "m_SamplesPerFrame": 1024,
+    "m_MainOutputSettings": {
+      "m_AudioDeviceShareset": "",
+      "m_DeviceID": 0,
+      "m_PanningRule": 0,
+      "m_ChannelConfig": {
+        "m_ChannelConfigType": 0,
+        "m_ChannelMask": 0,
+        "m_NumberOfChannels": 0
+      }
+    },
+    "m_StreamingLookAheadRatio": 1.0,
+    "m_SampleRate": 44100,
+    "m_NumberOfRefillsInVoice": 4,
+    "m_SpatialAudioSettings": {
+      "m_MaxSoundPropagationDepth": 8,
+      "m_DiffractionFlags": -1,
+      "m_MovementThreshold": 1.0,
+      "m_NumberOfPrimaryRays": 100,
+      "m_MaxReflectionOrder": 1,
+      "m_MaxPathLength": 10000.0,
+      "m_EnableDiffractionOnReflections": 1,
+      "m_EnableDirectPathDiffraction": 1,
+      "m_EnableTransmission": 1
+    }
+  },
+  "AdvancedSettings": {
+    "m_IOMemorySize": 1048576,
+    "m_TargetAutoStreamBufferLengthMs": 380.0,
+    "m_UseStreamCache": 0,
+    "m_MaximumPinnedBytesInCache": 4294967295,
+    "m_EnableGameSyncPreparation": 0,
+    "m_ContinuousPlaybackLookAhead": 1,
+    "m_MonitorQueuePoolSize": 131072,
+    "m_MaximumHardwareTimeoutMs": 1000,
+    "m_DebugOutOfRangeCheckEnabled": 0,
+    "m_DebugOutOfRangeLimit": 16.0,
+    "m_SpatialAudioSettings": {
+      "m_DiffractionShadowAttenuationFactor": 1.0,
+      "m_DiffractionShadowDegrees": 30.0
+    },
+    "m_RenderDuringFocusLoss": 1,
+    "m_SoundBankPersistentDataPath": "",
+    "m_UseAsyncOpen": 0
+  },
+  "CommsSettings": {
+    "m_PoolSize": 262144,
+    "m_DiscoveryBroadcastPort": 24024,
+    "m_CommandPort": 0,
+    "m_NotificationPort": 0,
+    "m_InitializeSystemComms": 1,
+    "m_NetworkName": ""
+  }
+}

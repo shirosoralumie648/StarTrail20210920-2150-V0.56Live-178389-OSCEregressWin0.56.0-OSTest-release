@@ -1,0 +1,220 @@
+{
+	"$type" : "RPG.GameCore.LevelGraphConfig", 
+	"$guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+	"OnInitSequece" : 
+	[
+	], 
+	"OnStartSequece" : 
+	[
+		
+		// 故事开始
+        
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.LevelStoryInitialize", 
+					"$guid" : "1e39424a-9cfb-4ff9-a1c5-8dc6838df16d", 
+					"TaskEnabled" : true, 
+					"AreaPrefabPath" : "Story/Mission/1010201/Story_101020103_01.prefab", 
+					"LockPlayControl" : true, 
+					"EntityVisiableList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.EntityVisiableInfo", 
+							"$guid" : "9744d743-b0a7-4387-b90e-a0118c106f1f", 
+							"CharType" : "LocalPlayer", 
+							"GroupID" : 0, 
+							"GroupNPCID" : 0, 
+							"RenderVisible" : false, 
+							"MuteColliderWhenInvisiable" : true
+						}
+					], 
+					"CreateCharacterList" : 
+					[
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "fb552ec7-95d1-447d-8ac3-71b10343105b", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Bronya", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Bronya_00", 
+							"AreaName" : "Story_101020103_01", 
+							"AnchorName" : "Seele01"
+						}, 
+						{
+							"$type" : "RPG.GameCore.CreateCharacter", 
+							"$guid" : "b92619ca-0f8f-48f1-b723-0a181dc66ce5", 
+							"TaskEnabled" : true, 
+							"CharacterUniqueName" : "Cocolia", 
+							"Catgory" : "Default", 
+							"AvatarID" : "Cocolia_00", 
+							"AreaName" : "Story_101020103_01", 
+							"AnchorName" : "Cocolia01"
+						}
+					], 
+					"CloseFootIK" : true, 
+					"NeedShowTalkUI" : true, 
+					"HideBillboard" : true, 
+					"HideEffect" : true, 
+					"HideProp" : true, 
+					"EnableRootMotion" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.EnableStoryMode", 
+					"$guid" : "d6b89478-6db2-4a74-b423-55f31de554d8", 
+					"TaskEnabled" : true, 
+					"Enable" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.PlayTimeline", 
+					"$guid" : "59809d85-8b39-4699-bc81-7bc7db25a6b1", 
+					"TaskEnabled" : true, 
+					"TimelineName" : "Story/Mission/1010201/Story_101020103_01.playable", 
+					"Type" : "Story", 
+					"Parameters" : 
+					[
+					]
+				}, 
+				{
+					"$type" : "RPG.GameCore.EndStory", 
+					"$guid" : "e58831b3-6fd7-4cc6-8dfe-2edbf91515c5", 
+					"TaskEnabled" : true
+				}
+			]
+		}, 
+		{
+			"$type" : "RPG.GameCore.LevelStartSequeceConfig", 
+			"$guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+			"Order" : 0, 
+			"IsLoop" : false, 
+			"TaskList" : 
+			[
+				{
+					"$type" : "RPG.GameCore.EnableStoryMode", 
+					"$guid" : "bd1f7193-94e4-44e3-9cdb-9be0bd3463e4", 
+					"TaskEnabled" : true, 
+					"Enable" : false
+				}, 
+				{
+					"$type" : "RPG.GameCore.WaitStoryEnd", 
+					"$guid" : "ae6c59ac-f55d-4baa-bd9b-805ffaa19163", 
+					"TaskEnabled" : true
+				}, 
+				{
+					"$type" : "RPG.GameCore.FinishLevelGraph", 
+					"$guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+					"TaskEnabled" : true
+				}
+			]
+		}
+	], 
+	"$NodeGraphInfo" : 
+	{
+		"DanglingNodes" : 
+		[
+		], 
+		"ClassMeta" : 
+		[
+			{
+				"Position" : 
+				[
+					-544, 
+					-352
+				], 
+				"Comment" : "触发剧情可可利亚和板鸭", 
+				"Guid" : "80d9f06d-dd77-4bbd-b6c1-7b1e45d471cc", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-288, 
+					-336
+				], 
+				"Guid" : "5227824c-c2a2-4113-bd53-bfccf904f48f", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					-48, 
+					-320
+				], 
+				"Guid" : "1e39424a-9cfb-4ff9-a1c5-8dc6838df16d", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					176, 
+					-320
+				], 
+				"Guid" : "d6b89478-6db2-4a74-b423-55f31de554d8", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					448, 
+					-320
+				], 
+				"Guid" : "59809d85-8b39-4699-bc81-7bc7db25a6b1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					720, 
+					-320
+				], 
+				"Guid" : "e58831b3-6fd7-4cc6-8dfe-2edbf91515c5", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					64, 
+					-176
+				], 
+				"Guid" : "3017f383-a070-4a4b-8863-e9c68d8fcfd1", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					288, 
+					-160
+				], 
+				"Guid" : "bd1f7193-94e4-44e3-9cdb-9be0bd3463e4", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					528, 
+					-176
+				], 
+				"Guid" : "ae6c59ac-f55d-4baa-bd9b-805ffaa19163", 
+				"Locked" : false
+			}, 
+			{
+				"Position" : 
+				[
+					912, 
+					-176
+				], 
+				"Guid" : "302a1890-6955-4cbb-9c6e-43eb989e319d", 
+				"Locked" : false
+			}
+		], 
+		"Connections" : 
+		[
+		], 
+		"SerializeVersion" : 1
+	}
+}
